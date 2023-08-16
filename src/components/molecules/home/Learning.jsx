@@ -1,9 +1,9 @@
 import Logo from "../../atoms/Logo";
 import Text from "../../atoms/Text";
 import TextLink from "../../atoms/TextLink";
-import sub from "../../../assets/images/subtract (1).png";
-import sub2 from "../../../assets/images/subtract.png";
-import sub3 from "../../../assets/images/subtract3.png";
+import sub from "../../../assets/images/Subtract (1).png";
+import sub2 from "../../../assets/images/Subtract.png";
+import sub3 from "../../../assets/images/Subtract3.png";
 
 const Learning = () => {
   return (

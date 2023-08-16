@@ -6,8 +6,8 @@ import syimg3 from '../../../assets/images/Group 153 (1).png'
 import star from "../../../assets/images/Frame 427318881.png";
 import rtqt from "../../../assets/images/closeqt.png";
 import ltqt from "../../../assets/images/openqt.png";
-import sub from '../../../assets/images/subtract.png'
-import sub2 from '../../../assets/images/subtract (1).png'
+import sub from '../../../assets/images/Subtract.png'
+import sub2 from '../../../assets/images/Subtract (1).png'
 
 const Say = () => {
   return (

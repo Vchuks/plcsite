@@ -259,6 +259,26 @@ box-shadow: 0px 2.5944252014160156px 59.23224639892578px -1.9458190202713013px r
   color: #333;
   font-size: 14px;
 }
+select::-ms-expand {
+  display: none;
+}
+select {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0.5em 2em 0.5em 0.5em;
+  /* border: 1px solid #1e1a1a; */
+  font: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-image: url(./assets/images/angle-small-down.png);
+  background-position: right 15% top 1.2em, right 15% top 1em;
+  background-size:15px  ;
+  background-color: #222057;
+}
 
 
 
@@ -329,7 +349,7 @@ box-shadow: 0px 2.5944252014160156px 59.23224639892578px -1.9458190202713013px r
   
   @keyframes moveleft {
     0% {transform: translateX(0);}
-    100% {transform: translateX(calc(-200px * 12));}
+    100% {transform: translateX(calc(-100px * 12));}
   }
   .play{
     width: 15%;

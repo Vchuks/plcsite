@@ -3,8 +3,20 @@ import Text from "../../atoms/Text";
 import TextLink from "../../atoms/TextLink";
 import whats from "../../../assets/images/ri_whatsapp-fill.png";
 import map from "../../../assets/images/Group 4.png"
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [entcou, setEntCou] = useState([])
+
+  useEffect(() => {
+      fetch("https://backend.pluralcode.institute/loop-course-list")
+          .then((response) => response.json())
+          .then((result) => {
+              setEntCou(result.courses);
+              
+          })
+          .catch((err) => console.log(err));
+  }, []);
   return (
     <div className="flex flex-col-reverse lg:flex-row bg-cblue border-0 px-4 lg:px-14 py-8 lg:py-32">
       <div className="w-full">
@@ -19,7 +31,7 @@ const Hero = () => {
         <div className="border rounded-2xl gap-5 my-4 border-corange selectdiv flex flex-col lg:flex-row items-center px-6 justify-between py-4">
           <select className="w-full hero-link outline-none text-center text-sm text-cblue rounded bg-white pt-4 pb-3">
             <option className="">Select Course</option>
-            <option className="text-left">Course</option>
+            {entcou.map(each => <option key={each.id}>{each.name}</option>)}
           </select>
           <TextLink
           to="#"

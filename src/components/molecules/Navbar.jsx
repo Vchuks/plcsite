@@ -24,14 +24,14 @@ const Navbar = () => {
   }
 
   return (
-    <div className="bg-cblue border border-cblue flex justify-between px-4 lg:px-14 py-4 lg:py-8 ">
+    <div className="bg-cblue border border-cblue items-center flex justify-between px-4 lg:px-14 py-4 lg:py-8 ">
       <div className="w-full">
         <Logo src={plclogo} alt="Pluralcode" className="w-52" />
       </div>
       <div className="w-full hidden lg:flex items-center text-white justify-between">
         <div className="relative flex items-center gap-2 cursor-pointer" onMouseEnter={handleSchdp} onMouseLeave={handleSchdp} >
           <Text className="" body="School" />
-          <FaChevronDown />
+          <FaChevronDown className="text-xs" />
         {/* school drop down */}
         {schdp &&<div className="absolute top-full mt-1 bg-white schdp p-8 gap-4 text-black flex">
             <div>
@@ -53,7 +53,7 @@ const Navbar = () => {
         <TextLink to="#" className="" body="LooP" />
         <div className="relative flex items-center gap-2 cursor-pointer" onMouseEnter={handleMoredp} onMouseLeave={handleMoredp}>
           <Text className="" body="More" />
-          <FaChevronDown />
+          <FaChevronDown className="text-xs"/>
           {/* more drop down */}
         {moredp &&<div className="absolute top-full mt-1 bg-white schdp p-8 gap-4 text-black flex">
             <div>
@@ -74,27 +74,28 @@ const Navbar = () => {
       <div className="w-full hidden lg:flex justify-end items-center text-center gap-4">
         <TextLink
           to="#"
-          className="w-32 py-2 border rounded text-corange text-sm border-corange"
+          className="w-32 pt-3 pb-2 border rounded text-corange text-sm border-corange"
           body={<button className="w-full">Sign In</button>}
         />
         <TextLink
           to="#"
-          className="w-36 bg-corange text-white text-sm rounded py-2"
+          className="w-36 bg-corange text-white text-sm rounded pt-3 pb-2"
           body={<button className="w-full">Start Learning</button>}
         />
       </div>
       <div className="flex justify-end lg:hidden" onClick={handleNav}>
-        <Logo src={icon} className="w-9/12" />
+        <Logo src={icon} className="w-9/12" alt="" />
       </div>
+      {/* small screen nav  */}
       {smallNav && (
-        <div className="w-full bg-cblue h-screen absolute top-0 left-0 px-4 py-4 smallnav">
+        <div className="w-full bg-cblue h-screen absolute top-0 left-0 px-6 py-4 smallnav">
           <div className="w-1/4 ml-auto flex justify-end" onClick={handleNav}>
             <Logo src={closeicon} className="w-10" />
           </div>
-          <div className="flex flex-col gap-10 text-white">
+          <div className="flex flex-col gap-10 mt-6 text-white">
           <div className="relative flex items-center gap-2 cursor-pointer" onClick={handleSchdp} onMouseEnter={handleSchdp} onMouseLeave={handleSchdp} >
           <Text className="" body="School" />
-          <FaChevronDown />
+          <FaChevronDown className="text-xs"/>
         {/* school drop down */}
         {schdp &&<div className="absolute top-full mt-1 bg-white schdp p-8 gap-4 text-black flex">
             <div>
@@ -116,7 +117,7 @@ const Navbar = () => {
             <TextLink to="#" className="" body="LooP" />
             <div className="relative flex items-center gap-2 cursor-pointer"onClick={handleMoredp} onMouseEnter={handleMoredp} onMouseLeave={handleMoredp}>
           <Text className="" body="More" />
-          <FaChevronDown />
+          <FaChevronDown className="text-xs" />
           {/* more drop down */}
         {moredp &&<div className="absolute top-full mt-1 bg-white schdp p-8 gap-4 text-black flex">
             <div>
@@ -136,12 +137,12 @@ const Navbar = () => {
           <div className="w-full flex items-center text-center gap-4">
             <TextLink
               to="#"
-              className="w-32 py-2 border rounded text-corange border-corange"
+              className="w-32 pt-3 pb-2 border rounded text-corange border-corange"
               body={<button className="w-full">Sign In</button>}
             />
             <TextLink
               to="#"
-              className="w-36 bg-corange text-white rounded py-2"
+              className="w-36 bg-corange text-white rounded pt-3 pb-2"
               body={<button className="w-full">Start Learning</button>}
             />
           </div>

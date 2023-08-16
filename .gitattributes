@@ -31,4 +31,8 @@
 /src/assets/images/Group[[:space:]]20390[[:space:]](2).png filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/Group[[:space:]]20390[[:space:]](3).png filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/Group[[:space:]]20390.png filter=lfs diff=lfs merge=lfs -text
+/src/assets/fonts/Gilroy-Medium.ttf filter=lfs diff=lfs merge=lfs -text
+/src/assets/fonts/Gilroy-SemiBold.ttf filter=lfs diff=lfs merge=lfs -text
+/src/assets/images/Group[[:space:]]4.png filter=lfs diff=lfs merge=lfs -text
+/src/assets/images/cloud.png filter=lfs diff=lfs merge=lfs -text
 * !text !filter !merge !diff

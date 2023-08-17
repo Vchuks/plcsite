@@ -59,13 +59,14 @@ background: rgba(248, 153, 29, 0.24);
 
 .carousel-slider{
   padding-bottom:50px !important;
+  margin: auto !important;
 }
 .control-dots{
   width: 45% !important;
   right: -5px;
   top: 75%;
   text-align: left !important;
- 
+
 }
 .carousel .control-dots .dot{
   width: 14px !important;
@@ -267,6 +268,7 @@ select {
   box-sizing: border-box;
   padding: 0.5em 2em 0.5em 0.5em;
   /* border: 1px solid #1e1a1a; */
+  text-align: center;
   font: inherit;
   line-height: inherit;
   -webkit-appearance: none;
@@ -278,6 +280,106 @@ select {
   background-position: right 15% top 1.2em, right 15% top 1em;
   background-size:15px  ;
   background-color: #222057;
+}
+.wrld1{
+  top: 45%;
+  left:25%;
+}
+.wrld2{
+  top: 30%;
+  left:60%;
+}
+.wrld3{
+  left: 48%;
+  top: 69%;
+}
+.wrld4{
+  top:38% ;
+  left: 15%;
+}
+.wrld5{
+  top: 52%;
+  left: 67%;
+}
+.wrld6{
+  top: 50%;
+  left: 45%;
+}
+.wrld7{
+  top:75%;
+  right: 12%;
+}
+.wrld8{
+  top: 72%;
+  left: 32%;
+}
+@keyframes wglow {
+  0% {
+    background-color: #F86C1D;
+    box-shadow: 0 0 3px #F86C1D;
+  }
+  50% {
+    background-color: #F8991D;
+    box-shadow: 0 0 20px #F8991D;
+  }
+  100% {
+    background-color: #F86C1D;
+    box-shadow: 0 0 3px #F86C1D;
+  }
+}
+.wrldglow{
+  animation: wglow 2s ease-in-out infinite alternate;
+  border-radius: 50%;
+}
+.world-text{
+  background-color: #fff;
+  width: 200px;
+  position: relative; 
+  padding: 10px 1rem;
+  z-index: 1;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 1px 1px 5px gray;
+}
+.world-text:after{
+  content: " ";
+  width: 0;
+  height: 0;
+  z-index: -1;
+  position: absolute;
+  background-color: #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #fff;
+  border-radius: 2px;
+  left: 0;
+  top: 0;
+}
+.world-text2{
+  background-color: #fff;
+  width: 200px;
+  position: relative; 
+  padding: 10px 1rem;
+  z-index: 1;
+  border-radius: 20px;
+  font-size: 14px;
+  box-shadow: 1px 1px 5px gray;
+}
+.world-text2:after{
+  content: " ";
+  width: 0;
+  height: 0;
+  z-index: -1;
+  position: absolute;
+  background-color: #fff;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-left: 10px solid #fff;
+  border-radius: 2px;
+  right:  0;
+  top: 0;
 }
 
 
@@ -310,7 +412,7 @@ select {
 }
   .control-dots{
     width: 100% !important;
-    right: 10px;
+    right: 0;
     top: 95%;
   }
   .carousel .control-dots .dot{
@@ -412,5 +514,8 @@ select {
   }
   .newsback{
     width: 96%;
+  }
+  .world-text,.world-text2{
+    width: 170px;
   }
 }

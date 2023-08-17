@@ -42,12 +42,12 @@ const Bridge = () => {
         Bridging <span className="text-corange">Africa&apos;s Talent </span>Gap
       </p>
 
-      <Carousel autoPlay infiniteLoop showThumbs={false} showArrows={false} showStatus={false}>
+      <Carousel autoPlay infiniteLoop stopOnHover width={"95%"} showThumbs={false} showArrows={false} showStatus={false}>
         {data.map((each) => {
           return (
             <div
               key={each.id}
-              className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center pt-10 lg:pt-20"
+              className="w-full flex flex-col lg:flex-row gap-10 lg:gap-0 items-center pt-10 lg:pt-20"
             >
               <div className="w-full">
                 <div className="w-11/12 lg:w-10/12 m-auto">

@@ -8,30 +8,33 @@ import rtqt from "../../../assets/images/closeqt.png";
 import ltqt from "../../../assets/images/openqt.png";
 import sub from '../../../assets/images/Subtract.png'
 import sub2 from '../../../assets/images/Subtract (1).png'
+import curve from "../../../assets/images/Vector 5.png";
+
 
 const Say = () => {
   return (
     <div className="px-4 lg:px-14 py-20 lg:py-14 say-box">
       <div className="w-20 h-2 rounded-2xl my-2 bg-corange"></div>
-      <p className="text-cdark font-['aristsemibold'] text-3xl lg:text-5xl">
+      <p className="w-max relative text-cdark font-['aristsemibold'] text-3xl lg:text-5xl">
         What Our <span className="text-corange">Students Say </span>
+        <span className="hidden lg:block absolute w-[100px] h-full top-[50%] -right-[27%]"><Logo src={curve} alt="" className="w-full"/></span>
       </p>
+      <div className="flex flex-col lg:flex-row gap-4 items-start pb-4">
+        <div className="lg:w-9/12">
       <Text
         className="lg:text-lg say-text font-['gmedium'] py-2"
         body="We have maintained an amazing learning experience for our students, find out how they feel about us."
       />
-      <div className="flex flex-col lg:flex-row gap-4 items-end pb-4">
-        <div className="lg:w-9/12">
-          <div className="w-full py-4 lg:py-0 lg:w-36">
+          <div className="w-full py-4 lg:py-0 2xl:py-5 lg:w-36">
             <p className="text-5xl lg:text-center font-['gmedium'] text-cgray">
               4.5<span className="text-lg">out of 5</span>
             </p>
             <Text
-              className="text-cgray lg:text-center text-2xl pt-2"
+              className="text-cgray font-['aristbold'] lg:text-center text-2xl pt-2"
               body="Trustpilot"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full 2xl:w-[88%]">
             <Logo
               src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/plc12.png"
               alt=""
@@ -39,10 +42,10 @@ const Say = () => {
             />
           </div>
         </div>
-        <div className="w-full flex flex-col lg:flex-row items-center gap-5">
+        <div className="w-full flex flex-col lg:flex-row items-center gap-5 2xl:gap-0">
           <div className="w-full">
             <div><Logo src={sub2} className="w-14 ml-auto pb-6" alt=""/></div>
-            <div className="testimony bg-white border border-corange rounded-xl p-4">
+            <div className="testimony 2xl:h-56 2xl:w-11/12 bg-white border border-corange rounded-xl p-4 ">
               <div>
                 <div className="flex items-end">
                   <div>
@@ -76,7 +79,7 @@ const Say = () => {
           </div>
           <div className="w-full flex flex-col gap-5">
             <div className="w-full">
-              <div className="testimony bg-white border border-corange rounded-xl p-4">
+              <div className="testimony 2xl:h-56 2xl:w-11/12 bg-white border border-corange rounded-xl p-4">
                 <div>
                   <div className="flex items-end">
                     <div>
@@ -108,7 +111,7 @@ const Say = () => {
               </div>
             </div>
             <div className="w-full">
-              <div className="testimony bg-white border border-corange rounded-xl p-3">
+              <div className="testimony 2xl:h-56 2xl:w-11/12 bg-white border border-corange rounded-xl p-3">
                 <div>
                   <div className="flex items-end">
                     <div>

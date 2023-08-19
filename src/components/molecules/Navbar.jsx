@@ -33,18 +33,24 @@ const Navbar = () => {
           <Text className="" body="School" />
           <FaChevronDown className="text-xs" />
         {/* school drop down */}
-        {schdp &&<div className="absolute top-full mt-1 bg-white schdp p-8 gap-4 text-black flex">
-            <div>
-                <Text className="" body="Product School"/>
-                <TextLink to="" className="" body="Product Design"/>
+        {schdp &&<div className="w-max absolute top-full mt-1 bg-white schdp p-5 gap-4 text-black flex">
+            <div className="flex flex-col">
+                <Text className="text-cblue pb-1 font-['aristbold']" body="Product School"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Product Design"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Product Management"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Agile Project Management"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Scrum Project Management"/>
             </div>
-            <div>
-                <Text className="" body="Product School"/>
-                <TextLink to="" className="" body="Product Design"/>
+            <div className="flex flex-col">
+                <Text className="text-cblue pb-1 font-['aristbold']" body="Data School"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Data Analytics"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Business Analytics"/>
             </div>
-            <div>
-                <Text className="" body="Product School"/>
-                <TextLink to="" className="" body="Product Design"/>
+            <div className="flex flex-col">
+                <Text className="text-cblue pb-1 font-['aristbold']" body="Programming School"/>
+                <TextLink to="#" className="text-cdark text-sm" body="FullStack Development"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Cloud Computing"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Cyber Security"/>
             </div>
         </div>}
         </div>
@@ -55,18 +61,16 @@ const Navbar = () => {
           <Text className="" body="More" />
           <FaChevronDown className="text-xs"/>
           {/* more drop down */}
-        {moredp &&<div className="absolute top-full mt-1 bg-white schdp p-8 gap-4 text-black flex">
+        {moredp &&<div className="w-max absolute top-full mt-1 bg-white schdp p-5 gap-4 text-black">
             <div>
-                <Text className="" body=" School"/>
-                <TextLink to="" className="" body="Product Design"/>
+                
+                <TextLink to="" className="text-cdark text-sm" body="Why Pluralcode"/>
             </div>
             <div>
-                <Text className="" body=" School"/>
-                <TextLink to="" className="" body="Product Design"/>
+                <TextLink to="" className="text-cdark text-sm" body="Talk to Student Advisor"/>
             </div>
             <div>
-                <Text className="" body="Product School"/>
-                <TextLink to="" className="" body="Product Design"/>
+                <TextLink to="" className="text-cdark text-sm" body="Become a Mentor"/>
             </div>
         </div>}
         </div>
@@ -88,49 +92,53 @@ const Navbar = () => {
       </div>
       {/* small screen nav  */}
       {smallNav && (
-        <div className="w-full bg-cblue h-screen absolute top-0 left-0 px-6 py-4 smallnav">
+        <div className="w-full bg-cblue z-10 h-screen text-lg absolute top-0 left-0 px-6 py-4 smallnav">
           <div className="w-1/4 ml-auto flex justify-end" onClick={handleNav}>
             <Logo src={closeicon} className="w-10" />
           </div>
           <div className="flex flex-col gap-10 mt-6 text-white">
-          <div className="relative flex items-center gap-2 cursor-pointer" onClick={handleSchdp} onMouseEnter={handleSchdp} onMouseLeave={handleSchdp} >
-          <Text className="" body="School" />
+          <div className="relative flex items-center gap-2 cursor-pointer" >
+          <Text className="" body="School"  onClick={handleSchdp} onMouseEnter={handleSchdp} onMouseLeave={handleSchdp} />
           <FaChevronDown className="text-xs"/>
         {/* school drop down */}
-        {schdp &&<div className="absolute top-full mt-1 bg-white schdp p-8 gap-4 text-black flex">
-            <div>
-                <Text className="" body="Product School"/>
-                <TextLink to="" className="" body="Product Design"/>
+        {schdp &&<div className=" z-10 absolute top-full mt-1 bg-white schdp p-4 text-black flex flex-col gap-2">
+        <div className="flex flex-col">
+                <Text className="text-cblue text-base pb-1 font-['aristbold']" body="Product School"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Product Design"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Product Management"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Agile Project Management"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Scrum Project Management"/>
             </div>
-            <div>
-                <Text className="" body="Product School"/>
-                <TextLink to="" className="" body="Product Design"/>
+            <div className="flex flex-col">
+                <Text className="text-cblue text-base pb-1 font-['aristbold']" body="Data School"/>
+                <TextLink to="#" className="text-cdark text-sm " body="Data Analytics"/>
+                <TextLink to="#" className="text-cdark text-sm " body="Business Analytics"/>
             </div>
-            <div>
-                <Text className="" body="Product School"/>
-                <TextLink to="" className="" body="Product Design"/>
+            <div className="flex flex-col">
+                <Text className="text-cblue text-base pb-1 font-['aristbold']" body="Programming School"/>
+                <TextLink to="#" className="text-cdark text-sm" body="FullStack Development"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Cloud Computing"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Cyber Security"/>
             </div>
         </div>}
         </div>
             <TextLink to="#" className="" body="Tuition" />
             <TextLink to="#" className="" body="FAQ" />
             <TextLink to="#" className="" body="LooP" />
-            <div className="relative flex items-center gap-2 cursor-pointer"onClick={handleMoredp} onMouseEnter={handleMoredp} onMouseLeave={handleMoredp}>
-          <Text className="" body="More" />
+            <div className="relative flex items-center gap-2 cursor-pointer">
+          <Text className="" body="More" onClick={handleMoredp} onMouseEnter={handleMoredp} onMouseLeave={handleMoredp}/>
           <FaChevronDown className="text-xs" />
           {/* more drop down */}
-        {moredp &&<div className="absolute top-full mt-1 bg-white schdp p-8 gap-4 text-black flex">
-            <div>
-                <Text className="" body=" School"/>
-                <TextLink to="" className="" body="Product Design"/>
+        {moredp &&<div className="absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">
+        <div>
+                
+                <TextLink to="#" className="text-cdark text-sm" body="Why Pluralcode"/>
             </div>
             <div>
-                <Text className="" body=" School"/>
-                <TextLink to="" className="" body="Product Design"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Talk to Student Advisor"/>
             </div>
             <div>
-                <Text className="" body="Product School"/>
-                <TextLink to="" className="" body="Product Design"/>
+                <TextLink to="#" className="text-cdark text-sm" body="Become a Mentor"/>
             </div>
         </div>}
         </div>
@@ -150,6 +158,7 @@ const Navbar = () => {
         </div>
       )}
     </div>
+    
   );
 };
 

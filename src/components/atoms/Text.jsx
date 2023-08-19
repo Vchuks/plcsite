@@ -1,8 +1,8 @@
 import PropTypes from "prop-types" 
 
-const Text = ({className, body}) => {
+const Text = ({className, body, ...rest}) => {
   return (
-    <p className={className}>{body}</p>
+    <p className={className} {...rest}>{body}</p>
   )
 }
 Text.propTypes = {

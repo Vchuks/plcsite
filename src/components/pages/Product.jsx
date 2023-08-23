@@ -1,7 +1,7 @@
 import Learning from "../molecules/home/Learning";
-import Courses from "../molecules/school/Courses";
+import Courses from "../molecules/school/CourseProduct";
 import How from "../molecules/school/How";
-import ProductHero from "../molecules/school/ProductHero";
+import ProductHero from "../molecules/school/product/ProductHero";
 
 const Product = () => {
   return (
@@ -9,7 +9,7 @@ const Product = () => {
       <ProductHero />
       <Courses />
       <How />
-      <Learning ids="clearn" />
+      <Learning />
     </div>
   );
 };

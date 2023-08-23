@@ -81,7 +81,7 @@ const NavbarTwo = () => {
           </div>
           <div className="flex flex-col gap-10 mt-6 text-white">
           <div className="relative flex items-center gap-2 cursor-pointer" >
-          <Text className="" body="School"  onClick={handleSchdp} onMouseEnter={handleSchdp} onMouseLeave={handleSchdp} />
+          <Text className="" body="School"  onClick={handleSchdp} />
           <FaChevronDown className="text-xs"/>
         {/* school drop down */}
         {schdp &&<div className="w-3/4 z-10 absolute top-full mt-1 bg-white schdp p-4 text-black flex flex-col gap-2">
@@ -97,7 +97,7 @@ const NavbarTwo = () => {
             <TextLink to="#" className="" body="FAQ" />
             <TextLink to="#" className="" body="LooP" />
             <div className="relative flex items-center gap-2 cursor-pointer">
-          <Text className="" body="More" onClick={handleMoredp} onMouseEnter={handleMoredp} onMouseLeave={handleMoredp}/>
+          <Text className="" body="More" onClick={handleMoredp} />
           <FaChevronDown className="text-xs" />
           {/* more drop down */}
         {moredp &&<div className="w-3/4 h-[120px] absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">

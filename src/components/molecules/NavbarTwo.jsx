@@ -53,7 +53,7 @@ const NavbarTwo = () => {
             <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                 
                 <TextLink to="" className="text-cdark " body="Why Pluralcode"/>
-                <TextLink to="" className="text-cdark " body="Become a Mentor"/>
+                <TextLink to="" className="text-cdark " body="Partner with us"/>
             </div>
         </div>}
         </div>

@@ -12,7 +12,7 @@ const data = [
       "Earn a Tech Diploma and master skills that will help you achieve your dream of a career change, workplace promotion or international job opportunities.",
     linktext: "Start Learning",
     link: "#",
-    pic: "https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/plc15.png",
+    pic: "https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p3.png",
   },
   {
     id: "2",
@@ -21,7 +21,7 @@ const data = [
       "Build your dream team with Pluralcode. Hire our most talented graduates to help you turn your vision into reality.",
     linktext: "Hire Our Grads",
     link: "#",
-    pic: "https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/plc13.png",
+    pic: "https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p7.png",
   },
   {
     id: "3",
@@ -30,7 +30,7 @@ const data = [
       "Pluralcode’s SandBox initiative seeks to provide ten thousand less privileged young Africans with free access to Tech Education. Collaborate with us.",
     linktext: "Collaborate With Us",
     link: "#",
-    pic: "https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/plc14.png",
+    pic: "https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p9.png",
   },
 ];
 
@@ -61,7 +61,7 @@ const Bridge = () => {
                     body={each.title}
                   />
                   <Text
-                    className="py-4 lg:py-6 font-['aristsemibold'] carou-text text-lg"
+                    className="py-4 lg:py-6 font-['gmedium'] carou-text text-lg"
                     body={each.comment}
                   />
                   <TextLink

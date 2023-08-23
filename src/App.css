@@ -22,6 +22,18 @@
   font-family: gsemibold;
   src: url("./assets/fonts/Gilroy-SemiBold.ttf");
 }
+@font-face {
+  font-family: gregular;
+  src: url("./assets/fonts/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: gbold;
+  src: url("./assets/fonts/Gilroy-Bold.ttf");
+}
+@font-face {
+  font-family: gexbold;
+  src: url("./assets/fonts/Gilroy-ExtraBold.ttf");
+}
 body{
   background-color: #fff;
   font-family: aristregular;
@@ -37,12 +49,12 @@ body{
   animation-timing-function: linear;
 }
 .schdp{
-  border-radius: 12px;
+  border-radius: 32px;
   box-shadow: 0px 3.547872304916382px 81px -2.6609041690826416px rgba(16, 24, 40, 0.05), 0px -8.869999885559082px 20px -2.2174201011657715px rgba(16, 24, 40, 0.05);
 }
 .plt{
   border-radius: 24px;
-background: rgba(248, 153, 29, 0.24);
+background: rgba(248, 153, 29, 0.24) ;
 }
 .hero-text{
   width: 700px;
@@ -214,8 +226,8 @@ animation: glow 2s ease-in-out infinite alternate;
   width: 433px;
 }
 .learnback{
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   border: 1px solid #232323;
   border-radius: 8px 0;
   bottom: -5%;
@@ -379,6 +391,10 @@ select {
   right:  0;
   top: 0;
 }
+.shad{
+  box-shadow: 0px 5.221533298492432px 119.21066284179688px -3.916149854660034px rgba(16, 24, 40, 0.05), 0px -13.054304122924805px 29.43473243713379px -3.263458251953125px rgba(16, 24, 40, 0.05);
+}
+
 
 
 
@@ -390,6 +406,7 @@ select {
   .sb{
     height: 380px;
   }
+  
  
 }
 @media (max-width:997px) {

@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens:{
+        l:'900px',
+        xxxl:'2250px'
+      },
       colors:{
         "cblue":"#222057",
         "corange":"#F8991D",

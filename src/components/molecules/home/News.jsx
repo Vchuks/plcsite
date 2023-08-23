@@ -23,7 +23,7 @@ const News = () => {
           <div className="relative newseach p-6  2xl:h-full 2xl:w-10/12">
             <div className="lg:h-40  2xl:h-full">
               <Logo
-                src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/plc5.png"
+                src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p5.png"
                 className=""
                 alt=""
               />
@@ -46,7 +46,7 @@ const News = () => {
         <div className="relative newseach newsbg p-6  2xl:h-full 2xl:w-10/12">
             <div className="lg:h-40  2xl:h-full">
               <Logo
-                src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/plc6.png"
+                src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p12.png"
                 className=""
                 alt=""
               />
@@ -67,7 +67,7 @@ const News = () => {
           <div className="relative newseach newsbg p-6  2xl:h-full 2xl:w-10/12">
             <div className="lg:h-44 2xl:h-full">
               <Logo
-                src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/plc7.png"
+                src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p6.png"
                 className=""
                 alt=""
               />

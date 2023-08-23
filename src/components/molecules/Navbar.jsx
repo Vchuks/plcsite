@@ -81,7 +81,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-col gap-10 mt-6 text-white">
           <div className="relative flex items-center gap-2 cursor-pointer" >
-          <Text className="" body="School"  onMouseEnter={handleSchdp} onMouseLeave={handleSchdp}  />
+          <Text className="" body="School"  onClick={handleSchdp}   />
           <FaChevronDown className="text-xs"/>
         {/* school drop down */}
         {schdp &&<div className="w-3/4 z-10 absolute top-full mt-1 bg-white schdp p-4 text-black flex flex-col gap-2">

@@ -6,11 +6,11 @@ import curve1 from "../../../../assets/images/Frame.png";
 import curve2 from "../../../../assets/images/Vector 10.png";
 import curve3 from "../../../../assets/images/Vector 11.png";
 
-const DataHero = () => {
+const ProgrammingHero = () => {
   return (
     <div className="flex flex-col items-center lg:flex-row bg-[#F5F6FA] px-4 lg:px-14 py-8 lg:py-32 gap-6">
       <div className="lg:w-7/12 2xl:w-full relative">
-        <div className="hidden lg:block absolute w-[70px] top-1 right-[54%] 2xl:right-[57%]">
+        <div className="hidden lg:block absolute w-[70px] top-1 right-[22%] 2xl:right-[26%]">
           <Logo src={curve1} alt="" className="w-full" />
         </div>
         <div className="hidden lg:block absolute w-[40px] -left-[6%] top-0 2xl:-left-10">
@@ -21,11 +21,11 @@ const DataHero = () => {
           body="Welcome to Pluralcode's"
         />
         <p className="hero-text 2xl:w-[750px] 2xl:text-7xl leading-tight lg:leading-none pt-6 text-cblue">
-          Data <span className="text-corange">School</span>
+          Programming <span className="text-corange">School</span>
         </p>
         <Text
           className="lg:w-9/12 2xl:w-[800px] 2xl:py-5 2xl:text-2xl py-3 lg:py-0  font-['gmedium'] text-cblue"
-          body="Our data school trains and prepares students for careers in Data Analytics/ Science. Build expertise in data manipulation, visualization, predictive analytics, machine learning. Start acquiring valuable skills right away, create a project portfolio to demonstrate your abilities, and get support from mentors, peers, and experts in the field."
+          body="Our training is open to all without prerequisite or degree. PluralCode provides a 16 weeks, cutting-edge, full-time, and accessible web development course to help you upskill or quickly change careers. Our Web Development Course is intensive and incorporates extensive practice to help you prepare for the real world. You’ll learn coding by working on interactive websites that utilize HTML, CSS, JavaScript and more."
         />
 
         <div className="relative pt-4 lg:text-lg text-cblue flex gap-1 ">
@@ -50,7 +50,7 @@ const DataHero = () => {
       <div className="w-full">
         <Logo
           className="w-full"
-          src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/IMG_4239.PNG"
+          src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/IMG_4237.PNG"
           alt=""
         />
       </div>
@@ -58,4 +58,4 @@ const DataHero = () => {
   );
 };
 
-export default DataHero;
+export default ProgrammingHero;

@@ -8,6 +8,8 @@ import NavbarTwo from './components/molecules/NavbarTwo'
 import Product from './components/pages/Product'
 import Data from './components/pages/Data'
 import { useEffect } from 'react'
+import Programming from './components/pages/Programming'
+import Cloud from './components/pages/Cloud'
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
       <Route path='/' element = {<Home/>}/>
       <Route path='school/product' element= {<Product/>}/>
       <Route path='school/data' element= {<Data/>}/>
+      <Route path='school/programming' element= {<Programming/>}/>
+      <Route path='school/cloud' element= {<Cloud/>}/>
 
     </Routes>
     <Footer/>

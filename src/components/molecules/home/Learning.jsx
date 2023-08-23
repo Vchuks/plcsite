@@ -22,7 +22,7 @@ const Learning = () => {
           <Logo src={sub} className="w-14" alt="" />
         </div>
 
-        <div className="relative h-full  learneach p-6">
+        <div className="relative h-full  learneach p-6" data-aos="zoom-in-up" data-aos-duration="2000">
           <div>
             <Logo
               src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p2.png"
@@ -47,7 +47,7 @@ const Learning = () => {
           <Logo src={sub2} className="w-full" alt="" />
         </div>
 
-        <div className="relative h-full  learneach p-6">
+        <div className="relative h-full  learneach p-6" data-aos="zoom-in-up" data-aos-duration="2000">
           <div>
             <Logo
               src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p1.png"

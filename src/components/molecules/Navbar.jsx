@@ -24,7 +24,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="bg-cblue border font-['gmedium'] border-cblue items-center flex  justify-between px-4 lg:px-14 py-4 lg:py-8 ">
+    <div className="bg-cblue border sticky top-0 z-20 font-['gmedium'] border-cblue items-center flex  justify-between px-4 lg:px-14 py-4 lg:py-8 ">
       <div className="w-full">
         <Logo src={plclogo} alt="Pluralcode" className="w-52" />
       </div>

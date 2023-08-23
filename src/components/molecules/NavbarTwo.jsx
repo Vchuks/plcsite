@@ -24,7 +24,7 @@ const NavbarTwo = () => {
   }
 
   return (
-    <div className="bg-[#F5F6FA] font-['gmedium'] items-center flex justify-between px-4 lg:px-14 py-4 lg:py-8 ">
+    <div className="bg-[#F5F6FA] sticky top-0 z-20 font-['gmedium'] items-center flex justify-between px-4 lg:px-14 py-4 lg:py-8 ">
       <div className="w-full">
         <Logo src={plclogo} alt="Pluralcode" className="w-52" />
       </div>

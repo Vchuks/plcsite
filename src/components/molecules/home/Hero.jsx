@@ -64,7 +64,7 @@ const Hero = () => {
   
   return (
     <div className="flex flex-col-reverse lg:flex-row bg-cblue px-4 lg:px-0 lg:ps-14 py-8 lg:py-32 gap-6">
-      <div className="lg:w-6/12 2xl:w-full relative">
+      <div className="lg:w-6/12 2xl:w-full relative" data-aos="zoom-in-up" data-aos-duration="2000">
         <div className="hidden lg:block absolute w-[70px] right-[13%] 2xl:right-[22%]"><Logo src={curve1} alt="" className="w-full"/></div>
         <div className="hidden lg:block absolute w-[70px] -left-[9%] -top-[4%] 2xl:-left-14"><Logo src={curve2} alt="" className="w-full"/></div>
         <Text

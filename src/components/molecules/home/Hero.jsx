@@ -87,7 +87,7 @@ const Hero = () => {
               ))}
           </select>
           <TextLink
-            to="#"
+            to="/#learn"
             className="w-full hero-link bg-corange rounded"
             body={
               <button className="pt-3 pb-3 2xl:pt-5 2xl:pb-5 w-full text-center text-sm text-white rounded">
@@ -98,12 +98,12 @@ const Hero = () => {
         </div>
         <div className="relative lg:text-lg text-white flex gap-1 justify-center lg:justify-start">
           Got Questions?
-          <span className="flex text-corange items-center gap-2">
+          <TextLink to="https://wa.me/2349169190508?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs" className="" body={<span className="flex text-corange items-center gap-2">
             Chat with us{" "}
             <div className="w-4 lg:w-5">
               <Logo src={whats} className="w-full" alt="" />
             </div>
-          </span>
+          </span>}/>
             <div className="hidden lg:block absolute w-[70px] opacity-20 left-[40%] 2xl:left-[33%] top-1"><Logo src={curve3} alt="" className="w-full"/></div>
         </div>
       </div>

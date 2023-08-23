@@ -19,7 +19,7 @@ const News = () => {
         />
       </div>
       <div className="2xl:w-full flex flex-col lg:flex-row justify-center items-center gap-14 pt-6 2xl:gap-0">
-        <div className="">
+        <div data-aos="zoom-in-up" data-aos-duration="2000">
           <div className="relative newseach p-6  2xl:h-full 2xl:w-10/12">
             <div className="lg:h-40  2xl:h-full">
               <Logo
@@ -37,12 +37,13 @@ const News = () => {
                 className="text-cdark py-4 text-sm font-['gmedium']"
                 body="Pluralcode partners with Finquest Finance to launch ‘Learn Now, Pay Later’"
               />
-              <TextLink className="text-corange" to="#" body="View Magazine" />
+              <TextLink className="text-corange" to="https://techpoint.africa/2023/01/27/pluralcode-partners-with-finquest-finance-to-launch-learn-now-pay-later-for-nigerian-tech-enthusiasts/" body="View Magazine" />
             </div>
             <div className="bg-corange absolute newsback"></div>
           </div>
         </div>
         <div className="flex flex-col gap-14">
+          <div data-aos="zoom-in-up" data-aos-duration="2000">
         <div className="relative newseach newsbg p-6  2xl:h-full 2xl:w-10/12">
             <div className="lg:h-40  2xl:h-full">
               <Logo
@@ -54,16 +55,18 @@ const News = () => {
             <div className="flex flex-col justify-between">
               <Text
                 className="text-cdark lg:text-lg font-['aristbold']"
-                body="Techpoint Africa"
+                body="TechNext NG"
               />
               <Text
                 className="text-cdark py-4 text-sm font-['gmedium']"
                 body="Pluralcode partners with Finquest Finance to launch ‘Learn Now, Pay Later’"
               />
-              <TextLink className="text-corange" to="#" body="View Magazine" />
+              <TextLink className="text-corange" to="https://technext.ng/2023/01/26/pluralcode-mission-africa-tech-school/" body="View Magazine" />
             </div>
             <div className="bg-cdark absolute newsback"></div>
           </div>
+          </div>
+          <div data-aos="zoom-in-up" data-aos-duration="2000">
           <div className="relative newseach newsbg p-6  2xl:h-full 2xl:w-10/12">
             <div className="lg:h-44 2xl:h-full">
               <Logo
@@ -81,9 +84,10 @@ const News = () => {
                 className="text-cdark py-2 text-sm font-['gmedium']"
                 body="Introducing Pluralcode, a fast-growing Ed-tech company."
               />
-              <TextLink className="text-corange" to="#" body="View Magazine" />
+              <TextLink className="text-corange" to="https://businessday.ng/sponsored/article/nigerian-ed-tech-company-pluralcode-is-on-a-mission-to-build-africas-largest-tech-school/" body="View Magazine" />
             </div>
             <div className="bg-white absolute newsback"></div>
+          </div>
           </div>
         </div>
       </div>

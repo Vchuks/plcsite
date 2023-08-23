@@ -88,7 +88,7 @@ const CourseCloud = () => {
                   body="Learn to use popular Cloud platforms MS Azure, understand Cloud computing concepts and technologies apply virtualization and its use in Infrastructure development."
                 />
                 <TextLink
-                  to="/#learn"
+                  to="#learn"
                   offset={-200}
                   className=""
                   body={
@@ -115,7 +115,7 @@ const CourseCloud = () => {
                   body="Earn a Diploma in network administration, penetration testing, and vulnerability management. Become a professional Cyber Security Expert. "
                 />
                 <TextLink
-                  to="/#learn"
+                  to="#learn"
                   offset={-200}
                   className=""
                   body={

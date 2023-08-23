@@ -34,7 +34,7 @@ const Say = () => {
               body="Trustpilot"
             />
           </div>
-          <div className="w-full 2xl:w-[88%]">
+          <div className="w-full 2xl:w-[88%]" data-aos="zoom-in-up" data-aos-duration="2000">
             <Logo
               src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p4.png"
               alt=""
@@ -43,7 +43,7 @@ const Say = () => {
           </div>
         </div>
         <div className="w-full flex flex-col lg:flex-row items-center gap-5 2xl:gap-0">
-          <div className="w-full">
+          <div className="w-full" data-aos="zoom-in-up" data-aos-duration="2000">
             <div><Logo src={sub2} className="w-14 ml-auto pb-6" alt=""/></div>
             <div className="testimony 2xl:h-56 2xl:w-11/12 bg-white border border-corange rounded-xl p-4 ">
               <div>
@@ -77,8 +77,8 @@ const Say = () => {
             </div>
             <div className="hidden lg:block"><Logo src={sub} className="w-14 pt-6 ml-auto" alt=""/></div>
           </div>
-          <div className="w-full flex flex-col gap-5">
-            <div className="w-full">
+          <div className="w-full flex flex-col gap-5" >
+            <div className="w-full" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="testimony 2xl:h-56 2xl:w-11/12 bg-white border border-corange rounded-xl p-4">
                 <div>
                   <div className="flex items-end">
@@ -110,7 +110,7 @@ const Say = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full">
+            <div className="w-full" data-aos="zoom-in-up" data-aos-duration="2000">
               <div className="testimony 2xl:h-56 2xl:w-11/12 bg-white border border-corange rounded-xl p-3">
                 <div>
                   <div className="flex items-end">

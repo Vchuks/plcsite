@@ -64,7 +64,7 @@ const CourseProgramming = () => {
                   body="Learn how to create international standard website and apps using the most recent Javascript frameworks of the day."
                 />
                 <TextLink
-                  to="/#learn"
+                  to="#learn"
                   offset={-200}
                   className=""
                   body={

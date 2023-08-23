@@ -109,7 +109,7 @@ const CourseProduct = () => {
                   body="Learn Ui/Ux from scratch without writing a single code. Master how to design high fidelity interface with FIGMA, design journey mapping and empathize with users."
                 />
                 <TextLink
-                  to="/#learn"
+                  to="#learn"
                   offset={-200}
                   className=""
                   body={
@@ -136,7 +136,7 @@ const CourseProduct = () => {
                   body="Apply Your new product skills to real world projects using the latest industry tools and techniques in Product Management. "
                 />
                 <TextLink
-                  to="/#learn"
+                  to="#learn"
                   offset={-200}
                   className=""
                   body={
@@ -163,7 +163,7 @@ const CourseProduct = () => {
                   body="Master the skills and tools you need to become a Technical Project Manager and lead some of the most exciting projects across multiple industries."
                 />
                 <TextLink
-                  to="/#learn"
+                  to="#learn"
                   offset={-200}
                   className=""
                   body={

@@ -76,7 +76,7 @@ const Hero = () => {
           Borderless Career.
         </p>
         <Text
-          className="text-center 2xl:w-[500px] 2xl:py-5 2xl:text-2xl py-3 lg:py-0 lg:text-left lg:w-96 lg:text-lg text-white"
+          className="text-center lg:w-[400px] 2xl:w-[580px] font-['gmedium'] 2xl:py-5 2xl:text-2xl py-3 lg:py-0 lg:text-left lg:text-lg text-white"
           body="Your global tech journey begins here. Master the skills you need to start a successful career."
         />
         <div className="border 2xl:w-[500px] rounded-2xl gap-5 2xl:my-6 my-4 border-corange selectdiv flex flex-col lg:flex-row items-center px-6 justify-between py-4">
@@ -96,7 +96,7 @@ const Hero = () => {
             }
           />
         </div>
-        <div className="relative text-white flex gap-1 justify-center lg:justify-start">
+        <div className="relative lg:text-lg text-white flex gap-1 justify-center lg:justify-start">
           Got Questions?
           <span className="flex text-corange items-center gap-2">
             Chat with us{" "}
@@ -104,7 +104,7 @@ const Hero = () => {
               <Logo src={whats} className="w-full" alt="" />
             </div>
           </span>
-            <div className="hidden lg:block absolute w-[70px] opacity-20 left-[36%] 2xl:left-[30%] top-1"><Logo src={curve3} alt="" className="w-full"/></div>
+            <div className="hidden lg:block absolute w-[70px] opacity-20 left-[40%] 2xl:left-[33%] top-1"><Logo src={curve3} alt="" className="w-full"/></div>
         </div>
       </div>
       <div className="relative w-full ">

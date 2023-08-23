@@ -36,7 +36,7 @@ const Say = () => {
           </div>
           <div className="w-full 2xl:w-[88%]">
             <Logo
-              src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/plc12.png"
+              src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p4.png"
               alt=""
               className="w-full"
             />

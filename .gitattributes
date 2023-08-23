@@ -36,4 +36,7 @@
 /src/assets/images/Group[[:space:]]4.png filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/cloud.png filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/World[[:space:]]Map[[:space:]]1.png filter=lfs diff=lfs merge=lfs -text
+/src/assets/fonts/Gilroy-Bold.ttf filter=lfs diff=lfs merge=lfs -text
+/src/assets/fonts/Gilroy-ExtraBold.ttf filter=lfs diff=lfs merge=lfs -text
+/src/assets/fonts/Gilroy-Regular.ttf filter=lfs diff=lfs merge=lfs -text
 * !text !filter !merge !diff

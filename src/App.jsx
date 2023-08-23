@@ -6,6 +6,7 @@ import Footer from './components/molecules/Footer'
 import { useLocation } from "react-router-dom";
 import NavbarTwo from './components/molecules/NavbarTwo'
 import Product from './components/pages/Product'
+import Data from './components/pages/Data'
 import { useEffect } from 'react'
 
 
@@ -32,6 +33,7 @@ function App() {
     <Routes>
       <Route path='/' element = {<Home/>}/>
       <Route path='school/product' element= {<Product/>}/>
+      <Route path='school/data' element= {<Data/>}/>
 
     </Routes>
     <Footer/>

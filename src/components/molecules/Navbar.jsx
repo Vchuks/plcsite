@@ -97,7 +97,7 @@ const Navbar = () => {
             <TextLink to="#" className="" body="FAQ" />
             <TextLink to="#" className="" body="LooP" />
             <div className="relative flex items-center gap-2 cursor-pointer">
-          <Text className="" body="More" onMouseEnter={handleMoredp} onMouseLeave={handleMoredp} />
+          <Text className="" body="More" onClick={handleMoredp}  />
           <FaChevronDown className="text-xs" />
           {/* more drop down */}
         {moredp &&<div className="w-3/4 h-[120px] absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">

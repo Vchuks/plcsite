@@ -22,20 +22,23 @@ const NavbarTwo = () => {
   const handleMoredp = () => {
     setMoredp(!moredp)
   }
+  const closeNav=()=>{
+    setSmallNav(!smallNav)
+  }
 
   return (
-    <div className="bg-[#F5F6FA] sticky top-0 z-20 font-['gmedium'] items-center flex justify-between px-4 lg:px-14 py-4 lg:py-8 ">
+    <div className="bg-[#F5F6FA] font-['gmedium'] items-center flex justify-between px-4 lg:px-14 py-4 lg:py-8 ">
       <div className="w-full">
-        <Logo src={plclogo} alt="Pluralcode" className="w-52" />
+        <TextLink to="/" className="" body={<Logo src={plclogo} alt="Pluralcode" className="w-52" />}/>
       </div>
       <div className="w-full hidden lg:flex items-center text-cgray font-['gmedium'] justify-between">
         <div className="relative flex items-center gap-2 cursor-pointer" onMouseEnter={handleSchdp} onMouseLeave={handleSchdp} >
-          <Text className="" body="School" />
+          <Text className="" body="Schools" />
           <FaChevronDown className="text-xs" />
         {/* school drop down */}
-        {schdp &&<div className="w-[300px] absolute top-full mt-1 font-['gmedium] bg-white schdp p-5 lg:p-6 gap-4 text-black flex">
+        {schdp &&<div className="w-[300px] absolute top-full mt-[2px] font-['gmedium] bg-white schdp p-5 lg:p-6 gap-4 text-black flex">
             <div className="flex flex-col gap-2 text-sm font-['gmedium']">
-            <TextLink to="/school/product" className=" text-cdark" body="Product School"/>
+            <TextLink to="/school/product" className=" text-cdark" body="Product School" onClick={closeNav}/>
                 <TextLink to="/school/data" className=" text-cdark" body="Data School"/>
                 <TextLink to="/school/programming" className=" text-cdark" body="Programming School"/>
                 <TextLink to="/school/cloud" className=" text-cdark" body="Cloud School"/>
@@ -49,7 +52,7 @@ const NavbarTwo = () => {
           <Text className="" body="More" />
           <FaChevronDown className="text-xs"/>
           {/* more drop down */}
-        {moredp &&<div className="w-[200px] absolute top-full mt-1 bg-white schdp p-5 lg:p-6 lg:pt-7 h-32 gap-4 text-cdark">
+        {moredp &&<div className="w-[200px] absolute top-full mt-[2px] bg-white schdp p-5 lg:p-6 lg:pt-7 h-32 gap-4 text-cdark">
             <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                 
                 <TextLink to="" className="text-cdark " body="Why Pluralcode"/>
@@ -81,21 +84,21 @@ const NavbarTwo = () => {
           </div>
           <div className="flex flex-col gap-10 mt-6 text-white">
           <div className="relative flex items-center gap-2 cursor-pointer" >
-          <Text className="" body="School"  onClick={handleSchdp} />
+          <Text className="" body="Schools"  onClick={handleSchdp} />
           <FaChevronDown className="text-xs"/>
         {/* school drop down */}
         {schdp &&<div className="w-3/4 z-10 absolute top-full mt-1 bg-white schdp p-4 text-black flex flex-col gap-2">
         <div className="flex flex-col gap-2 text-sm font-['gmedium']">
-        <TextLink to="/school/product" className="text-sm text-cdark" body="Product School"/>
-                <TextLink to="/school/data" className="text-sm text-cdark" body="Data School"/>
-                <TextLink to="/school/programming" className="text-sm text-cdark" body="Programming School"/>
-                <TextLink to="/school/cloud" className="text-sm text-cdark" body="Cloud School"/>
+        <TextLink to="/school/product" className="text-sm text-cdark" body="Product School" onClick={closeNav}/>
+                <TextLink to="/school/data" className="text-sm text-cdark" body="Data School" onClick={closeNav}/>
+                <TextLink to="/school/programming" className="text-sm text-cdark" body="Programming School" onClick={closeNav}/>
+                <TextLink to="/school/cloud" className="text-sm text-cdark" body="Cloud School" onClick={closeNav}/>
             </div>
         </div>}
         </div>
-            <TextLink to="#" className="" body="Tuition" />
-            <TextLink to="#" className="" body="FAQ" />
-            <TextLink to="#" className="" body="LooP" />
+            <TextLink to="#" className="" body="Tuition" onClick={closeNav}/>
+            <TextLink to="#" className="" body="FAQ" onClick={closeNav}/>
+            <TextLink to="#" className="" body="LooP" onClick={closeNav}/>
             <div className="relative flex items-center gap-2 cursor-pointer">
           <Text className="" body="More" onClick={handleMoredp} />
           <FaChevronDown className="text-xs" />
@@ -103,8 +106,8 @@ const NavbarTwo = () => {
         {moredp &&<div className="w-3/4 h-[120px] absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">
         <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                 
-                <TextLink to="" className="text-cdark text-sm" body="Why Pluralcode"/>
-                <TextLink to="" className="text-cdark text-sm" body="Partner with us"/>
+                <TextLink to="" className="text-cdark text-sm" body="Why Pluralcode" onClick={closeNav}/>
+                <TextLink to="" className="text-cdark text-sm" body="Partner with us" onClick={closeNav}/>
             </div>
         </div>}
         </div>

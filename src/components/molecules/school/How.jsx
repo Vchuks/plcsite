@@ -21,6 +21,7 @@ const How = () => {
         <div className="hidden absolute -top-[5%] right-0 lg:flex">
           <Logo src={sub3} className="w-14" alt="" />
         </div>
+        <div data-aos="fade-up" data-aos-duration="2000">
             <div className="relative w-11/12 m-auto lg:w-[450px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
                 <Text className="px-5 py-8 rounded-ss-[30px] bg-corange font-['gbold'] text-cdark text-xl lg:text-3xl" body="01 (Step One) "/>
                 <div className="p-4 lg:p-6">
@@ -30,6 +31,8 @@ const How = () => {
                 </div>
                 <div className="absolute -z-[1] rounded-ss-[30px] rounded-ee-[30px] w-full h-[90%] -right-3 lg:-right-6 top-5 border border-black bg-white"></div>
             </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000">
             <div className="relative w-11/12 m-auto lg:w-[450px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
                 <Text className="px-5 py-8 rounded-ss-[30px] bg-cgray font-['gbold'] text-white text-xl lg:text-3xl" body="02 (Step Two) "/>
                 <div className="p-4 lg:p-7">
@@ -39,6 +42,8 @@ const How = () => {
                 </div>
                 <div className="absolute -z-[1] rounded-ss-[30px] rounded-ee-[30px] w-full h-[90%] -right-3 lg:-right-6 top-5 border border-black bg-white"></div>
             </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000">
             <div className="relative w-11/12 m-auto lg:w-[450px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
                 <Text className="px-5 py-8 rounded-ss-[30px] bg-cblue font-['gbold'] text-white text-xl lg:text-3xl" body="03 (Step Three) "/>
                 <div className="p-4 lg:p-6">
@@ -47,6 +52,7 @@ const How = () => {
                 
                 </div>
                 <div className="absolute -z-[1] rounded-ss-[30px] rounded-ee-[30px] w-full h-[90%] -right-3 lg:-right-6 top-5 border border-black bg-white"></div>
+            </div>
             </div>
             <div className="hidden lg:block absolute bottom-[42%] right-[18%]">
           <Logo src={sub2} className="w-14" alt="" />
@@ -57,7 +63,7 @@ const How = () => {
         </div>
         <div className="font-['gregular'] w-full text-center">
             <Text className="font-['gsemibold'] text-3xl text-cblue lg:text-[48px]" body="Got Questions?"/>
-            <p className="text-cdark text-lg pt-4">Our Student Advisors are on standby.<TextLink className="" to="#" body={<span className="text-corange">Chat with us</span>}/></p>
+            <p className="text-cdark text-lg pt-4">Our Student Advisors are on standby.<TextLink className="" to="https://wa.me/2349169190508?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs" body={<span className="text-corange">Chat with us</span>}/></p>
         </div>
     </div>
   )

@@ -8,8 +8,8 @@ import curve3 from "../../../../assets/images/Vector 11.png";
 
 const CloudHero = () => {
   return (
-    <div className="flex flex-col items-center lg:flex-row bg-[#F5F6FA] px-4 lg:px-14 py-8 lg:py-32 gap-6">
-      <div className="lg:w-7/12 2xl:w-full relative">
+    <div className="flex flex-col items-center lg:flex-row bg-[#F5F6FA] px-4 lg:px-14 py-8 lg:py-0 gap-6">
+      <div className="lg:w-7/12 2xl:w-full relative" data-aos="zoom-in-up" data-aos-duration="2000">
         <div className="hidden lg:block absolute w-[70px] top-1 right-[51%] 2xl:right-[54%]">
           <Logo src={curve1} alt="" className="w-full" />
         </div>
@@ -32,7 +32,7 @@ const CloudHero = () => {
           Got Questions?
           <TextLink
             className=""
-            to="#"
+            to="https://wa.me/2349169190508?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs"
             body={
               <span className="flex text-corange items-center gap-2">
                 Chat with us{" "}
@@ -47,7 +47,7 @@ const CloudHero = () => {
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full" data-aos="zoom-in-up" data-aos-duration="2000">
         <Logo
           className="w-full"
           src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/IMG_4236.PNG"

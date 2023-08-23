@@ -30,20 +30,20 @@ const Footer = () => {
       <div className="w-full foot flex flex-col md:flex-row lg:justify-end gap-5 mt-3 lg:mt-0 xl:gap-12 2xl:gap-24 lg:pb-10">
         <div className="flex flex-col gap-2">
           <h5 className="pb-1">Top Courses</h5>
-          <Link to="#">Data Analytics</Link>
-          <Link to="#">Business Analytics</Link>
-          <Link to="#">Full-Stack Development</Link>
-          <Link to="#">Front-End Development</Link>
-          <Link to="#">Cloud Computing</Link>
+          <Link to="/school/data">Data Analytics</Link>
+          <Link to="/school/data">Business Analytics</Link>
+          <Link to="/school/programming">Full-Stack Development</Link>
+          <Link to="/school/programming">Front-End Development</Link>
+          <Link to="/school/cloud">Cloud Computing</Link>
           
         </div>
         <div className="flex flex-col gap-2">
           <h5 className="pb-1">Top Courses</h5>
-          <Link to="#">Cyber Security</Link>
-          <Link to="#">Product Design</Link>
-          <Link to="#">Product Management</Link>
-          <Link to="#">Scrum Product Management</Link>
-          <Link to="#">Agile Project Management</Link>
+          <Link to="/school/cloud">Cyber Security</Link>
+          <Link to="/school/product">Product Design</Link>
+          <Link to="/school/product">Product Management</Link>
+          <Link to="/school/product">Scrum Product Management</Link>
+          <Link to="/school/product">Agile Project Management</Link>
           
         </div>
         <div className="flex flex-col gap-2">

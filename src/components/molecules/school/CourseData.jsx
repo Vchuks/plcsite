@@ -88,7 +88,7 @@ const CourseData = () => {
                   body="Master Data Analytics all the way from Problem Solving, to tools like MS Excel, SQL, PowerBI & Python for Machine Learning."
                 />
                 <TextLink
-                  to="/#learn"
+                  to="#learn"
                   offset={-200}
                   className=""
                   body={
@@ -115,7 +115,7 @@ const CourseData = () => {
                   body="Learn business practices and data analytics skills for intelligent decision making and corporate growth. "
                 />
                 <TextLink
-                  to="/#learn"
+                  to="#learn"
                   offset={-200}
                   className=""
                   body={

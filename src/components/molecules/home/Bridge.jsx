@@ -11,7 +11,7 @@ const data = [
     comment:
       "Earn a Tech Diploma and master skills that will help you achieve your dream of a career change, workplace promotion or international job opportunities.",
     linktext: "Start Learning",
-    link: "#",
+    link: "/#school",
     pic: "https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p3.png",
   },
   {

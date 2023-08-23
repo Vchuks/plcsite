@@ -17,12 +17,12 @@ const Learning = () => {
         className="lg:text-lg say-text font-['gmedium'] py-2"
         body="Discover the learning options that are tailored for your ideal experience."
       />
-      <div className="flex flex-col lg:flex-row gap-14 lg:gap-4 justify-center py-8">
+      <div className="flex flex-col lg:flex-row gap-14 lg:gap-4 justify-center py-8" >
         <div className="hidden lg:flex items-end">
           <Logo src={sub} className="w-14" alt="" />
         </div>
-
-        <div className="relative h-full  learneach p-6" data-aos="zoom-in-up" data-aos-duration="2000">
+<div data-aos="zoom-in-up" data-aos-duration="2000">
+        <div className="relative h-full  learneach p-6">
           <div>
             <Logo
               src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p2.png"
@@ -43,11 +43,13 @@ const Learning = () => {
           </div>
           <div className="bg-cgray absolute learnback"></div>
         </div>
+        </div>
         <div className="hidden lg:block w-14 mt-14">
           <Logo src={sub2} className="w-full" alt="" />
         </div>
 
-        <div className="relative h-full  learneach p-6" data-aos="zoom-in-up" data-aos-duration="2000">
+        <div data-aos="zoom-in-up" data-aos-duration="2000">
+        <div className="relative h-full  learneach p-6">
           <div>
             <Logo
               src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p1.png"
@@ -67,6 +69,7 @@ const Learning = () => {
             <TextLink className="text-corange" to="#" body="Start Learning" />
           </div>
           <div className="bg-corange absolute learnback"></div>
+        </div>
         </div>
         <div className="hidden lg:flex items-end">
           <Logo src={sub3} className="w-14" alt="" />

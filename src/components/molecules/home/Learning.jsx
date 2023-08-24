@@ -15,7 +15,7 @@ const Learning = () => {
       </p>
       <Text
         className="lg:text-lg say-text font-['gmedium'] py-2"
-        body="Discover the learning options that are tailored for your ideal experience."
+        body="Choose the learning option that best suites you from the formats below."
       />
       <div className="flex flex-col lg:flex-row gap-14 lg:gap-4 justify-center py-8" >
         <div className="hidden lg:flex items-end">
@@ -39,7 +39,7 @@ const Learning = () => {
               className="text-cdark py-4 lg:h-32 font-['gmedium']"
               body="Take advantage of instructor-led, live classes with onsite and virtual options. Share a hands-on classroom with students in a cohort-based training."
             />
-            <TextLink className="text-corange" to="https://pluralcode.academy/admissions/" body="Start Learning" />
+            <TextLink className="text-corange" to="https://pluralcode.academy/admissions/" target="_blank" body="Start Learning" />
           </div>
           <div className="bg-cgray absolute learnback"></div>
         </div>
@@ -66,7 +66,7 @@ const Learning = () => {
               className="text-cdark py-4 lg:h-32 font-['gmedium']"
               body="Ideal for you if you prefer to learn at your own time. Pluralcode’s LMS & bite-sized topics, assessments and projects allows you to earn your Diploma without stress."
             />
-            <TextLink className="text-corange" to="#" body="Start Learning" />
+            <TextLink className="text-corange" to="#" target="_blank" body="Start Learning" />
           </div>
           <div className="bg-corange absolute learnback"></div>
         </div>

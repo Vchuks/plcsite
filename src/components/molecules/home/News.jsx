@@ -37,7 +37,7 @@ const News = () => {
                 className="text-cdark py-4 text-sm font-['gmedium']"
                 body="Pluralcode partners with Finquest Finance to launch ‘Learn Now, Pay Later’"
               />
-              <TextLink className="text-corange" to="https://techpoint.africa/2023/01/27/pluralcode-partners-with-finquest-finance-to-launch-learn-now-pay-later-for-nigerian-tech-enthusiasts/" body="View Magazine" />
+              <TextLink className="text-corange" to="https://techpoint.africa/2023/01/27/pluralcode-partners-with-finquest-finance-to-launch-learn-now-pay-later-for-nigerian-tech-enthusiasts/" target="_blank" body="View Magazine" />
             </div>
             <div className="bg-corange absolute newsback"></div>
           </div>
@@ -61,7 +61,7 @@ const News = () => {
                 className="text-cdark py-4 text-sm font-['gmedium']"
                 body="Pluralcode partners with Finquest Finance to launch ‘Learn Now, Pay Later’"
               />
-              <TextLink className="text-corange" to="https://technext.ng/2023/01/26/pluralcode-mission-africa-tech-school/" body="View Magazine" />
+              <TextLink className="text-corange" to="https://technext.ng/2023/01/26/pluralcode-mission-africa-tech-school/" target="_blank" body="View Magazine" />
             </div>
             <div className="bg-cdark absolute newsback"></div>
           </div>
@@ -84,7 +84,7 @@ const News = () => {
                 className="text-cdark py-2 text-sm font-['gmedium']"
                 body="Introducing Pluralcode, a fast-growing Ed-tech company."
               />
-              <TextLink className="text-corange" to="https://businessday.ng/sponsored/article/nigerian-ed-tech-company-pluralcode-is-on-a-mission-to-build-africas-largest-tech-school/" body="View Magazine" />
+              <TextLink className="text-corange" to="https://businessday.ng/sponsored/article/nigerian-ed-tech-company-pluralcode-is-on-a-mission-to-build-africas-largest-tech-school/" target="_blank" body="View Magazine" />
             </div>
             <div className="bg-white absolute newsback"></div>
           </div>

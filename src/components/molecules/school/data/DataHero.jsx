@@ -32,7 +32,8 @@ const DataHero = () => {
           Got Questions?
           <TextLink
             className=""
-            to="https://wa.me/2349169190508?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs"
+            target="_blank"
+            to="https://wa.me/2347083153185?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs"
             body={
               <span className="flex text-corange items-center gap-2">
                 Chat with us{" "}

@@ -17,7 +17,7 @@ const How = () => {
         <span className="hidden lg:block absolute w-[100px] h-full top-[45%] -right-[40%]"><Logo src={curve} alt="" className="w-full"/></span>
         </p>
         </div>
-        <div className="w-full relative lg:w-[88%] 2xl:w-[70%] xxxl:w-3/6 m-auto flex flex-col flex-wrap my-20 lg:flex-row justify-center gap-10 lg:gap-14">
+        <div className="w-full relative lg:w-[88%] 2xl:w-[70%] xxxl:w-3/6 m-auto flex flex-col flex-wrap my-10 lg:my-20 lg:flex-row justify-center gap-10 lg:gap-14">
         <div className="hidden absolute -top-[5%] right-0 lg:flex">
           <Logo src={sub3} className="w-14" alt="" />
         </div>
@@ -63,7 +63,7 @@ const How = () => {
         </div>
         <div className="font-['gregular'] w-full text-center">
             <Text className="font-['gsemibold'] text-3xl text-cblue lg:text-[48px]" body="Got Questions?"/>
-            <p className="text-cdark text-lg pt-4">Our Student Advisors are on standby.<TextLink className="" target="_blank" to="https://wa.me/2347083153185?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs" body={<span className="text-corange">Chat with us</span>}/></p>
+            <p className="text-cdark lg:text-lg pt-1 lg:pt-4">Our Student Advisors are on standby.<TextLink className="" target="_blank" to="https://wa.me/2347083153185?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs" body={<span className="text-corange font-['gsemibold']"> Chat with us</span>}/></p>
         </div>
     </div>
   )

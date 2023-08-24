@@ -45,8 +45,8 @@ const Navbar = () => {
             </div>
         </div>}
         </div>
-        <TextLink to="#" className="" body="Tuition" />
-        <TextLink to="#" className="" body="FAQ" />
+        <TextLink to="/tuition" className="" body="Tuition" />
+        <TextLink to="/faq" className="" body="FAQ" />
         <TextLink to="#" className="" body="LooP" />
         <div className="relative flex items-center gap-2 cursor-pointer" onMouseEnter={handleMoredp} onMouseLeave={handleMoredp}>
           <Text className="" body="More" />
@@ -55,8 +55,8 @@ const Navbar = () => {
         {moredp &&<div className="w-[200px] absolute top-full mt-[2px] bg-white schdp p-5 lg:p-6 lg:pt-7 h-32 gap-4 text-cdark">
             <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                 
-                <TextLink to="" className="text-cdark " body="Why Pluralcode"/>
-                <TextLink to="" className="text-cdark " body="Partner with us"/>
+                <TextLink to="/why_pluralcode" className="text-cdark " body="Why Pluralcode"/>
+                <TextLink to="/partnership" className="text-cdark " body="Partner with us"/>
             </div>
         </div>}
         </div>
@@ -64,12 +64,12 @@ const Navbar = () => {
       <div className="w-full hidden lg:flex justify-end items-center text-center gap-4">
         <TextLink
           to="#"
-          className="w-32 pt-3 pb-2 border rounded text-corange text-sm border-corange"
+          className="w-32 pt-3 pb-3 border rounded text-corange text-sm border-corange"
           body={<button className="w-full">Sign In</button>}
         />
         <TextLink
           to="#learn"
-          className="w-36 bg-corange text-white text-sm rounded pt-3 pb-2"
+          className="w-36 bg-corange text-white text-sm rounded pt-3 pb-3"
           body={<button className="w-full">Start Learning</button>}
         />
       </div>
@@ -96,8 +96,8 @@ const Navbar = () => {
             </div>
         </div>}
         </div>
-            <TextLink to="#" className="" body="Tuition" />
-            <TextLink to="#" className="" body="FAQ" />
+            <TextLink to="/tuition" className="" body="Tuition" />
+            <TextLink to="/faq" className="" body="FAQ" />
             <TextLink to="#" className="" body="LooP" />
             <div className="relative flex items-center gap-2 cursor-pointer">
           <Text className="" body="More" onClick={handleMoredp}  />
@@ -105,21 +105,21 @@ const Navbar = () => {
           {/* more drop down */}
         {moredp &&<div className="w-3/4 h-[120px] absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">
         <div className="flex flex-col gap-2 text-sm font-['gmedium']">
-                <TextLink to="" className="text-cdark text-sm" body="Why Pluralcode" onClick={closeNav}/>
-                <TextLink to="" className="text-cdark text-sm" body="Partner with us" onClick={closeNav}/>
+                <TextLink to="/why_pluralcode" className="text-cdark text-sm" body="Why Pluralcode" onClick={closeNav}/>
+                <TextLink to="/partnership" className="text-cdark text-sm" body="Partner with us" onClick={closeNav}/>
             </div>
         </div>}
         </div>
           <div className="w-full flex items-center text-center gap-4">
             <TextLink
               to="#"
-              className="w-32 pt-3 pb-2 border rounded text-corange border-corange"
+              className="w-32 text-sm py-3 border rounded text-corange border-corange"
               body={<button className="w-full">Sign In</button>}
             />
             <TextLink
               to="#learn"
               onClick={closeNav}
-              className="w-36 bg-corange text-white rounded pt-3 pb-2"
+              className="w-36 bg-corange text-sm text-white rounded py-3"
               body={<button className="w-full">Start Learning</button>}
             />
           </div>

@@ -11,7 +11,7 @@ const data = [
     comment:
       "Earn a Tech Diploma and master skills that will help you achieve your dream of a career change, workplace promotion or international job opportunities.",
     linktext: "Start Learning",
-    link: "/#school",
+    link: "#school",
     pic: "https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p3.png",
   },
   {
@@ -20,7 +20,7 @@ const data = [
     comment:
       "Build your dream team with Pluralcode. Hire our most talented graduates to help you turn your vision into reality.",
     linktext: "Hire Our Grads",
-    link: "#",
+    link: "/partnership",
     pic: "https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p7.png",
   },
   {
@@ -29,7 +29,7 @@ const data = [
     comment:
       "Pluralcode’s SandBox initiative seeks to provide ten thousand less privileged young Africans with free access to Tech Education. Collaborate with us.",
     linktext: "Collaborate With Us",
-    link: "#",
+    link: "/partnership",
     pic: "https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p9.png",
   },
 ];

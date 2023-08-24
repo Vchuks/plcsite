@@ -394,7 +394,15 @@ select {
 .shad{
   box-shadow: 0px 5.221533298492432px 119.21066284179688px -3.916149854660034px rgba(16, 24, 40, 0.05), 0px -13.054304122924805px 29.43473243713379px -3.263458251953125px rgba(16, 24, 40, 0.05);
 }
-
+pre{
+  font-family: gsemibold;
+  white-space:pre-line ;
+}
+.faqborder{
+  border-radius: 16px;
+background: #FCFCFE;
+box-shadow: 0px 0.8869680762290955px 1.773936152458191px -0.8869680762290955px rgba(16, 24, 40, 0.10), 0px 1.773936152458191px 2.6609041690826416px -0.44348403811454773px rgba(16, 24, 40, 0.10);
+}
 
 
 

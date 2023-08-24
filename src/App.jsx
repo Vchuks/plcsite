@@ -10,13 +10,16 @@ import Data from './components/pages/Data'
 import { useEffect } from 'react'
 import Programming from './components/pages/Programming'
 import Cloud from './components/pages/Cloud'
+import Tuition from './components/pages/Tuition'
+import Partnership from './components/pages/Partnership'
+import Faq from './components/pages/Faq'
 
 
 function App() {
   const location = useLocation();
-        let navbar = <Navbar />;   // default navbar
-        if (location.pathname.includes('/school')) {
-          navbar = <NavbarTwo />;
+        let navbar = <NavbarTwo />;   // default navbar
+        if (location.pathname.includes('/partnership') || location.pathname === "/")  {
+          navbar = <Navbar />;
         }
 
    useEffect(()=> {
@@ -38,6 +41,10 @@ function App() {
       <Route path='school/data' element= {<Data/>}/>
       <Route path='school/programming' element= {<Programming/>}/>
       <Route path='school/cloud' element= {<Cloud/>}/>
+      <Route path='tuition' element= {<Tuition/>}/>
+      <Route path='faq' element= {<Faq/>}/>
+      <Route path='partnership' element= {<Partnership/>}/>
+      <Route path='*' element= {<p>Page not found!!!</p>}/>
 
     </Routes>
     <Footer/>

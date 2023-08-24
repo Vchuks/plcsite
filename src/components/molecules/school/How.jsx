@@ -17,7 +17,7 @@ const How = () => {
         <span className="hidden lg:block absolute w-[100px] h-full top-[45%] -right-[40%]"><Logo src={curve} alt="" className="w-full"/></span>
         </p>
         </div>
-        <div className="w-full relative lg:w-[88%] 2xl:w-[70%] xxxl:w-3/6 m-auto flex flex-col flex-wrap my-20 lg:flex-row justify-center gap-10 lg:gap-x-0">
+        <div className="w-full relative lg:w-[88%] 2xl:w-[70%] xxxl:w-3/6 m-auto flex flex-col flex-wrap my-20 lg:flex-row justify-center gap-10 lg:gap-14">
         <div className="hidden absolute -top-[5%] right-0 lg:flex">
           <Logo src={sub3} className="w-14" alt="" />
         </div>
@@ -27,7 +27,7 @@ const How = () => {
                 <div className="p-4 lg:p-6">
                 <Text className="text-cdark font-['gexbold'] text-2xl lg:text-4xl" body="Complete and Submit Admission Form"/>
                 <Text className="lg:text-xl lg:w-11/12 pt-5" body="You will need to fill out Pluralcode’s admission form, by clicking the button below. Select your preferred course, learning format and payment plan. Endeavor to provide accurate contact and bio information."/>
-                <TextLink to="#" className="flex justify-center" body={<button className="bg-corange w-60 py-3 mt-4 text-white rounded">Start Learning</button>}/>
+                <TextLink to="#learn" className="flex justify-center" body={<button className="bg-corange w-60 py-3 mt-4 text-white rounded">Start Learning</button>}/>
                 </div>
                 <div className="absolute -z-[1] rounded-ss-[30px] rounded-ee-[30px] w-full h-[90%] -right-3 lg:-right-6 top-5 border border-black bg-white"></div>
             </div>
@@ -63,7 +63,7 @@ const How = () => {
         </div>
         <div className="font-['gregular'] w-full text-center">
             <Text className="font-['gsemibold'] text-3xl text-cblue lg:text-[48px]" body="Got Questions?"/>
-            <p className="text-cdark text-lg pt-4">Our Student Advisors are on standby.<TextLink className="" to="https://wa.me/2349169190508?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs" body={<span className="text-corange">Chat with us</span>}/></p>
+            <p className="text-cdark text-lg pt-4">Our Student Advisors are on standby.<TextLink className="" target="_blank" to="https://wa.me/2347083153185?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs" body={<span className="text-corange">Chat with us</span>}/></p>
         </div>
     </div>
   )

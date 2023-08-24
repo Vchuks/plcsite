@@ -9,7 +9,7 @@ const FullstackHighlight = () => {
       <p className="relative text-cdark w-max font-['aristsemibold'] text-3xl lg:text-5xl">
         Course <span className="text-corange">Highlights</span>
       </p>
-      <div className="lg:w-[87%] 2xl:w-9/12 xxxl:w-[55%] m-auto flex flex-col lg:flex-row py-8 gap-14 lg:gap-0 lg:py-16">
+      <div className="lg:w-[87%] 2xl:w-9/12 xxxl:w-[55%] m-auto flex flex-col lg:flex-row py-8 gap-14 lg:py-16">
         <div data-aos="fade-up" data-aos-duration="2000">
         <div className="w-11/12 lg:w-[450px] h-full lg:h-[510px] flex flex-col justify-between m-auto bg-white relative border border-[#0D0032] rounded-ss-[8px] rounded-ee-[8px]">
         <Text

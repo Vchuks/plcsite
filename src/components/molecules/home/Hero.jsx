@@ -98,7 +98,7 @@ const Hero = () => {
         </div>
         <div className="relative lg:text-lg text-white flex gap-1 justify-center lg:justify-start">
           Got Questions?
-          <TextLink to="https://wa.me/2349169190508?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs" className="" body={<span className="flex text-corange items-center gap-2">
+          <TextLink to="https://wa.me/2347083153185?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs" className="" target="_blank" body={<span className="flex text-corange items-center gap-2">
             Chat with us{" "}
             <div className="w-4 lg:w-5">
               <Logo src={whats} className="w-full" alt="" />

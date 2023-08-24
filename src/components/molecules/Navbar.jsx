@@ -68,7 +68,7 @@ const Navbar = () => {
           body={<button className="w-full">Sign In</button>}
         />
         <TextLink
-          to="#"
+          to="#learn"
           className="w-36 bg-corange text-white text-sm rounded pt-3 pb-2"
           body={<button className="w-full">Start Learning</button>}
         />
@@ -117,7 +117,8 @@ const Navbar = () => {
               body={<button className="w-full">Sign In</button>}
             />
             <TextLink
-              to="#"
+              to="#learn"
+              onClick={closeNav}
               className="w-36 bg-corange text-white rounded pt-3 pb-2"
               body={<button className="w-full">Start Learning</button>}
             />

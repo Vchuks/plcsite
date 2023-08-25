@@ -62,11 +62,11 @@ const Navbar = () => {
         </div>
       </div>
       <div className="w-full hidden lg:flex justify-end items-center text-center gap-4">
-        <TextLink
+        {/* <TextLink
           to="#"
           className="w-32 pt-3 pb-3 border rounded text-corange text-sm border-corange"
           body={<button className="w-full">Sign In</button>}
-        />
+        /> */}
         <TextLink
           to="#learn"
           className="w-36 bg-corange text-white text-sm rounded pt-3 pb-3"
@@ -111,11 +111,11 @@ const Navbar = () => {
         </div>}
         </div>
           <div className="w-full flex items-center text-center gap-4">
-            <TextLink
+            {/* <TextLink
               to="#"
               className="w-32 text-sm py-3 border rounded text-corange border-corange"
               body={<button className="w-full">Sign In</button>}
-            />
+            /> */}
             <TextLink
               to="#learn"
               onClick={closeNav}

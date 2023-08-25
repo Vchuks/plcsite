@@ -13,11 +13,14 @@ import Cloud from './components/pages/Cloud'
 import Tuition from './components/pages/Tuition'
 import Partnership from './components/pages/Partnership'
 import Faq from './components/pages/Faq'
+import Why from './components/pages/Why'
 
 
 function App() {
   const location = useLocation();
         let navbar = <NavbarTwo />;   // default navbar
+        
+
         if (location.pathname.includes('/partnership') || location.pathname === "/")  {
           navbar = <Navbar />;
         }
@@ -43,8 +46,9 @@ function App() {
       <Route path='school/cloud' element= {<Cloud/>}/>
       <Route path='tuition' element= {<Tuition/>}/>
       <Route path='faq' element= {<Faq/>}/>
+      <Route path='why_pluralcode' element= {<Why/>}/>
       <Route path='partnership' element= {<Partnership/>}/>
-      <Route path='*' element= {<p>Page not found!!!</p>}/>
+      <Route path='*' element= {<p className='h-[20vh] p-4 lg:px-14 w-full text-4xl flex items-center '>Page not found!!!</p>}/>
 
     </Routes>
     <Footer/>

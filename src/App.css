@@ -403,7 +403,10 @@ pre{
 background: #FCFCFE;
 box-shadow: 0px 0.8869680762290955px 1.773936152458191px -0.8869680762290955px rgba(16, 24, 40, 0.10), 0px 1.773936152458191px 2.6609041690826416px -0.44348403811454773px rgba(16, 24, 40, 0.10);
 }
-
+.why-line{
+  border-radius: 64px 0px;
+border: 0.95px solid var(--plural-code-blue, #222057);
+}
 
 
 @media (min-width:1023px) and (max-width:1025px) {

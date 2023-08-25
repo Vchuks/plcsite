@@ -8,10 +8,16 @@ import sub3 from "../../assets/images/Subtract3.png";
 import loop from "../../assets/images/PluralCode Loop 1 1.png";
 import { useEffect, useState } from "react";
 
+
 const Tuition = () => {
     const [loading, setLoading] = useState(true);
     const [err, setErr] = useState("");
-    // const [fee, setFee] = useState("");
+    const [fee, setFee] = useState([]);
+    const [loopfee, setLoopfee] = useState({
+        usdcourse:"",
+        ngncourse:"",
+        certusd:""
+    })
     useEffect(() => { 
         async function getApi() {
           try {
@@ -20,9 +26,7 @@ const Tuition = () => {
             );
             const result = await response.json()
             console.log(result)
-            // setFee(response.data);
-            // setOnline(response.data.virtual_diploma);
-            // setOnsite(response.data.onsite_diploma);
+            setFee(result);
             setErr(null);
           } catch (error) {
             console.log(error.message);
@@ -33,8 +37,24 @@ const Tuition = () => {
         }
         getApi();
       }, []);
+
+      useEffect(() => {
+        fetch("https://backend.pluralcode.institute/loop-course-list")
+            .then((response) => response.json())
+            .then((result) => {
+                console.log(result)
+                setLoopfee({
+                    usdcourse:result.loopcourseusd,
+                    ngncourse:result.loopcoursengn,
+                    certusd:result.loopcertificateusd,
+                })
+            })
+            .catch((err) => console.log(err));
+    }, []);
+      const numFor = Intl.NumberFormat("en-US");
+console.log(loopfee)
   return (
-    <div className="how-box bg-[#F5F6FA]  px-4 lg:px-14 py-10 lg:py-14">
+    <div className="how-box bg-[#F5F6FA] relative -z-10 px-4 lg:px-14 py-10 lg:py-14">
         {loading && <p className="">Loading...</p>}
             {err && <p className="">An error occured</p>}
       <div className="">
@@ -60,8 +80,8 @@ const Tuition = () => {
               <div className="w-[94%] m-auto py-2">
                 <div className="flex justify-between text-cdark font-['gexbold'] text-2xl lg:text-[35px]">
                   
-                  <p className="flex"><span className="text-base lg:text-xl">$</span>400</p>
-                  <p className="opacity-70 flex"><span className="text-base lg:text-xl">&#8358;</span>80,000</p>
+                  <p className="flex"><span className="text-base lg:text-xl">$</span>{isNaN(fee[0]?.usdprice) ? 0 : numFor.format(fee[0]?.usdprice)}</p>
+                  <p className="opacity-70 flex"><span className="text-base lg:text-xl">&#8358;</span>{isNaN(fee[0]?.paymentFeengn) ? 0 : numFor.format(fee[0]?.paymentFeengn)}</p>
                 </div>
                 <Text
                   className="font-['gexbold'] pt-3 text-corange"
@@ -78,7 +98,7 @@ const Tuition = () => {
               <p className="font-['gregular'] lg:text-xl py-2">
                 <span className="font-['gbold']">Entry level</span> (On-site)
                 courses on the other hand will only cost{" "}
-                <span className="font-['gbold']">$200</span> (NG 160,000) to
+                <span className="font-['gbold']">${isNaN(fee[2]?.usdprice) ? 0 : numFor.format(fee[2]?.usdprice)}</span> (NG {isNaN(fee[2]?.paymentFeengn) ? 0 : numFor.format(fee[2]?.paymentFeengn)}) to
                 enroll.
               </p>
               <TextLink
@@ -104,8 +124,8 @@ const Tuition = () => {
             <div className="p-4 lg:p-5">
               <div className="w-[94%] m-auto py-2">
                 <div className="flex justify-between text-cdark font-['gexbold'] text-2xl lg:text-[35px]">
-                <p className="flex"><span className="text-base lg:text-xl">$</span>400</p>
-                  <p className="opacity-70 flex"><span className="text-base lg:text-xl">&#8358;</span>300,000</p>
+                <p className="flex"><span className="text-base lg:text-xl">$</span>{isNaN(fee[1]?.usdprice) ? 0 : numFor.format(fee[1]?.usdprice)}</p>
+                  <p className="opacity-70 flex"><span className="text-base lg:text-xl">&#8358;</span>{isNaN(fee[1]?.paymentFeengn) ? 0 : numFor.format(fee[1]?.paymentFeengn)}</p>
                 </div>
                 <Text
                   className="font-['gexbold'] pt-3 text-corange"
@@ -120,7 +140,7 @@ const Tuition = () => {
                 to get started.
               </p>
               <p className="font-['gregular'] lg:text-xl py-2">
-                <span className="font-['gbold']">Entry level</span> (Virtual) courses on the other hand will only cost <span className="font-['gbold']">$150</span> (NG 120,000) to enroll.
+                <span className="font-['gbold']">Entry level</span> (Virtual) courses on the other hand will only cost <span className="font-['gbold']">${isNaN(fee[3]?.usdprice) ? 0 : numFor.format(fee[3]?.usdprice)}</span> (NG {isNaN(fee[3]?.paymentFeengn) ? 0 : numFor.format(fee[3]?.paymentFeengn)}) to enroll.
               </p>
               <TextLink
                 to="https://pluralcode.academy/admissions/"
@@ -149,17 +169,17 @@ const Tuition = () => {
             <div className="p-4 lg:p-5">
               <div className="w-[94%] m-auto py-2">
                 <div className="flex justify-between text-cdark font-['gexbold'] text-2xl lg:text-[35px]">
-                <p className="flex"><span className="text-base lg:text-xl">$</span>400</p>
-                  <p className="flex"><span className="text-base lg:text-xl">&#8358;</span>80,000</p>
+                <p className="flex"><span className="text-base lg:text-xl">$</span>{isNaN(loopfee?.usdcourse) ? 0 : numFor.format(loopfee?.usdcourse)}</p>
+                  <p className="flex"><span className="text-base lg:text-xl">&#8358;</span>{isNaN(loopfee?.ngncourse) ? 0 : numFor.format(loopfee?.ngncourse)}</p>
                 </div>
                 <p
                   className="font-['gexbold'] pt-3 text-corange"
-                  ><span className="text-lg">$100.00</span> certificate fee at the end of course
+                  ><span className="text-lg">${isNaN(loopfee?.certusd) ? 0 : numFor.format(loopfee?.certusd)}</span> certificate fee at the end of course
                 </p>
               </div>
 
               <p className="font-['gregular'] lg:text-xl py-3">
-              Pluralcode’s Self-Paced Diploma (LooP) will require an enrollment fee, as well as a $100 certification fee at the end of your course. 
+              Pluralcode’s Self-Paced Diploma (LooP) will require an enrollment fee, as well as a ${isNaN(loopfee?.certusd) ? 0 : numFor.format(loopfee?.certusd)} certification fee at the end of your course. 
               </p>
               <p className="font-['gregular'] lg:text-xl py-2">
               LooP allows you to get all the benefits of the Diploma programs without needing to afford or join a live class

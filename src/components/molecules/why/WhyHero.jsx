@@ -69,7 +69,7 @@ const WhyHero = () => {
         </div>
         <div className="bg-[#FFD195] relative h-[260px] 2xl:h-[300px] text-cgray w-full lg:w-[18%] 2xl:w-[20%] rounded-ss-[64px] rounded-ee-[64px]">
           <div className="h-full px-10 flex flex-col justify-center">
-            <Text className="font-['gbold'] text-center  text-5xl" body="2k+" />
+            <Text className="font-['gbold'] text-center  text-5xl" body="6k+" />
             <Text
               className="text-[32px] text-center py-4"
               body="Graduated Students"

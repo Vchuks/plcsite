@@ -3,12 +3,16 @@ const FaqList =[
         top:"I’m not sure what course to choose, what should I do?",
         body:`No problem, Pluralcode has an entire team of professional Student Advisors with vast experience in different areas of tech. One of them will be more than happy to discuss your options and help you find the right fit for you.
 
-        Click here to quickly book a FREE session with an advisor or send an email to support@pluralcode.academy with your questions and contact information. A student advisor will be in touch shortly to guide you. 
+        Click <a href="https://pluralcode.academy/apply">here</a> to quickly book a FREE session with an advisor or send an email to <a href="mailto:support@pluralcode.academy"><b>support@pluralcode.academy</b></a> with your questions and contact information. A student advisor will be in touch shortly to guide you. 
         `
     },
     {
         top:"How can I start learning?",
-        body:`Kindly check the Tuition Page on the website to get all details about Pluralcode’s tuition.`
+        body:`To begin, kindly select one of our courses above and proceed to the enrollment page. You will be required to provide your basic information and pay through available options. Once this is completed, you will receive an email with your login access to the Student Portal and you can start learning right away.`
+    },
+    {
+        top:"How much does it cost to take a course?",
+        body:`Kindly check the <a href="/tuition"><b>Tuition Page</b></a> on the website to get all details about Pluralcode’s tuition.`
     },
     {
         top:"Does Pluralcode have flexible payment plans?",
@@ -36,7 +40,7 @@ const FaqList =[
     },
     {
         top:"I did not receive an email or cannot access my Student Portal, what should I do?",
-        body:`If you’re struggling to access your portal or did not receive the welcome email with your login access, kindly check your spam, junk or promotion folders as they may be stuck there. If you still cannot find it, kindly send an email to support@pluralcode.academy detailing your challenge and it will be resolved very quickly.
+        body:`If you’re struggling to access your portal or did not receive the welcome email with your login access, kindly check your spam, junk or promotion folders as they may be stuck there. If you still cannot find it, kindly send an email to <a href="mailto:support@pluralcode.academy"><b>support@pluralcode.academy</b></a> detailing your challenge and it will be resolved very quickly.
         `
     },
     {
@@ -53,12 +57,12 @@ const FaqList =[
     },
     {
         top:"My Debit/Credit card keeps failing, what should I do?",
-        body:`If you’re struggling to complete your payment, chances are your card or source of payment is not compatible with our third party payment gateway, kindly send an email to admissions@pluralcode.academy detailing your challenge and you will be assisted accordingly.
+        body:`If you’re struggling to complete your payment, chances are your card or source of payment is not compatible with our third party payment gateway, kindly send an email to <a href="mailto:admissions@pluralcode.academy"><b>admissions@pluralcode.academy</b></a> detailing your challenge and you will be assisted accordingly.
         `
     },
     {
         top:"Can I get a refund on my fees?",
-        body:`Refunds are subject to Pluralcode’s policy. Do ensure to read up on our entire policy by clicking here.
+        body:`Refunds are subject to Pluralcode’s policy. Do ensure to read up on our entire policy by clicking <a href="https://pluralcode.academy/payment/terms.html"><b>here.</b></a>
         `
     },
     {

@@ -27,7 +27,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="bg-cblue border font-['gmedium'] border-cblue items-center flex  justify-between px-4 lg:px-14 py-4 lg:py-8 ">
+    <div className="bg-cblue  border font-['gmedium'] border-cblue items-center flex  justify-between px-4 lg:px-14 py-4 lg:py-8 ">
       <div className="w-full">
         <TextLink to="/" className="" body={<Logo src={plclogo} alt="Pluralcode" className="w-52" />}/>
       </div>
@@ -47,12 +47,12 @@ const Navbar = () => {
         </div>
         <TextLink to="/tuition" className="" body="Tuition" />
         <TextLink to="/faq" className="" body="FAQ" />
-        <TextLink to="#" className="" body="LooP" />
+        <TextLink to="https://pluralcode.academy/loop" className="" body="LooP" />
         <div className="relative flex items-center gap-2 cursor-pointer" onMouseEnter={handleMoredp} onMouseLeave={handleMoredp}>
           <Text className="" body="More" />
           <FaChevronDown className="text-xs"/>
           {/* more drop down */}
-        {moredp &&<div className="w-[200px] absolute top-full mt-[2px] bg-white schdp p-5 lg:p-6 lg:pt-7 h-32 gap-4 text-cdark">
+        {moredp &&<div className="w-[200px] z-10 absolute top-full mt-[2px] bg-white schdp p-5 lg:p-6 lg:pt-7 h-32 gap-4 text-cdark">
             <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                 
                 <TextLink to="/why_pluralcode" className="text-cdark " body="Why Pluralcode"/>
@@ -68,7 +68,7 @@ const Navbar = () => {
           body={<button className="w-full">Sign In</button>}
         /> */}
         <TextLink
-          to="#learn"
+          to="/#learn"
           className="w-36 bg-corange text-white text-sm rounded pt-3 pb-3"
           body={<button className="w-full">Start Learning</button>}
         />
@@ -83,9 +83,11 @@ const Navbar = () => {
             <Logo src={closeicon} alt="" className="w-10" />
           </div>
           <div className="flex flex-col gap-10 mt-6 text-white">
-          <div className="relative flex items-center gap-2 cursor-pointer" >
-          <Text className="" body="Schools"  onClick={handleSchdp}   />
+          <div className="relative w-3/4"  >
+            <div className="w-max  flex items-center gap-2 cursor-pointer"  onClick={handleSchdp}>
+          <Text className="" body="Schools"   />
           <FaChevronDown className="text-xs"/>
+          </div>
         {/* school drop down */}
         {schdp &&<div className="w-3/4 z-10 absolute top-full mt-1 bg-white schdp p-4 text-black flex flex-col gap-2">
         <div className="flex flex-col gap-2 text-sm font-['gmedium']">
@@ -96,12 +98,14 @@ const Navbar = () => {
             </div>
         </div>}
         </div>
-            <TextLink to="/tuition" className="" body="Tuition" />
-            <TextLink to="/faq" className="" body="FAQ" />
-            <TextLink to="#" className="" body="LooP" />
-            <div className="relative flex items-center gap-2 cursor-pointer">
-          <Text className="" body="More" onClick={handleMoredp}  />
+            <TextLink to="/tuition" className="w-max" body="Tuition" />
+            <TextLink to="/faq" className="w-max" body="FAQ" />
+            <TextLink to="https://pluralcode.academy/loop" className="w-max" body="LooP" />
+            <div className="relative w-3/4 " >
+            <div className="w-max flex items-center gap-2 cursor-pointer" onClick={handleMoredp}>
+          <Text className="" body="More" />
           <FaChevronDown className="text-xs" />
+          </div>
           {/* more drop down */}
         {moredp &&<div className="w-3/4 h-[120px] absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">
         <div className="flex flex-col gap-2 text-sm font-['gmedium']">
@@ -117,7 +121,7 @@ const Navbar = () => {
               body={<button className="w-full">Sign In</button>}
             /> */}
             <TextLink
-              to="#learn"
+              to="/#learn"
               onClick={closeNav}
               className="w-36 bg-corange text-sm text-white rounded py-3"
               body={<button className="w-full">Start Learning</button>}

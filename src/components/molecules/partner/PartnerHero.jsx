@@ -27,7 +27,7 @@ const PartnerHero = () => {
       <div className="flex flex-col lg:flex-row items-end mt-10 lg:mt-28 gap-5 pb-10 lg:pb-0 2xl:gap-10 relative">
         
         
-        <div className="w-full lg:w-[20%] lg:h-[300px]">
+        <div className="hidden lg:block w-full lg:w-[20%] lg:h-[300px]">
             <div className="w-full flex lg:h-full items-end">
 
           <Logo
@@ -37,7 +37,7 @@ const PartnerHero = () => {
             />
             </div>
         </div>
-        <div className="w-full lg:w-[20%] lg:h-[300px]">
+        <div className="hidden lg:block w-full lg:w-[20%] lg:h-[300px]">
             <div className="flex lg:h-full items-end">
 
           <Logo
@@ -48,7 +48,7 @@ const PartnerHero = () => {
             </div>
         </div>
         
-        <div className="w-full  lg:w-[20%] lg:h-[300px] 2xl:h-[360px] ">
+        <div className="hidden lg:block w-full  lg:w-[20%] lg:h-[300px] 2xl:h-[360px] ">
             <div className="lg:h-full w-full flex items-end">
 
           <Logo
@@ -68,7 +68,7 @@ const PartnerHero = () => {
             />
             </div>
         </div>
-        <div className="w-full lg:w-[20%] lg:h-[300px] 2xl:h-[360px] ">
+        <div className="hidden lg:block w-full lg:w-[20%] lg:h-[300px] 2xl:h-[360px] ">
             <div className="lg:h-full w-full flex items-end">
 
           <Logo

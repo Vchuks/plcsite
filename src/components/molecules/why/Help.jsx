@@ -14,7 +14,7 @@ const Help = () => {
       <div className="flex flex-col lg:flex-row gap-8 pt-6 lg:gap-4">
         <Text className="lg:w-[30%] 2xl:w-1/4 text-lg font-['gmedium']" body="Your pathway to a tech career doesn’t have to be confusing. We will walk you through it."/>
         <div className="w-10/12 m-auto lg:w-full flex flex-col lg:flex-row gap-10 lg:gap-7">
-          <div className="w-[25%]" data-aos="zoom-in-up" data-aos-duration="2000">
+          <div className="w-full lg:w-[25%]" data-aos="zoom-in-up" data-aos-duration="2000">
             <div className="relative w-full school p-3 flex flex-col justify-between h-full" >
                 <div><Logo src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/IMG_4182.PNG" className="" alt=""/></div>
                 <div className="flex flex-col justify-between">
@@ -26,7 +26,7 @@ const Help = () => {
                 <div className="absolute schoolback bg-cblue"></div>
             </div>
           </div>
-            <div className="w-[25%]" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="w-full lg:w-[25%]" data-aos="zoom-in-up" data-aos-duration="2000">
 
             <div className="relative w-full school p-3 flex flex-col justify-between h-full" >
                 <div><Logo src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/IMG_4184.PNG" className="" alt=""/></div>
@@ -39,7 +39,7 @@ const Help = () => {
                 <div className="absolute schoolback bg-cdark"></div>
             </div>
             </div>
-            <div className="w-[25%]" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="w-full lg:w-[25%]" data-aos="zoom-in-up" data-aos-duration="2000">
 
             <div className="relative w-full school p-3 flex flex-col justify-between h-full" >
                 <div><Logo src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/IMG_4183.PNG" className="" alt=""/></div>
@@ -52,7 +52,7 @@ const Help = () => {
                 <div className="absolute schoolback bg-corange"></div>
             </div>
             </div>
-            <div className="w-[25%]" data-aos="zoom-in-up" data-aos-duration="2000">
+            <div className="w-full lg:w-[25%]" data-aos="zoom-in-up" data-aos-duration="2000">
 
             <div className="relative w-full school p-3 flex flex-col justify-between h-full"  >
                 <div><Logo src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/IMG_4181.PNG" className="rounded-[10px]" alt=""/></div>

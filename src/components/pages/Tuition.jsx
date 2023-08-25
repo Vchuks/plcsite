@@ -8,55 +8,54 @@ import sub3 from "../../assets/images/Subtract3.png";
 import loop from "../../assets/images/PluralCode Loop 1 1.png";
 import { useEffect, useState } from "react";
 
-
 const Tuition = () => {
-    const [loading, setLoading] = useState(true);
-    const [err, setErr] = useState("");
-    const [fee, setFee] = useState([]);
-    const [loopfee, setLoopfee] = useState({
-        usdcourse:"",
-        ngncourse:"",
-        certusd:""
-    })
-    useEffect(() => { 
-        async function getApi() {
-          try {
-            const response = await fetch(
-              "https://backend.pluralcode.institute/websitecourse-list"
-            );
-            const result = await response.json()
-            console.log(result)
-            setFee(result);
-            setErr(null);
-          } catch (error) {
-            console.log(error.message);
-            setErr(error.message);
-          } finally {
-            setLoading(false);
-          }
-        }
-        getApi();
-      }, []);
+  const [loading, setLoading] = useState(true);
+  const [err, setErr] = useState("");
+  const [fee, setFee] = useState([]);
+  const [loopfee, setLoopfee] = useState({
+    usdcourse: "",
+    ngncourse: "",
+    certusd: "",
+  });
+  useEffect(() => {
+    async function getApi() {
+      try {
+        const response = await fetch(
+          "https://backend.pluralcode.institute/websitecourse-list"
+        );
+        const result = await response.json();
+        console.log(result);
+        setFee(result);
+        setErr(null);
+      } catch (error) {
+        console.log(error.message);
+        setErr(error.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+    getApi();
+  }, []);
 
-      useEffect(() => {
-        fetch("https://backend.pluralcode.institute/loop-course-list")
-            .then((response) => response.json())
-            .then((result) => {
-                console.log(result)
-                setLoopfee({
-                    usdcourse:result.loopcourseusd,
-                    ngncourse:result.loopcoursengn,
-                    certusd:result.loopcertificateusd,
-                })
-            })
-            .catch((err) => console.log(err));
-    }, []);
-      const numFor = Intl.NumberFormat("en-US");
-console.log(loopfee)
+  useEffect(() => {
+    fetch("https://backend.pluralcode.institute/loop-course-list")
+      .then((response) => response.json())
+      .then((result) => {
+        console.log(result);
+        setLoopfee({
+          usdcourse: result.loopcourseusd,
+          ngncourse: result.loopcoursengn,
+          certusd: result.loopcertificateusd,
+        });
+      })
+      .catch((err) => console.log(err));
+  }, []);
+  const numFor = Intl.NumberFormat("en-US");
+  console.log(loopfee);
   return (
     <div className="how-box bg-[#F5F6FA] relative -z-10 px-4 lg:px-14 py-10 lg:py-14">
-        {loading && <p className="">Loading...</p>}
-            {err && <p className="">An error occured</p>}
+      {loading && <p className="">Loading...</p>}
+      {err && <p className="">An error occured</p>}
       <div className="">
         <div className="w-20 h-2 rounded-2xl my-3 bg-corange"></div>
         <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl">
@@ -79,9 +78,18 @@ console.log(loopfee)
             <div className="p-4 lg:p-5">
               <div className="w-[94%] m-auto py-2">
                 <div className="flex justify-between text-cdark font-['gexbold'] text-2xl lg:text-[35px]">
-                  
-                  <p className="flex"><span className="text-base lg:text-xl">$</span>{isNaN(fee[0]?.usdprice) ? 0 : numFor.format(fee[0]?.usdprice)}</p>
-                  <p className="opacity-70 flex"><span className="text-base lg:text-xl">&#8358;</span>{isNaN(fee[0]?.paymentFeengn) ? 0 : numFor.format(fee[0]?.paymentFeengn)}</p>
+                  <p className="flex">
+                    <span className="text-base lg:text-xl">$</span>
+                    {isNaN(fee[0]?.usdprice)
+                      ? 0
+                      : numFor.format(fee[0]?.usdprice)}
+                  </p>
+                  <p className="opacity-70 flex">
+                    <span className="text-base lg:text-xl">&#8358;</span>
+                    {isNaN(fee[0]?.paymentFeengn)
+                      ? 0
+                      : numFor.format(fee[0]?.paymentFeengn)}
+                  </p>
                 </div>
                 <Text
                   className="font-['gexbold'] pt-3 text-corange"
@@ -98,8 +106,17 @@ console.log(loopfee)
               <p className="font-['gregular'] lg:text-xl py-2">
                 <span className="font-['gbold']">Entry level</span> (On-site)
                 courses on the other hand will only cost{" "}
-                <span className="font-['gbold']">${isNaN(fee[2]?.usdprice) ? 0 : numFor.format(fee[2]?.usdprice)}</span> (NG {isNaN(fee[2]?.paymentFeengn) ? 0 : numFor.format(fee[2]?.paymentFeengn)}) to
-                enroll.
+                <span className="font-['gbold']">
+                  $
+                  {isNaN(fee[2]?.usdprice)
+                    ? 0
+                    : numFor.format(fee[2]?.usdprice)}
+                </span>{" "}
+                (NG{" "}
+                {isNaN(fee[2]?.paymentFeengn)
+                  ? 0
+                  : numFor.format(fee[2]?.paymentFeengn)}
+                ) to enroll.
               </p>
               <TextLink
                 to="https://pluralcode.academy/admissions/"
@@ -124,8 +141,18 @@ console.log(loopfee)
             <div className="p-4 lg:p-5">
               <div className="w-[94%] m-auto py-2">
                 <div className="flex justify-between text-cdark font-['gexbold'] text-2xl lg:text-[35px]">
-                <p className="flex"><span className="text-base lg:text-xl">$</span>{isNaN(fee[1]?.usdprice) ? 0 : numFor.format(fee[1]?.usdprice)}</p>
-                  <p className="opacity-70 flex"><span className="text-base lg:text-xl">&#8358;</span>{isNaN(fee[1]?.paymentFeengn) ? 0 : numFor.format(fee[1]?.paymentFeengn)}</p>
+                  <p className="flex">
+                    <span className="text-base lg:text-xl">$</span>
+                    {isNaN(fee[1]?.usdprice)
+                      ? 0
+                      : numFor.format(fee[1]?.usdprice)}
+                  </p>
+                  <p className="opacity-70 flex">
+                    <span className="text-base lg:text-xl">&#8358;</span>
+                    {isNaN(fee[1]?.paymentFeengn)
+                      ? 0
+                      : numFor.format(fee[1]?.paymentFeengn)}
+                  </p>
                 </div>
                 <Text
                   className="font-['gexbold'] pt-3 text-corange"
@@ -140,11 +167,23 @@ console.log(loopfee)
                 to get started.
               </p>
               <p className="font-['gregular'] lg:text-xl py-2">
-                <span className="font-['gbold']">Entry level</span> (Virtual) courses on the other hand will only cost <span className="font-['gbold']">${isNaN(fee[3]?.usdprice) ? 0 : numFor.format(fee[3]?.usdprice)}</span> (NG {isNaN(fee[3]?.paymentFeengn) ? 0 : numFor.format(fee[3]?.paymentFeengn)}) to enroll.
+                <span className="font-['gbold']">Entry level</span> (Virtual)
+                courses on the other hand will only cost{" "}
+                <span className="font-['gbold']">
+                  $
+                  {isNaN(fee[3]?.usdprice)
+                    ? 0
+                    : numFor.format(fee[3]?.usdprice)}
+                </span>{" "}
+                (NG{" "}
+                {isNaN(fee[3]?.paymentFeengn)
+                  ? 0
+                  : numFor.format(fee[3]?.paymentFeengn)}
+                ) to enroll.
               </p>
               <TextLink
                 to="https://pluralcode.academy/admissions/"
-                target='_blank'
+                target="_blank"
                 className="flex justify-center"
                 body={
                   <button className="bg-corange w-60 py-3 mt-4 lg:text-lg text-white rounded">
@@ -159,30 +198,45 @@ console.log(loopfee)
         <div data-aos="fade-up" data-aos-duration="2000">
           <div className="relative w-11/12 m-auto lg:w-[420px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
             <div className="flex justify-between px-5 py-8 rounded-ss-[30px] bg-cblue font-['gbold'] text-white text-xl lg:text-3xl">
-
-            <Text
-              className=""
-              body="Self Paced (LooP)"
-              />
-            <Logo className="w-20 h-full" alt="" src={loop}/>
-              </div>
+              <Text className="" body="Self Paced (LooP)" />
+              <Logo className="w-20 h-full" alt="" src={loop} />
+            </div>
             <div className="p-4 lg:p-5">
               <div className="w-[94%] m-auto py-2">
                 <div className="flex justify-between text-cdark font-['gexbold'] text-2xl lg:text-[35px]">
-                <p className="flex"><span className="text-base lg:text-xl">$</span>{isNaN(loopfee?.usdcourse) ? 0 : numFor.format(loopfee?.usdcourse)}</p>
-                  <p className="flex"><span className="text-base lg:text-xl">&#8358;</span>{isNaN(loopfee?.ngncourse) ? 0 : numFor.format(loopfee?.ngncourse)}</p>
+                  <p className="flex">
+                    <span className="text-base lg:text-xl">$</span>
+                    {isNaN(loopfee?.usdcourse)
+                      ? 0
+                      : numFor.format(loopfee?.usdcourse)}
+                  </p>
+                  <p className="flex">
+                    <span className="text-base lg:text-xl">&#8358;</span>
+                    {isNaN(loopfee?.ngncourse)
+                      ? 0
+                      : numFor.format(loopfee?.ngncourse)}
+                  </p>
                 </div>
-                <p
-                  className="font-['gexbold'] pt-3 text-corange"
-                  ><span className="text-lg">${isNaN(loopfee?.certusd) ? 0 : numFor.format(loopfee?.certusd)}</span> certificate fee at the end of course
+                <p className="font-['gexbold'] pt-3 text-corange">
+                  <span className="text-lg">
+                    $
+                    {isNaN(loopfee?.certusd)
+                      ? 0
+                      : numFor.format(loopfee?.certusd)}
+                  </span>{" "}
+                  certificate fee at the end of course
                 </p>
               </div>
 
               <p className="font-['gregular'] lg:text-xl py-3">
-              Pluralcode’s Self-Paced Diploma (LooP) will require an enrollment fee, as well as a ${isNaN(loopfee?.certusd) ? 0 : numFor.format(loopfee?.certusd)} certification fee at the end of your course. 
+                Pluralcode’s Self-Paced Diploma (LooP) will require an
+                enrollment fee, as well as a $
+                {isNaN(loopfee?.certusd) ? 0 : numFor.format(loopfee?.certusd)}{" "}
+                certification fee at the end of your course.
               </p>
               <p className="font-['gregular'] lg:text-xl py-2">
-              LooP allows you to get all the benefits of the Diploma programs without needing to afford or join a live class
+                LooP allows you to get all the benefits of the Diploma programs
+                without needing to afford or join a live class
               </p>
               <TextLink
                 to="#"
@@ -197,7 +251,7 @@ console.log(loopfee)
             <div className="absolute -z-[1] rounded-ss-[30px] rounded-ee-[30px] w-full h-[90%] -right-3 lg:-right-6 top-5 border border-black bg-white"></div>
           </div>
         </div>
-        
+
         <div className="hidden lg:block absolute bottom-[42%] right-[18%]">
           <Logo src={sub2} className="w-14" alt="" />
         </div>
@@ -216,7 +270,12 @@ console.log(loopfee)
             className=""
             target="_blank"
             to="https://wa.me/2347083153185?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs"
-            body={<span className="text-corange font-['gsemibold']"> Chat with us</span>}
+            body={
+              <span className="text-corange font-['gsemibold']">
+                {" "}
+                Chat with us
+              </span>
+            }
           />
         </p>
       </div>

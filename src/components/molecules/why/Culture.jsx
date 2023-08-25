@@ -12,13 +12,13 @@ const Culture = () => {
     <div className="bg-[#FFFAF4] relative -z-10 px-4 lg:px-14 py-8 lg:py-14">
       <div className="w-20 h-2 rounded-2xl my-2 bg-corange"></div>
       <p className="w-max relative text-cdark font-['aristsemibold'] text-3xl lg:text-5xl">
-        Our <span className="text-corange">Culture?</span>
+        Our <span className="text-corange">Culture</span>
         <span className="hidden lg:block absolute w-[100px] h-full top-[50%] -right-[35%]">
           <Logo src={curve} alt="" className="w-full" />
         </span>
       </p>
-      <div className="flex">
-        <p className="text-lg font-['gmedium'] w-[310px]">
+      <div className="flex flex-col lg:flex-row">
+        <p className="text-lg font-['gmedium'] lg:w-[310px]">
           These attributes define Pluralcode as an institution, and we strive to
           bring these out in our students as well.
         </p>

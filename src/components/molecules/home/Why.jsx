@@ -16,7 +16,7 @@ const Why = () => {
       <div className="m-auto lg:ml-auto w-11/12 lg:w-9/12 text-white grid  lg:grid-cols-9 gap-10  py-20" data-aos="zoom-in-up" data-aos-duration="2000">
         <div className="relative h-full w-full lg:col-start-2  lg:col-span-4 mt-4">
           <div className="bg-cblue rounded-2xl py-8 2xl:py-14 px-4 text-center">
-          <Text className="text-3xl lg:text-5xl font-['gmedium']" body="2,000+"/>
+          <Text className="text-3xl lg:text-5xl font-['gmedium']" body="6,000+"/>
             <Text className="text-2xl pt-2" body="Graduates"/>
           </div>
           <div className="absolute back2"></div>

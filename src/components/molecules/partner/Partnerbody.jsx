@@ -5,7 +5,7 @@ import TextLink from "../../atoms/TextLink";
 
 const Partnerbody = () => {
   return (
-    <div className="bg-[#1018280D] relative -z-10 px-4 lg:px-14 py-10 lg:py-14">
+    <div className="bg-[#1018280D] relative z-10 px-4 lg:px-14 py-10 lg:py-14">
       <div className="">
         <div className="w-20 h-2 rounded-2xl my-3 bg-corange"></div>
         <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl">
@@ -168,7 +168,7 @@ Hit us up and let’s find common ground and get the message out to your audienc
         <TextLink
           className=""
           target="_blank"
-          to="mailto: business@pluralcode.institute"
+          to="mailto:business@pluralcode.institute"
           body={
             <button className="bg-corange w-3/4 px-4 lg:w-56 rounded lg:text-lg py-3 text-white font-['gsemibold']">
               {" "}

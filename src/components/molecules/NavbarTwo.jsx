@@ -36,7 +36,7 @@ const NavbarTwo = () => {
           <Text className="" body="Schools" />
           <FaChevronDown className="text-xs" />
         {/* school drop down */}
-        {schdp &&<div className="w-[300px] absolute top-full mt-[2px] font-['gmedium] bg-white schdp p-5 lg:p-6 gap-4 text-black flex">
+        {schdp &&<div className="w-[300px] z-20 absolute top-full mt-[2px] font-['gmedium] bg-white schdp p-5 lg:p-6 gap-4 text-black flex">
             <div className="flex flex-col gap-2 text-sm font-['gmedium']">
             <TextLink to="/school/product" className=" text-cdark" body="Product School" onClick={closeNav}/>
                 <TextLink to="/school/data" className=" text-cdark" body="Data School"/>
@@ -47,12 +47,12 @@ const NavbarTwo = () => {
         </div>
         <TextLink to="/tuition" className="" body="Tuition" />
         <TextLink to="/faq" className="" body="FAQ" />
-        <TextLink to="#" className="" body="LooP" />
+        <TextLink to="https://pluralcode.academy/loop" className="" body="LooP" />
         <div className="relative flex items-center gap-2 cursor-pointer" onMouseEnter={handleMoredp} onMouseLeave={handleMoredp}>
           <Text className="" body="More" />
           <FaChevronDown className="text-xs"/>
           {/* more drop down */}
-        {moredp &&<div className="w-[200px] absolute top-full mt-[2px] bg-white schdp p-5 lg:p-6 lg:pt-7 h-32 gap-4 text-cdark">
+        {moredp &&<div className="w-[200px] z-20 absolute top-full mt-[2px] bg-white schdp p-5 lg:p-6 lg:pt-7 h-32 gap-4 text-cdark">
             <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                 
                 <TextLink to="/why_pluralcode" className="text-cdark " body="Why Pluralcode"/>
@@ -68,7 +68,7 @@ const NavbarTwo = () => {
           body={<button className="w-full">Sign In</button>}
         /> */}
         <TextLink
-          to="#learn"
+          to="/#learn"
           className="w-36 bg-corange text-white text-sm rounded pt-3 pb-3"
           body={<button className="w-full">Start Learning</button>}
         />
@@ -78,14 +78,16 @@ const NavbarTwo = () => {
       </div>
       {/* small screen nav  */}
       {smallNav && (
-        <div className="block lg:hidden w-full bg-cblue z-10 h-screen text-lg absolute top-0 left-0 px-6 py-4 smallnav">
+        <div className="block z-20 lg:hidden w-full bg-cblue h-screen text-lg absolute top-0 left-0 px-6 py-4 smallnav">
           <div className="w-1/4 ml-auto flex justify-end" onClick={handleNav}>
             <Logo src={closeicon} alt="" className="w-10" />
           </div>
           <div className="flex flex-col gap-10 mt-6 text-white">
-          <div className="relative flex items-center gap-2 cursor-pointer" >
-          <Text className="" body="Schools"  onClick={handleSchdp} />
-          <FaChevronDown className="text-xs"/>
+          <div className="relative w-3/4 " >
+            <div className="w-max flex items-center gap-2 cursor-pointer" onClick={handleSchdp}>
+          <Text className="" body="More" />
+          <FaChevronDown className="text-xs" />
+          </div>
         {/* school drop down */}
         {schdp &&<div className="w-3/4 z-10 absolute top-full mt-1 bg-white schdp p-4 text-black flex flex-col gap-2">
         <div className="flex flex-col gap-2 text-sm font-['gmedium']">
@@ -98,10 +100,12 @@ const NavbarTwo = () => {
         </div>
             <TextLink to="/tuition" className="" body="Tuition" onClick={closeNav}/>
             <TextLink to="/faq" className="" body="FAQ" onClick={closeNav}/>
-            <TextLink to="#" className="" body="LooP" onClick={closeNav}/>
-            <div className="relative flex items-center gap-2 cursor-pointer">
-          <Text className="" body="More" onClick={handleMoredp} />
+            <TextLink to="https://pluralcode.academy/loop" className="" body="LooP" onClick={closeNav}/>
+            <div className="relative w-3/4 " >
+            <div className="w-max flex items-center gap-2 cursor-pointer" onClick={handleMoredp}>
+          <Text className="" body="More" />
           <FaChevronDown className="text-xs" />
+          </div>
           {/* more drop down */}
         {moredp &&<div className="w-3/4 h-[120px] absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">
         <div className="flex flex-col gap-2 text-sm font-['gmedium']">
@@ -118,7 +122,7 @@ const NavbarTwo = () => {
               body={<button className="w-full">Sign In</button>}
             /> */}
             <TextLink
-              to="#learn"
+              to="/#learn"
               onClick={closeNav}
               className="w-36 text-sm bg-corange text-white rounded py-3"
               body={<button className="w-full">Start Learning</button>}

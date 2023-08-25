@@ -53,7 +53,7 @@ const Tuition = () => {
   const numFor = Intl.NumberFormat("en-US");
   console.log(loopfee);
   return (
-    <div className="how-box bg-[#F5F6FA] relative -z-10 px-4 lg:px-14 py-10 lg:py-14">
+    <div className="how-box bg-[#F5F6FA] relative z-10 px-4 lg:px-14 py-10 lg:py-14">
       {loading && <p className="">Loading...</p>}
       {err && <p className="">An error occured</p>}
       <div className="">
@@ -239,7 +239,7 @@ const Tuition = () => {
                 without needing to afford or join a live class
               </p>
               <TextLink
-                to="#"
+                to="https://pluralcode.academy/loop"
                 className="flex justify-center"
                 body={
                   <button className="bg-corange w-60 py-3 mt-4 lg:text-lg text-white rounded">

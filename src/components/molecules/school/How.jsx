@@ -9,7 +9,7 @@ import sub3 from "../../../assets/images/Subtract3.png";
 
 const How = () => {
   return (
-    <div className="how-box bg-[#F0EBE9] relative -z-10  px-4 lg:px-14 py-10 lg:py-14">
+    <div className="how-box bg-[#F0EBE9] relative z-10  px-4 lg:px-14 py-10 lg:py-14">
         <div className="">
       <div className="w-20 h-2 rounded-2xl my-3 bg-corange"></div>
         <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl">

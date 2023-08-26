@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
         <TextLink to="/tuition" className="" body="Tuition" />
         <TextLink to="/faq" className="" body="FAQ" />
-        <TextLink to="https://pluralcode.academy/loop" className="" body="LooP" />
+        {/* <TextLink to="https://pluralcode.academy/loop" className="" body="LooP" /> */}
         <div className="relative flex items-center gap-2 cursor-pointer" onMouseEnter={handleMoredp} onMouseLeave={handleMoredp}>
           <Text className="" body="More" />
           <FaChevronDown className="text-xs"/>
@@ -100,7 +100,7 @@ const Navbar = () => {
         </div>
             <TextLink to="/tuition" className="w-max" body="Tuition" />
             <TextLink to="/faq" className="w-max" body="FAQ" />
-            <TextLink to="https://pluralcode.academy/loop" className="w-max" body="LooP" />
+            {/* <TextLink to="https://pluralcode.academy/loop" className="w-max" body="LooP" /> */}
             <div className="relative w-3/4 " >
             <div className="w-max flex items-center gap-2 cursor-pointer" onClick={handleMoredp}>
           <Text className="" body="More" />

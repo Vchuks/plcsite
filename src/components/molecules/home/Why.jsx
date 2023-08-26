@@ -17,7 +17,7 @@ const Why = () => {
         <div className="relative h-full w-full lg:col-start-2  lg:col-span-4 mt-4">
           <div className="bg-cblue rounded-2xl py-8 2xl:py-14 px-4 text-center">
           <Text className="text-3xl lg:text-5xl font-['gmedium']" body="6,000+"/>
-            <Text className="text-2xl pt-2" body="Graduates"/>
+            <Text className="text-2xl pt-2" body="Learners"/>
           </div>
           <div className="absolute back2"></div>
         </div>

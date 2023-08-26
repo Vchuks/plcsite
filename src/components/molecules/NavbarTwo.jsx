@@ -85,7 +85,7 @@ const NavbarTwo = () => {
           <div className="flex flex-col gap-10 mt-6 text-white">
           <div className="relative w-3/4 " >
             <div className="w-max flex items-center gap-2 cursor-pointer" onClick={handleSchdp}>
-          <Text className="" body="More" />
+          <Text className="" body="Schools" />
           <FaChevronDown className="text-xs" />
           </div>
         {/* school drop down */}

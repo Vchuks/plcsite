@@ -239,7 +239,7 @@ const Tuition = () => {
                 without needing to afford or join a live class
               </p>
               <TextLink
-                to="https://pluralcode.academy/loop"
+                to="https://pluralcode.academy/loop/admission"
                 className="flex justify-center"
                 body={
                   <button className="bg-corange w-60 py-3 mt-4 lg:text-lg text-white rounded">

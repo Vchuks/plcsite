@@ -7,7 +7,7 @@ import curve from "../../../assets/images/Vector 5.png";
 const News = () => {
   return (
     <div className="px-4 lg:px-14 py-20 lg:pt-14 pb-20 flex flex-col lg:flex-row news-box">
-      <div className="2xl:w-9/12">
+      <div className="w-full 2xl:w-9/12">
         <div className="w-20 h-2 rounded-2xl my-2 bg-corange"></div>
         <p className="relative text-cdark 2xl:w-max font-['aristsemibold'] text-3xl lg:text-5xl">
           Pluralcode <span className="text-corange">In The </span>News
@@ -18,7 +18,7 @@ const News = () => {
           body="Good things are hard to keep hidden and we are no exception. Find out what has been written in the news about Pluralcode, we will continue to work hard and build Africa’s largest school of technology."
         />
       </div>
-      <div className="2xl:w-full flex flex-col lg:flex-row justify-center items-center gap-14 pt-6 2xl:gap-0">
+      <div className="w-full 2xl:w-full flex flex-col lg:flex-row justify-center items-center gap-14 pt-6 2xl:gap-0">
         <div data-aos="zoom-in-up" data-aos-duration="2000">
           <div className="relative newseach p-6  2xl:h-full 2xl:w-10/12">
             <div className="lg:h-40  2xl:h-full">

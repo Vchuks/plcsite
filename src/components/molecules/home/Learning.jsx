@@ -66,7 +66,7 @@ const Learning = () => {
               className="text-cdark py-4 lg:h-32 font-['gmedium']"
               body="Ideal for you if you prefer to learn at your own time. Pluralcode’s LMS & bite-sized topics, assessments and projects allows you to earn your Diploma without stress."
             />
-            <TextLink className="text-corange" to="#" target="_blank" body="Coming Soon" />
+            <Text className="text-corange" body="Coming Soon" />
           </div>
           <div className="bg-corange absolute learnback"></div>
         </div>

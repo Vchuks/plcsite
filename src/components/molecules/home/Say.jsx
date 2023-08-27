@@ -20,7 +20,7 @@ const Say = () => {
         <span className="hidden lg:block absolute w-[100px] h-full top-[50%] -right-[27%]"><Logo src={curve} alt="" className="w-full"/></span>
       </p>
       <div className="flex flex-col lg:flex-row gap-4 items-start pb-4">
-        <div className="lg:w-9/12">
+        <div className="w-full lg:w-9/12">
       <Text
         className="lg:text-lg say-text font-['gmedium'] py-2"
         body="We have maintained an amazing learning experience for our students, find out how they feel about us."

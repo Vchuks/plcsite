@@ -63,25 +63,25 @@ const Hero = () => {
   
   
   return (
-    <div className="flex flex-col-reverse lg:flex-row bg-cblue px-4 lg:px-0 lg:ps-14 py-8 lg:py-32 gap-6">
+    <div className="flex flex-col-reverse lg:flex-row bg-cblue px-4 lg:px-0 lg:ps-14 py-8 lg:pt-28 lg:pb-16 gap-6">
       <div className="lg:w-6/12 2xl:w-full relative" data-aos="zoom-in-up" data-aos-duration="2000">
-        <div className="hidden lg:block absolute w-[70px] right-[13%] 2xl:right-[22%]"><Logo src={curve1} alt="" className="w-full"/></div>
-        <div className="hidden lg:block absolute w-[70px] -left-[9%] -top-[4%] 2xl:-left-14"><Logo src={curve2} alt="" className="w-full"/></div>
+        <div className="hidden lg:block absolute w-[70px] left-[75%] 2xl:left-[69%] xxxl:left-[55%] xxxl:w-[120px] top-0"><Logo src={curve1} alt="" className="w-full"/></div>
+        <div className="hidden lg:block absolute w-[70px] -left-[9%] -top-[4%] 2xl:-left-14 xxxl:-left-[7%] xxxl:-top-5 xxxl:w-[120px]"><Logo src={curve2} alt="" className="w-full"/></div>
         <Text
-          className="hidden lg:block plt w-fit px-4 text-corange text-xs pt-1"
+          className="hidden lg:block plt w-fit px-4 text-corange text-xs pt-1 xxxl:text-3xl"
           body="Pluralcode"
         />
-        <p className="hero-text 2xl:w-[750px] 2xl:text-7xl text-center lg:text-left leading-tight lg:leading-none pt-6 text-white">
+        <p className="hero-text 2xl:w-[750px] 2xl:text-7xl xxxl:w-[1000px] xxxl:text-8xl xxxl:leading-tight text-center lg:text-left leading-tight lg:leading-none pt-6 text-white">
           Acquire <span className="text-corange">Tech Skills </span>For a
           Borderless Career.
         </p>
         <Text
-          className="text-center lg:w-[400px] 2xl:w-[580px] font-['gmedium'] 2xl:py-5 2xl:text-2xl py-3 lg:py-0 lg:text-left lg:text-lg text-white"
+          className="text-center lg:w-[400px] 2xl:w-[580px] xxxl:w-[700px] xxxl:text-3xl xxxl:leading-tight font-['gmedium'] 2xl:py-5 2xl:text-2xl py-3 lg:py-0 lg:text-left lg:text-lg text-white"
           body="Your global tech journey begins here. Master the skills you need to start a successful career."
         />
-        <div className="border 2xl:w-[500px] rounded-2xl gap-5 2xl:my-6 my-4 border-corange selectdiv flex flex-col lg:flex-row items-center px-6 justify-between py-4">
-          <select className="w-full outline-none px-3 flex items-center justify-center text-sm text-cblue rounded bg-white pt-4 2xl:pt-5 2xl:pb-5  pb-3">
-            <option className=" text-center ">Select Course</option>
+        <div className="border 2xl:w-[500px] xxxl:w-[700px] rounded-2xl gap-5 2xl:my-6 my-4 border-corange selectdiv flex flex-col lg:flex-row items-center px-6 justify-between py-4 xxxl:py-6">
+          <select className="w-full outline-none px-3 flex items-center justify-center text-sm text-cblue rounded bg-white pt-4 2xl:pt-5 2xl:pb-5  pb-3  ">
+            <option className=" text-center">Select Course</option>
             {entcou.map((each) => (
               <option className="px-2" key={each.id}>{each.name}</option>
               ))}
@@ -90,13 +90,13 @@ const Hero = () => {
             to="/#learn"
             className="w-full hero-link bg-corange rounded"
             body={
-              <button className="pt-3 pb-3 2xl:pt-5 2xl:pb-5 w-full text-center text-sm text-white rounded">
+              <button className="pt-3 pb-3 2xl:pt-5 2xl:pb-5  w-full text-center text-sm text-white rounded">
                 Start Learning
               </button>
             }
           />
         </div>
-        <div className="relative lg:text-lg text-white flex gap-1 justify-center lg:justify-start">
+        <div className="relative lg:text-lg xxxl:text-3xl xxxl:pt-2 text-white flex gap-1 justify-center lg:justify-start">
           Got Questions?
           <TextLink to="https://wa.me/2347083153185?text=I%27m%20interested%20in%20taking%20one%20of%20your%20programs" className="" target="_blank" body={<span className="flex text-corange items-center gap-2">
             Chat with us{" "}

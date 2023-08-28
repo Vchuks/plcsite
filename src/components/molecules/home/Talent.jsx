@@ -28,34 +28,34 @@ const Talent = () => {
   return (
     <div className="px-4 lg:px-14 py-20 lg:py-14 talent-box">
       <div className="w-20 h-2 rounded-2xl my-2 bg-corange"></div>
-      <p className="text-cdark font-['aristsemibold'] text-3xl lg:text-5xl">
+      <p className="text-cdark font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
         Where Our <span className="text-corange">Talents Have Worked </span>
       </p>
-      <Text className="lg:text-lg ttext font-['gmedium'] py-3" body="Pluralcode prepares you to compete at the very top, these are few examples where our talents have worked."/>
+      <Text className="lg:text-lg w-full lg:w-[480px] xxxl:w-[620px] xxxl:text-2xl font-['gmedium'] py-3" body="Pluralcode prepares you to compete at the very top, these are few examples where our talents have worked."/>
       <div className='flex flex-wrap justify-center gap-8 py-10 talent' data-aos="fade-up" data-aos-duration="2000">
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg5} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg1} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg6} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg7} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg8} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg9} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg10} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg11} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg12} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg13} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg14} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg15} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg2} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg16} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg4} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg17} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg18} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg19} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg3} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg20} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg21} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg22} className="w-full"/></div>
-        <div className='w-16 lg:w-36 2xl:w-52'><Logo alt="" src={timg23} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg5} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg1} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg6} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg7} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg8} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg9} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg10} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg11} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg12} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg13} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg14} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg15} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg2} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg16} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg4} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg17} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg18} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg19} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg3} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg20} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg21} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg22} className="w-full"/></div>
+        <div className='w-16 lg:w-36 2xl:w-52 xxxl:w-72'><Logo alt="" src={timg23} className="w-full"/></div>
     </div>
     
     </div>

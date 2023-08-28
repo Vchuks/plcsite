@@ -29,15 +29,15 @@ const Navbar = () => {
   return (
     <div className="bg-cblue  border font-['gmedium'] border-cblue items-center flex  justify-between px-4 lg:px-14 py-4 lg:py-8 ">
       <div className="w-full">
-        <TextLink to="/" className="" body={<Logo src={plclogo} alt="Pluralcode" className="w-52" />}/>
+        <TextLink to="/" className="" body={<Logo src={plclogo} alt="Pluralcode" className="w-52 xxxl:w-64" />}/>
       </div>
-      <div className="w-full hidden lg:flex items-center text-white justify-between">
+      <div className="w-full hidden lg:flex items-center text-white justify-between xxxl:text-2xl">
         <div className="relative flex items-center gap-2 cursor-pointer" onMouseEnter={handleSchdp} onMouseLeave={handleSchdp} >
           <Text className="" body="Schools" />
           <FaChevronDown className="text-xs" />
         {/* school drop down */}
         {schdp &&<div className="w-[300px] absolute top-full mt-[2px] font['gmedium'] bg-white schdp p-5 lg:p-6 gap-4 text-black flex">
-            <div className="flex flex-col gap-2 text-sm font-['gmedium']">
+            <div className="flex flex-col gap-2 text-sm xxxl:text-xl font-['gmedium']">
                 <TextLink to="/school/product" className="text-cdark" body="Product School"/>
                 <TextLink to="/school/data" className="text-cdark" body="Data School"/>
                 <TextLink to="/school/programming" className="text-cdark" body="Programming School"/>
@@ -53,7 +53,7 @@ const Navbar = () => {
           <FaChevronDown className="text-xs"/>
           {/* more drop down */}
         {moredp &&<div className="w-[200px] z-10 absolute top-full mt-[2px] bg-white schdp p-5 lg:p-6 lg:pt-7 h-32 gap-4 text-cdark">
-            <div className="flex flex-col gap-2 text-sm font-['gmedium']">
+            <div className="flex flex-col gap-2 text-sm xxxl:text-xl font-['gmedium']">
                 
                 <TextLink to="/why_pluralcode" className="text-cdark " body="Why Pluralcode"/>
                 <TextLink to="/partnership" className="text-cdark " body="Partner with us"/>
@@ -64,12 +64,12 @@ const Navbar = () => {
       <div className="w-full hidden lg:flex justify-end items-center text-center gap-4">
         {/* <TextLink
           to="#"
-          className="w-32 pt-3 pb-3 border rounded text-corange text-sm border-corange"
+          className="w-32 pt-3 pb-3 xxxl:w-44 xxxl:py-5 xxxl:text-lg border rounded text-corange text-sm border-corange"
           body={<button className="w-full">Sign In</button>}
         /> */}
         <TextLink
           to="/#learn"
-          className="w-36 bg-corange text-white text-sm rounded pt-3 pb-3"
+          className="w-36 xxxl:w-44 xxxl:py-5 xxxl:text-lg bg-corange text-white text-sm rounded pt-3 pb-3"
           body={<button className="w-full">Start Learning</button>}
         />
       </div>

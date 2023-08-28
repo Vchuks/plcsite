@@ -8,12 +8,12 @@ const School = () => {
   return (
     <div className="school-box px-4 lg:px-14 py-20 lg:py-14" id="school">
       <div className="w-20 h-2 rounded-2xl my-2 bg-corange"></div>
-      <p className="text-cdark font-['aristsemibold'] text-3xl lg:text-5xl">
+      <p className="text-cdark font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
         Our <span className="text-corange">Schools </span>
       </p>
-      <div className="flex flex-col lg:flex-row gap-8 pt-6 lg:gap-4">
-        <Text className="lg:w-1/3 2xl:w-1/4 text-lg font-['gmedium']" body="Discover all the amazing areas of tech you can up-skill into. Choose a school to view all the Diploma Courses you can enroll for."/>
-        <div className="w-10/12 m-auto lg:w-full flex flex-col lg:flex-row gap-10 lg:gap-8">
+      <div className="flex flex-col lg:flex-row gap-8 pt-6 lg:gap-4 xxxl:gap-16">
+        <Text className="lg:w-1/3 2xl:w-1/4 text-lg xxxl:text-2xl font-['gmedium']" body="Discover all the amazing areas of tech you can up-skill into. Choose a school to view all the Diploma Courses you can enroll for."/>
+        <div className="w-10/12 m-auto lg:w-full flex flex-col lg:flex-row gap-10 lg:gap-8 xxxl:gap-16">
           <div data-aos="zoom-in-up" data-aos-duration="2000">
             <div className="relative w-full school p-3 flex flex-col justify-between sb" >
                 <div><Logo src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/IMG_4182.PNG" className="" alt=""/></div>

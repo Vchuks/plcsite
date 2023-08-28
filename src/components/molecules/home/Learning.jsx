@@ -10,11 +10,11 @@ const Learning = () => {
   return (
     <div className="px-4 lg:px-14 py-20 lg:py-14 learn-box" id="learn">
       <div className="w-20 h-2 rounded-2xl my-2 bg-corange"></div>
-      <p className="text-cdark font-['aristsemibold'] text-3xl lg:text-5xl">
+      <p className="text-cdark font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
         Learning <span className="text-corange">Options </span>
       </p>
       <Text
-        className="lg:text-lg say-text font-['gmedium'] py-2"
+        className="lg:text-lg xxxl:text-2xl say-text font-['gmedium'] py-2"
         body="Choose the learning option that best suites you from the formats below."
       />
       <div className="flex flex-col lg:flex-row gap-14 lg:gap-4 justify-center py-8" >
@@ -22,7 +22,7 @@ const Learning = () => {
           <Logo src={sub} className="w-14" alt="" />
         </div>
 <div data-aos="zoom-in-up" data-aos-duration="2000">
-        <div className="relative h-full  learneach p-6">
+        <div className="relative h-full  learneach xxxl:w-[600px] p-6">
           <div>
             <Logo
               src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p2.png"
@@ -49,7 +49,7 @@ const Learning = () => {
         </div>
 
         <div data-aos="zoom-in-up" data-aos-duration="2000">
-        <div className="relative h-full  learneach p-6">
+        <div className="relative h-full  learneach xxxl:w-[600px] p-6">
           <div>
             <Logo
               src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p1.png"

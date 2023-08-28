@@ -36,7 +36,7 @@ const Video = () => {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="wrapper">
+      <div className="wrapper xxxl:h-[1400px]">
       <button
         className="ex text-xl lg:text-3xl lg:p-5 text-black"
         onClick={handleClose}

@@ -10,25 +10,25 @@ const DataHero = () => {
   return (
     <div className="flex flex-col items-center lg:flex-row bg-[#F5F6FA] px-4 lg:px-14 py-8 lg:py-0 gap-6">
       <div className="lg:w-7/12 2xl:w-full relative" data-aos="zoom-in-up" data-aos-duration="2000">
-        <div className="hidden lg:block absolute w-[70px] top-1 right-[54%] 2xl:right-[57%]">
+        <div className="hidden lg:block absolute w-[70px] top-1 right-[54%] 2xl:right-[57%] xxxl:right-[62%] xxxl:w-[100px]">
           <Logo src={curve1} alt="" className="w-full" />
         </div>
-        <div className="hidden lg:block absolute w-[40px] -left-[6%] top-0 2xl:-left-10">
+        <div className="hidden lg:block absolute w-[40px] -left-[6%] top-0 2xl:-left-10 xxxl:w-[60px]">
           <Logo src={curve2} alt="" className="w-full" />
         </div>
         <Text
-          className="hidden lg:block plt w-fit px-4 text-corange text-xs pt-1"
+          className="hidden lg:block plt w-fit px-4 text-corange text-xs pt-1 xxxl:text-3xl"
           body="Welcome to Pluralcode's"
         />
-        <p className="hero-text 2xl:w-[750px] 2xl:text-7xl leading-tight lg:leading-none pt-6 text-cblue">
+        <p className="hero-text 2xl:w-[750px] 2xl:text-7xl xxxl:text-8xl leading-tight lg:leading-none pt-6 text-cblue">
           Data <span className="text-corange">School</span>
         </p>
         <Text
-          className="lg:w-9/12 2xl:w-[800px] 2xl:py-5 2xl:text-2xl py-3 lg:py-0  font-['gmedium'] text-cblue"
+          className="lg:w-9/12 2xl:w-[800px] 2xl:py-5 2xl:text-2xl py-3 lg:py-0  font-['gmedium'] text-cblue xxxl:text-3xl xxxl:leading-tight"
           body="Our data school trains and prepares students for careers in Data Analytics/ Science. Build expertise in data manipulation, visualization, predictive analytics, machine learning. Start acquiring valuable skills right away, create a project portfolio to demonstrate your abilities, and get support from mentors, peers, and experts in the field."
         />
 
-        <div className="relative pt-4 lg:text-lg text-cblue flex gap-1 ">
+        <div className="relative pt-4 lg:text-lg xxxl:text-2xl text-cblue flex gap-1 ">
           Got Questions?
           <TextLink
             className=""
@@ -43,14 +43,14 @@ const DataHero = () => {
               </span>
             }
           />
-          <div className="hidden lg:block absolute w-[40px] left-[38%] 2xl:left-[33%] top-2">
+          <div className="hidden lg:block absolute w-[40px] left-[38%] 2xl:left-[33%] xxxl:left-[28%] top-2">
             <Logo src={curve3} alt="" className="w-full" />
           </div>
         </div>
       </div>
       <div className="w-full"  data-aos="zoom-in-up" data-aos-duration="2000">
         <Logo
-          className="w-full"
+          className="w-full xxxl:w-3/4"
           src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/IMG_4239.PNG"
           alt=""
         />

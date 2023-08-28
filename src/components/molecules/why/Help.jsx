@@ -8,12 +8,12 @@ const Help = () => {
   return (
     <div className="bg-[#FFFAF4] px-4 lg:px-14 py-20 lg:py-14" id="school">
       <div className="w-20 h-2 rounded-2xl my-2 bg-corange"></div>
-      <p className="lg:w-[25%] text-cdark font-['aristsemibold'] text-3xl lg:text-5xl">
+      <p className="lg:w-[25%] xxxl:w-[20%] text-cdark font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
         We help <span className="text-corange">you </span>get started
       </p>
-      <div className="flex flex-col lg:flex-row gap-8 pt-6 lg:gap-4">
-        <Text className="lg:w-[30%] 2xl:w-1/4 text-lg font-['gmedium']" body="Your pathway to a tech career doesn’t have to be confusing. We will walk you through it."/>
-        <div className="w-10/12 m-auto lg:w-full flex flex-col lg:flex-row gap-10 lg:gap-7">
+      <div className="flex flex-col lg:flex-row gap-8 pt-6 lg:gap-4 xxxl:gap-14">
+        <Text className="lg:w-[30%] 2xl:w-1/4 text-lg font-['gmedium'] xxxl:text-2xl" body="Your pathway to a tech career doesn’t have to be confusing. We will walk you through it."/>
+        <div className="w-10/12 m-auto lg:w-full flex flex-col lg:flex-row gap-10 lg:gap-7 xxxl:gap-16">
           <div className="w-full lg:w-[25%]" data-aos="zoom-in-up" data-aos-duration="2000">
             <div className="relative w-full school p-3 flex flex-col justify-between h-full" >
                 <div><Logo src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/IMG_4182.PNG" className="" alt=""/></div>

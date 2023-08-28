@@ -10,13 +10,13 @@ import Logo from "../../atoms/Logo";
 const WhyHero = () => {
   return (
     <div className="bg-[#F5F6FA] relative -z-10 px-4 lg:px-14 py-10 lg:py-14 pb-0">
-      <div className="w-full lg:w-[650px] relative m-auto">
-        <p className="text-cblue leading-[1.3] text-center font-['aristbold'] text-3xl lg:text-[64px]">
+      <div className="w-full lg:w-[650px] relative m-auto xxxl:w-2/4">
+        <p className="text-cblue leading-[1.3] text-center font-['aristbold'] text-3xl lg:text-[64px] xxxl:text-[120px]">
           Building <span className="text-corange">Solutions </span>For Global
           Impact
         </p>
         <Text
-          className="text-center text-cblue font-['gsemibold']"
+          className="text-center text-cblue font-['gsemibold'] xxxl:text-2xl"
           body="For individuals, organizations and corporates across Africa and beyond, Pluralcode is on a mission to bridge the global talent gap by building the largest and most impactful tech talent incubator on the continent to showcase its talent to the world stage."
         />
         <div className="hidden absolute right-10 top-[40%] lg:flex">

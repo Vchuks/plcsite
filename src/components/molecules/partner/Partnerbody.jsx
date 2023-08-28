@@ -8,21 +8,21 @@ const Partnerbody = () => {
     <div className="bg-[#1018280D] relative z-10 px-4 lg:px-14 py-10 lg:py-14">
       <div className="">
         <div className="w-20 h-2 rounded-2xl my-3 bg-corange"></div>
-        <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl">
+        <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
           Let&apos;s <span className="text-corange">Partner </span>Up
           <span className="hidden lg:block absolute w-[100px] h-full top-[45%] -right-[30%]">
             <Logo src={curve} alt="" className="w-full" />
           </span>
         </p>
       </div>
-      <div className="w-full relative 2xl:w-[80%] xxxl:w-3/6 m-auto flex flex-col flex-wrap my-10 lg:my-20 lg:flex-row justify-center gap-10 lg:gap-14">
+      <div className="w-full relative 2xl:w-[80%] xxxl:w-10/12 m-auto flex flex-col flex-wrap my-10 lg:my-20 lg:flex-row justify-center gap-10 lg:gap-14">
         <div data-aos="fade-up" data-aos-duration="2000">
-          <div className="relative w-11/12 m-auto lg:w-[350px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
+          <div className="relative w-11/12 m-auto lg:w-[350px] xxxl:w-[500px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px] xxxl:text-xl">
             <Text
               className="px-5 py-10 rounded-ss-[30px] bg-corange font-['gbold'] text-cdark text-xl lg:text-3xl"
               body="Edu-Loan Partners"
             />
-            <div className="p-4 lg:p-5 font-['gregular'] h-[270px]">
+            <div className="p-4 lg:p-5 font-['gregular'] h-[270px] xxxl:h-[310px]">
               <Text
                 className=""
                 body="Edu-Loan partners can provide student loans at healthy interest rates to students at Pluralcode."
@@ -36,12 +36,12 @@ const Partnerbody = () => {
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000">
-          <div className="relative w-11/12 m-auto lg:w-[350px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
+          <div className="relative w-11/12 m-auto lg:w-[350px] xxxl:w-[500px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px] xxxl:text-xl">
             <Text
               className="px-5 py-10 rounded-ss-[30px] bg-cgray font-['gbold'] text-white text-xl lg:text-3xl"
               body="Hiring Partners"
             />
-            <div className="p-4 lg:p-5 font-['gregular'] h-[270px]">
+            <div className="p-4 lg:p-5 font-['gregular'] h-[270px] xxxl:h-[310px]">
               <Text
                 className=""
                 body="Hire Pluralcode’s best talents fresh out of the oven to help you build your dream team. You can also collaborate with us to take on interns from our Diploma program at almost zero cost to your business."
@@ -55,12 +55,12 @@ const Partnerbody = () => {
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000">
-          <div className="relative w-11/12 m-auto lg:w-[350px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
+          <div className="relative w-11/12 m-auto lg:w-[350px] xxxl:w-[500px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px] xxxl:text-xl">
             <Text
               className="px-5 py-10 rounded-ss-[30px] bg-cblue font-['gbold'] text-white text-xl lg:text-3xl"
               body="SandBox Partners"
             />
-            <div className="p-4 lg:p-5 font-['gregular'] h-[270px]">
+            <div className="p-4 lg:p-5 font-['gregular'] h-[270px] xxxl:h-[310px]">
               <Text
                 className=""
                 body="At the heart of our mission is impact, and this is reflected by our commitment to bringing education to less-opportune communities."
@@ -74,12 +74,12 @@ const Partnerbody = () => {
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000">
-          <div className="relative w-11/12 m-auto lg:w-[350px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
+          <div className="relative w-11/12 m-auto lg:w-[350px] xxxl:w-[500px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px] xxxl:text-xl">
             <Text
-              className="px-5 py-6 rounded-ss-[30px] bg-cgray font-['gbold'] text-white text-xl lg:text-3xl"
+              className="px-5 py-6 xxxl:py-10 rounded-ss-[30px] bg-cgray font-['gbold'] text-white text-xl lg:text-3xl"
               body="Corporate Training Partners"
             />
-            <div className="p-4 lg:p-5 font-['gregular'] h-[270px]">
+            <div className="p-4 lg:p-5 font-['gregular'] h-[270px] xxxl:h-[310px]">
               <Text
                 className=""
                 body="Your team needs up-skilling in order for your company to compete favorably in today’s global marketplace."
@@ -95,12 +95,12 @@ Pluralcode’s army of mentors, trainers and student advisors are on hand to tra
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000">
-          <div className="relative w-11/12 m-auto lg:w-[350px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
+          <div className="relative w-11/12 m-auto lg:w-[350px] xxxl:w-[500px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px] xxxl:text-xl">
             <Text
-              className="px-5 py-6 rounded-ss-[30px] bg-cblue font-['gbold'] text-white text-xl lg:text-3xl"
+              className="px-5 py-6  xxxl:py-10 rounded-ss-[30px] bg-cblue font-['gbold'] text-white text-xl lg:text-3xl"
               body="Funding & Investment Partners"
             />
-            <div className="p-4 lg:p-5 font-['gregular'] h-[270px]">
+            <div className="p-4 lg:p-5 font-['gregular'] h-[270px] xxxl:h-[310px]">
               <Text
                 className=""
                 body="We are positioned to become one of Africa’s largest tech talent incubators and we want partners & investors to help push it over the line."
@@ -114,13 +114,13 @@ Pluralcode’s army of mentors, trainers and student advisors are on hand to tra
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000">
-          <div className="relative w-11/12 m-auto lg:w-[350px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
+          <div className="relative w-11/12 m-auto lg:w-[350px] xxxl:w-[500px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px] xxxl:text-xl">
             <Text
               className="px-5 py-10 rounded-ss-[30px] bg-corange font-['gbold'] text-cdark text-xl lg:text-3xl"
               body="Brand 
               Collaborations"
             />
-            <div className="p-4 lg:p-5 font-['gregular'] h-[270px]">
+            <div className="p-4 lg:p-5 font-['gregular'] h-[270px] xxxl:h-[310px]">
               <Text
                 className=""
                 body="Paid partnerships, collaborations, brand ambassador deals and many more are open to talents and creators out there who are as excited about tech as we are."
@@ -136,12 +136,12 @@ Hit us up and let’s find common ground and get the message out to your audienc
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000">
-          <div className="relative w-11/12 m-auto lg:w-[350px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
+          <div className="relative w-11/12 m-auto lg:w-[350px] xxxl:w-[500px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px] xxxl:text-xl">
             <Text
               className="px-5 py-10 rounded-ss-[30px] bg-cblue font-['gbold'] text-white text-xl lg:text-3xl"
               body="Affiliate Partners"
             />
-            <div className="p-4 lg:p-5 font-['gregular'] h-[270px]">
+            <div className="p-4 lg:p-5 font-['gregular'] h-[270px] xxxl:h-[310px]">
               <Text
                 className=""
                 body="Earn a sizable income from home when you join our Affiliate program. Pluralcode has a well structured system and a very easy to sell collection of learning programs that your friends and colleagues will want to join. "
@@ -155,13 +155,13 @@ Hit us up and let’s find common ground and get the message out to your audienc
           </div>
         </div>
       </div>
-      <div className="font-['gregular'] w-full lg:w-[520px] m-auto text-center">
+      <div className="font-['gregular'] w-full lg:w-[520px] xxxl:w-[700px] m-auto text-center">
         <Text
-          className="font-['gsemibold'] text-3xl text-cblue lg:text-[48px]"
+          className="font-['gsemibold'] text-3xl text-cblue lg:text-[48px] xxxl:text-7xl"
           body="Reach Out To Us"
         />
         <Text
-          className="text-cgray py-4 font-['gsemibold'] text-center"
+          className="text-cgray py-4 font-['gsemibold'] text-center xxxl:text-xl"
           body="We’re on hand to work with you. Click the button below to contact us by email or send your mail to business@pluralcode.institute to get started."
         />
 

@@ -9,12 +9,12 @@ import Logo from "../../atoms/Logo";
 const PartnerHero = () => {
   return (
     <div className="bg-cblue relative -z-10 px-4 lg:px-14 py-10 lg:py-14 pb-0">
-      <div className="lg:w-[800px] relative m-auto">
-        <p className="lg:w-[650px] m-auto text-white leading-[1.3] text-center font-['aristbold'] text-3xl lg:text-[64px]">
+      <div className="lg:w-[800px] relative m-auto xxxl:w-2/4">
+        <p className="lg:w-[650px] xxxl:w-full m-auto text-white leading-[1.3] text-center font-['aristbold'] text-3xl lg:text-[64px] xxxl:text-[120px]">
           Build <span className="text-corange">Amazing </span>Things With Pluralcode
         </p>
         <Text
-          className="text-center lg:w-[800px] text-white font-['gsemibold'] lg:text-2xl"
+          className="text-center lg:w-[800px] xxxl:w-full xxxl:text-3xl text-white font-['gsemibold'] lg:text-2xl"
           body="We are doing amazing things! facilitating digital transformation in Africa and showcasing Africa’s talents to the world. Let’s collaborate and do great things together."
         />
         <div className="hidden absolute right-[15%] top-[40%] lg:flex">
@@ -24,7 +24,7 @@ const PartnerHero = () => {
           <Logo src={sub2} className="w-[52px]" alt="" />
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row items-end mt-10 lg:mt-28 gap-5 pb-10 lg:pb-0 2xl:gap-10 relative">
+      <div className="flex flex-col lg:flex-row items-end mt-10 lg:mt-28 gap-5 pb-10 lg:pb-0 2xl:gap-10 relative xxxl:mt-96">
         
         
         <div className="hidden lg:block w-full lg:w-[20%] lg:h-[300px]">
@@ -53,7 +53,7 @@ const PartnerHero = () => {
 
           <Logo
             src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/new2.png"
-            className="w-full lg:h-full object-contain"
+            className="w-full lg:h-full xxxl:h-auto object-contain"
             alt=""
             />
             </div>
@@ -63,17 +63,17 @@ const PartnerHero = () => {
 
           <Logo
             src={imm2}
-            className="w-full lg:h-full object-contain"
+            className="w-full lg:h-full xxxl:h-auto object-contain"
             alt=""
             />
             </div>
         </div>
         <div className="hidden lg:block w-full lg:w-[20%] lg:h-[300px] 2xl:h-[360px] ">
-            <div className="lg:h-full w-full flex items-end">
+            <div className="lg:h-full w-full  flex items-end">
 
           <Logo
             src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/new3.png"
-            className="w-full lg:h-full object-contain"
+            className="w-full lg:h-full xxxl:h-auto object-contain"
             alt=""
             />
             </div>

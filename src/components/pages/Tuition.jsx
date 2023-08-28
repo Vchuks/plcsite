@@ -58,7 +58,7 @@ const Tuition = () => {
       {err && <p className="">An error occured</p>}
       <div className="">
         <div className="w-20 h-2 rounded-2xl my-3 bg-corange"></div>
-        <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl">
+        <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
           Pluralcode <span className="text-corange">Tuition </span>
           <span className="hidden lg:block absolute w-[100px] h-full top-[45%] -right-[28%]">
             <Logo src={curve} alt="" className="w-full" />

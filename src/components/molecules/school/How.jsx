@@ -12,7 +12,7 @@ const How = () => {
     <div className="how-box bg-[#F0EBE9] relative z-10  px-4 lg:px-14 py-10 lg:py-14">
         <div className="">
       <div className="w-20 h-2 rounded-2xl my-3 bg-corange"></div>
-        <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl">
+        <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
           How <span className="text-corange">To </span>Apply
         <span className="hidden lg:block absolute w-[100px] h-full top-[45%] -right-[40%]"><Logo src={curve} alt="" className="w-full"/></span>
         </p>

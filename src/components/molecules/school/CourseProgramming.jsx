@@ -32,7 +32,7 @@ const CourseProgramming = () => {
     <>
       <div className="bg-[#fffaf4] px-4 lg:px-14 py-10 lg:py-14">
         <div className="w-20 h-2 rounded-2xl my-3 bg-corange"></div>
-        <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl">
+        <p className="relative text-cdark lg:w-max font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
           Programming <span className="text-corange">School </span>Courses
           <span className="hidden lg:block absolute w-[100px] h-full top-[45%] -right-[22%]">
             <Logo src={curve} alt="" className="w-full" />

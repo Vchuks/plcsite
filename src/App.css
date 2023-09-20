@@ -179,9 +179,7 @@ background: #FFF8EE;
   background-size: cover;
 }
 .video{
-  width: 70%;
-  margin: auto;
-  display: none;
+  height: 600px;
  
 }
 .vid{
@@ -491,12 +489,7 @@ border: 0.95px solid var(--plural-code-blue, #222057);
     position: relative;
     background-size:contain;
   }
-  .video{
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    display: none;
-  }
+ 
   
   .playimg{
   position: absolute;
@@ -506,8 +499,8 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   .playimg img{
     width: 50px;
   }
-  .vid{
-    margin-top: 25%;
+  .video{
+    height: 400px;
    }
   .ex{
     display: none;

@@ -42,4 +42,5 @@
 /src/assets/images/Group[[:space:]]20752.png filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/Group[[:space:]]20753.png filter=lfs diff=lfs merge=lfs -text
 /dist.zip filter=lfs diff=lfs merge=lfs -text
+/src/assets/images/Thumb[[:space:]]001-04.jpg filter=lfs diff=lfs merge=lfs -text
 * !text !filter !merge !diff

@@ -78,7 +78,7 @@ const NavbarTwo = () => {
       </div>
       {/* small screen nav  */}
       {smallNav && (
-        <div className="block z-20 lg:hidden w-full bg-cblue h-screen text-lg absolute top-0 left-0 px-6 py-4 smallnav">
+        <div className="block z-20 lg:hidden w-full bg-cblue h-screen text-lg fixed top-0 left-0 px-6 py-4 smallnav">
           <div className="w-1/4 ml-auto flex justify-end" onClick={handleNav}>
             <Logo src={closeicon} alt="" className="w-10" />
           </div>

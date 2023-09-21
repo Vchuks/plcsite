@@ -165,8 +165,8 @@ background: #FFF8EE;
 }
 .wrapper{
   width: 100%;
-  background: url("./assets/images/Frame 8.png");
-  height: 800px;
+  background: url("./assets/images/thumb.jpg");
+  height: 750px;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat; 
@@ -179,7 +179,9 @@ background: #FFF8EE;
   background-size: cover;
 }
 .video{
-  height: 600px;
+  width: 70%;
+  margin: auto;
+  display: none;
  
 }
 .vid{
@@ -423,9 +425,16 @@ border: 0.95px solid var(--plural-code-blue, #222057);
       width: 180px;
     
   }
-  
+  .wrapper{
+    height: 500px;
+  }
+  .wrapper2{
+    height: 550px;
+  }  
  
 }
+
+
 @media (max-width:997px) {
   .schdp{
     border-radius: 14px;
@@ -476,7 +485,7 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   .wrapper{
     width: 100%;
     /* background: url("./images/re"); */
-    height: 300px;
+    height: 250px;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
@@ -489,7 +498,12 @@ border: 0.95px solid var(--plural-code-blue, #222057);
     position: relative;
     background-size:contain;
   }
- 
+  .video{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: none;
+  }
   
   .playimg{
   position: absolute;
@@ -499,8 +513,8 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   .playimg img{
     width: 50px;
   }
-  .video{
-    height: 400px;
+  .vid{
+    margin-top: 25%;
    }
   .ex{
     display: none;
@@ -530,4 +544,32 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   .world-text,.world-text2{
     width: 170px;
   }
+}
+
+@media (min-width:750px) and (max-width:980px) {
+  .wrapper{
+    width: 100%;
+    /* background: url("./images/re"); */
+    height: 500px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .wrapper2{
+    width: 100%;
+    background: #FFFDFA;
+    height: 500px;
+    position: relative;
+    background-size:contain;
+  }
+  .vid{
+    margin-top: 10%;
+   }
+}
+@media (min-width:500px) and (max-width:550px) {
+  
+  .vid{
+    margin-top: 10%;
+   }
 }

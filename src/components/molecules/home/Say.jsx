@@ -15,7 +15,7 @@ const Say = () => {
   return (
     <div className="px-4 lg:px-14 py-20 lg:py-14 say-box">
       <div className="w-20 h-2 rounded-2xl my-2 bg-corange"></div>
-      <p className="w-max relative text-cdark font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
+      <p className="w-full md:w-max relative text-cdark font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
         What Our <span className="text-corange">Students Say </span>
         <span className="hidden lg:block absolute w-[100px] h-full top-[50%] -right-[27%]"><Logo src={curve} alt="" className="w-full"/></span>
       </p>

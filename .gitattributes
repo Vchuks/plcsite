@@ -44,4 +44,8 @@
 /dist.zip filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/Thumb[[:space:]]001-04.jpg filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/thumb.jpg filter=lfs diff=lfs merge=lfs -text
+/src/assets/fonts/Gilroy-Black.ttf filter=lfs diff=lfs merge=lfs -text
+/src/assets/images/Group[[:space:]]20667.png filter=lfs diff=lfs merge=lfs -text
+/src/assets/images/qa.png filter=lfs diff=lfs merge=lfs -text
+/src/assets/images/sdc.png filter=lfs diff=lfs merge=lfs -text
 * !text !filter !merge !diff

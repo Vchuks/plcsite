@@ -34,6 +34,10 @@
   font-family: gexbold;
   src: url("./assets/fonts/Gilroy-ExtraBold.ttf");
 }
+@font-face {
+  font-family: gblack;
+  src: url("./assets/fonts/Gilroy-Black.ttf");
+}
 body{
   background-color: #fff;
   font-family: aristregular;
@@ -431,6 +435,7 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   .wrapper2{
     height: 550px;
   }  
+  
  
 }
 

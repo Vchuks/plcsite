@@ -14,6 +14,7 @@ import Tuition from './components/pages/Tuition'
 import Partnership from './components/pages/Partnership'
 import Faq from './components/pages/Faq'
 import Why from './components/pages/Why'
+import Verify from './components/pages/Verify'
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <Route path='faq' element= {<Faq/>}/>
       <Route path='why_pluralcode' element= {<Why/>}/>
       <Route path='partnership' element= {<Partnership/>}/>
+      <Route path='verify_certificate' element= {<Verify/>}/>
       <Route path='*' element= {<p className='h-[20vh] p-4 lg:px-14 w-full text-4xl flex items-center '>Page not found!!!</p>}/>
 
     </Routes>

@@ -57,6 +57,7 @@ const Navbar = () => {
                 
                 <TextLink to="/why_pluralcode" className="text-cdark " body="Why Pluralcode"/>
                 <TextLink to="/partnership" className="text-cdark " body="Partner with us"/>
+                <TextLink to="/verify_certificate" className="text-cdark " body="Verify Certificate"/>
             </div>
         </div>}
         </div>
@@ -111,6 +112,7 @@ const Navbar = () => {
         <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                 <TextLink to="/why_pluralcode" className="text-cdark text-sm" body="Why Pluralcode" onClick={closeNav}/>
                 <TextLink to="/partnership" className="text-cdark text-sm" body="Partner with us" onClick={closeNav}/>
+                <TextLink to="/verify_certificate" className="text-cdark text-sm" body="Verify Certificate" onClick={closeNav}/>
             </div>
         </div>}
         </div>

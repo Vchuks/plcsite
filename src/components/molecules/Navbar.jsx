@@ -24,6 +24,8 @@ const Navbar = () => {
   }
   const closeNav=()=>{
     setSmallNav(!smallNav)
+    setSchdp(false)
+    setMoredp(false)
   }
 
   return (
@@ -42,6 +44,7 @@ const Navbar = () => {
                 <TextLink to="/school/data" className="text-cdark" body="Data School"/>
                 <TextLink to="/school/programming" className="text-cdark" body="Programming School"/>
                 <TextLink to="/school/cloud" className="text-cdark" body="Cloud School"/>
+                <TextLink to="/school/emerging_technologies" className="text-cdark" body="Emerging Technologies"/>
             </div>
         </div>}
         </div>
@@ -96,6 +99,7 @@ const Navbar = () => {
                 <TextLink to="/school/data" className="text-sm text-cdark" body="Data School" onClick={closeNav}/>
                 <TextLink to="/school/programming" className="text-sm text-cdark" body="Programming School" onClick={closeNav}/>
                 <TextLink to="/school/cloud" className="text-sm text-cdark" body="Cloud School" onClick={closeNav}/>
+                <TextLink to="/school/emerging_technologies" className="text-sm text-cdark" body="Emerging Technologies" onClick={closeNav}/>
             </div>
         </div>}
         </div>

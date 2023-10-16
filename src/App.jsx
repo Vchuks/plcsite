@@ -15,6 +15,7 @@ import Partnership from './components/pages/Partnership'
 import Faq from './components/pages/Faq'
 import Why from './components/pages/Why'
 import Verify from './components/pages/Verify'
+import EmergingTech from './components/pages/EmergingTech'
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <Route path='school/data' element= {<Data/>}/>
       <Route path='school/programming' element= {<Programming/>}/>
       <Route path='school/cloud' element= {<Cloud/>}/>
+      <Route path='school/emerging_technologies' element= {<EmergingTech/>}/>
       <Route path='tuition' element= {<Tuition/>}/>
       <Route path='faq' element= {<Faq/>}/>
       <Route path='why_pluralcode' element= {<Why/>}/>

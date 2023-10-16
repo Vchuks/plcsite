@@ -58,14 +58,14 @@ const Verify = () => {
  
   return (
     <div>
-      <div className="px-4 lg:ps-14 lg:pe-0 py-10 lg:pt-8 lg:pb-0 flex flex-col lg:flex-row items-center gap-4 lg:gap-0">
+      <div className="px-4 lg:ps-14 lg:pe-0 pt-10 lg:pt-8 lg:pb-0 flex flex-col lg:flex-row items-center gap-4 lg:gap-0">
         <div className="w-full">
           <p className="font-['gblack'] text-4xl lg:text-[64px] xxxl:text-[120px] text-cblue leading-tight">
             Verify <span className="text-corange">Our Student</span> Credentials
           </p>
           <Text
             className="w-full lg:w-[70%] lg:text-lg xxxl:w-[60%] xxxl:text-[32px] xxxl:leading-snug py-2 text-cdark font-['gsemibold']"
-            body="Enter the identification number of our students to verify their individual credentials."
+            body="Enter the identification number of our students to verify their individual credentials."
           />
           <div className="flex w-full lg:w-[70%] xxxl:w-[60%] rounded mt-4 xxxl:mt-8">
             <input

@@ -48,4 +48,5 @@
 /src/assets/images/Group[[:space:]]20667.png filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/qa.png filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/sdc.png filter=lfs diff=lfs merge=lfs -text
+/src/assets/images/emergingpic.png filter=lfs diff=lfs merge=lfs -text
 * !text !filter !merge !diff

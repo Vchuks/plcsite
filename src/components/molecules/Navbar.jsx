@@ -38,13 +38,15 @@ const Navbar = () => {
           <Text className="" body="Schools" />
           <FaChevronDown className="text-xs" />
         {/* school drop down */}
-        {schdp &&<div className="w-[300px] absolute top-full mt-[2px] font['gmedium'] bg-white schdp p-5 lg:p-6 gap-4 text-black flex">
+        {schdp &&<div className="w-[300px] absolute top-full mt-[2px] font['gmedium'] bg-white z-10 schdp p-5 lg:p-6 gap-4 text-black flex">
             <div className="flex flex-col gap-2 text-sm xxxl:text-xl font-['gmedium']">
                 <TextLink to="/school/product" className="text-cdark" body="Product School"/>
                 <TextLink to="/school/data" className="text-cdark" body="Data School"/>
                 <TextLink to="/school/programming" className="text-cdark" body="Programming School"/>
                 <TextLink to="/school/cloud" className="text-cdark" body="Cloud School"/>
                 <TextLink to="/school/emerging_technologies" className="text-cdark" body="Emerging Technologies"/>
+                <TextLink to="/school/digital_economy" className="text-cdark" body="Digital Economy"/>
+                <TextLink to="/school/business" className="text-cdark" body="Business School"/>
             </div>
         </div>}
         </div>
@@ -100,6 +102,8 @@ const Navbar = () => {
                 <TextLink to="/school/programming" className="text-sm text-cdark" body="Programming School" onClick={closeNav}/>
                 <TextLink to="/school/cloud" className="text-sm text-cdark" body="Cloud School" onClick={closeNav}/>
                 <TextLink to="/school/emerging_technologies" className="text-sm text-cdark" body="Emerging Technologies" onClick={closeNav}/>
+                <TextLink to="/school/digital_economy" className="text-sm text-cdark" body="Digital Economy" onClick={closeNav}/>
+                <TextLink to="/school/business" className="text-sm text-cdark" body="Business" onClick={closeNav}/>
             </div>
         </div>}
         </div>

@@ -1,7 +1,8 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import { Suspense, lazy } from "react";
 import Navbar from './components/molecules/Navbar'
-import Home from './components/pages/Home'
+const Home = lazy(()=> import('./components/pages/Home')) 
 import Footer from './components/molecules/Footer'
 import { useLocation } from "react-router-dom";
 import NavbarTwo from './components/molecules/NavbarTwo'
@@ -16,6 +17,10 @@ import Faq from './components/pages/Faq'
 import Why from './components/pages/Why'
 import Verify from './components/pages/Verify'
 import EmergingTech from './components/pages/EmergingTech'
+import CreativeMotion from './components/sub-pages/CreativeMotion';
+const DigitalEconomy = lazy(()=> import('./components/pages/DigitalEconomy'))
+const Business = lazy(()=> import('./components/pages/Business'))
+
 
 
 function App() {
@@ -41,12 +46,23 @@ function App() {
     <>
       {navbar}
     <Routes>
-      <Route path='/' element = {<Home/>}/>
+      <Route path='/' element = {<Suspense fallback={<p>Loading...</p>}>
+        <Home />
+      </Suspense>}/>
       <Route path='school/product' element= {<Product/>}/>
       <Route path='school/data' element= {<Data/>}/>
       <Route path='school/programming' element= {<Programming/>}/>
       <Route path='school/cloud' element= {<Cloud/>}/>
       <Route path='school/emerging_technologies' element= {<EmergingTech/>}/>
+      <Route path='school/digital_economy' element= {<Suspense fallback={<p>Loading...</p>}>
+        <DigitalEconomy />
+      </Suspense>}/>
+      <Route path='school/digital_economy/creative_&_motion' element= {<Suspense fallback={<p>Loading...</p>}>
+        <CreativeMotion />
+      </Suspense>}/>
+      <Route path='school/business' element= {<Suspense fallback={<p>Loading...</p>}>
+        <Business />
+      </Suspense>}/>
       <Route path='tuition' element= {<Tuition/>}/>
       <Route path='faq' element= {<Faq/>}/>
       <Route path='why_pluralcode' element= {<Why/>}/>

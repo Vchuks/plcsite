@@ -151,6 +151,10 @@ background: #FFF8EE;
   height: 130px;
   font-family: gmedium;
 }
+.sboxx{
+  height: 150px;
+  font-family: gmedium;
+}
 .talent-box{
   background: #f8991d0d;
 }
@@ -401,6 +405,7 @@ select {
 pre{
   font-family: gsemibold;
   white-space:pre-line ;
+  display: block;
 }
 .faqborder{
   border-radius: 16px;
@@ -411,6 +416,9 @@ box-shadow: 0px 0.8869680762290955px 1.773936152458191px -0.8869680762290955px r
   border-radius: 64px 0px;
 border: 0.95px solid var(--plural-code-blue, #222057);
 }
+.econw{
+  width: 20%;
+}
 
 
 @media (min-width:1023px) and (max-width:1025px) {
@@ -420,6 +428,12 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   }
   .sb{
     height: 380px;
+  }
+  .econw{
+    width: 0;
+  }
+  .econh{
+    height: 410px;
   }
   .newseach{
     width: 100%;

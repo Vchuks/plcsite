@@ -44,7 +44,7 @@ const News = () => {
         </div>
         <div className="flex flex-col gap-14">
           <div data-aos="zoom-in-up" data-aos-duration="2000">
-        <div className="relative newseach newsbg p-  2xl:h-full 2xl:w-10/12">
+        <div className="relative newseach newsbg p-6  2xl:h-full 2xl:w-10/12">
             <div className="lg:h-40  2xl:h-full">
               <Logo
                 src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/p12.png"

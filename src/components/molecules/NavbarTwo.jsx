@@ -45,6 +45,8 @@ const NavbarTwo = () => {
                 <TextLink to="/school/programming" className=" text-cdark" body="Programming School"/>
                 <TextLink to="/school/cloud" className=" text-cdark" body="Cloud School"/>
                 <TextLink to="/school/emerging_technologies" className=" text-cdark" body="Emerging Technologies" />
+                <TextLink to="/school/digital_economy" className="text-cdark" body="Digital Economy"/>
+                <TextLink to="/school/business" className="text-cdark" body="Business School"/>
             </div>
         </div>}
         </div>
@@ -100,6 +102,8 @@ const NavbarTwo = () => {
                 <TextLink to="/school/programming" className="text-sm text-cdark" body="Programming School" onClick={closeNav}/>
                 <TextLink to="/school/cloud" className="text-sm text-cdark" body="Cloud School" onClick={closeNav}/>
                 <TextLink to="/school/emerging_technologies" className="text-sm text-cdark" body="Emerging Technologies" onClick={closeNav}/>
+                <TextLink to="/school/digital_economy" className="text-sm text-cdark" body="Digital Economy" onClick={closeNav}/>
+                <TextLink to="/school/business" className="text-sm text-cdark" body="Business" onClick={closeNav}/>
             </div>
         </div>}
         </div>

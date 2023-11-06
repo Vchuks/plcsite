@@ -8,7 +8,7 @@ import curve3 from "../../../../assets/images/Vector 11.png";
 
 const ProgrammingHero = () => {
   return (
-    <div className="flex flex-col items-center lg:flex-row bg-[#F5F6FA] px-4 lg:px-14 py-8 lg:py-0 gap-6">
+    <div className="flex flex-col items-center lg:flex-row bg-[#F5F6FA] px-4 lg:px-14 pb-4 lg:py-0 gap-6">
       <div className="lg:w-7/12 2xl:w-full relative"data-aos="fade-up" data-aos-duration="2000" >
         <div className="hidden lg:block absolute w-[70px] top-1 right-[22%] 2xl:right-[26%] xxxl:right-[35%] xxxl:w-[100px]">
           <Logo src={curve1} alt="" className="w-full" />

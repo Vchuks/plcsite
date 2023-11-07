@@ -18,6 +18,10 @@ import Why from './components/pages/Why'
 import Verify from './components/pages/Verify'
 import EmergingTech from './components/pages/EmergingTech'
 import CreativeMotion from './components/sub-pages/CreativeMotion';
+import Art from './components/sub-pages/Art';
+import Content from './components/sub-pages/Content';
+import Excel from './components/sub-pages/Excel';
+import { DataProvider } from './contextData/DigitalContent';
 const DigitalEconomy = lazy(()=> import('./components/pages/DigitalEconomy'))
 const Business = lazy(()=> import('./components/pages/Business'))
 
@@ -45,6 +49,7 @@ function App() {
   return (
     <>
       {navbar}
+      <DataProvider>
     <Routes>
       <Route path='/' element = {<Suspense fallback={<p>Loading...</p>}>
         <Home />
@@ -60,6 +65,15 @@ function App() {
       <Route path='school/digital_economy/creative_&_motion' element= {<Suspense fallback={<p>Loading...</p>}>
         <CreativeMotion />
       </Suspense>}/>
+      <Route path='school/digital_economy/art' element= {<Suspense fallback={<p>Loading...</p>}>
+        <Art />
+      </Suspense>}/>
+      <Route path='school/digital_economy/content_creation' element= {<Suspense fallback={<p>Loading...</p>}>
+        <Content />
+      </Suspense>}/>
+      <Route path='school/digital_economy/excel' element= {<Suspense fallback={<p>Loading...</p>}>
+        <Excel />
+      </Suspense>}/>
       <Route path='school/business' element= {<Suspense fallback={<p>Loading...</p>}>
         <Business />
       </Suspense>}/>
@@ -71,6 +85,7 @@ function App() {
       <Route path='*' element= {<p className='h-[20vh] p-4 lg:px-14 w-full text-4xl flex items-center '>Page not found!!!</p>}/>
 
     </Routes>
+    </DataProvider>
     <Footer/>
     </>
   )

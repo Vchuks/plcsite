@@ -82,7 +82,7 @@ const Hero = () => {
         <div className="border 2xl:w-[500px] xxxl:w-[700px] rounded-2xl gap-5 2xl:my-6 my-4 border-corange selectdiv flex flex-col lg:flex-row items-center px-6 justify-between py-4 xxxl:py-6">
           <select className="w-full outline-none px-3 flex items-center justify-center text-sm text-cblue rounded bg-white pt-4 2xl:pt-5 2xl:pb-5  pb-3  ">
             <option className=" text-center">Select Course</option>
-            {entcou.map((each) => (
+            {entcou?.map((each) => (
               <option className="px-2" key={each.id}>{each.name}</option>
               ))}
           </select>

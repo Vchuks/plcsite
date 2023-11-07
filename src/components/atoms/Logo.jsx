@@ -1,8 +1,8 @@
 import PropTypes from "prop-types" 
 
-const Logo = ({src, alt, className}) => {
+const Logo = ({src, alt, className, ...rest}) => {
   return (
-    <img src={src} alt={alt} className={className}/>
+    <img src={src} alt={alt} className={className} {...rest}/>
   )
 }
 

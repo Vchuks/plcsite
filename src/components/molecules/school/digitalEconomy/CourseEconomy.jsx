@@ -24,7 +24,7 @@ const CourseEconomy = () => {
             className="w-full"
             data-aos-duration="2000"
           >
-            <div className="relative w-full school p-3 flex flex-col justify-between sb econh">
+            <TextLink to="art" body={<div className="relative w-full school p-3 flex flex-col justify-between sb econh">
               <div>
                 <Logo
                   src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/Frame71.png"
@@ -53,7 +53,7 @@ const CourseEconomy = () => {
                 </div>
               </div>
               <div className="absolute schoolback bg-cblue"></div>
-            </div>
+            </div>} />
           </div>
           <div
             data-aos="zoom-in-up"
@@ -96,7 +96,7 @@ const CourseEconomy = () => {
             data-aos-duration="2000"
             className="w-full"
           >
-            <div className="relative sb econh w-full school p-3 flex flex-col justify-between">
+            <TextLink to='content_creation' body={<div className="relative sb econh w-full school p-3 flex flex-col justify-between">
               <div>
                 <Logo
                   src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/Frame24.png"
@@ -125,14 +125,14 @@ const CourseEconomy = () => {
                 </div>
               </div>
               <div className="absolute schoolback bg-corange"></div>
-            </div>
+            </div>}/>
           </div>
           <div
             data-aos="zoom-in-up"
             data-aos-duration="2000"
             className="w-full"
           >
-            <div className="relative sb econh w-full school p-3 flex flex-col justify-between">
+           <TextLink to='excel' body={<div className="relative sb econh w-full school p-3 flex flex-col justify-between">
               <div>
                 <Logo
                   src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/Frame98.png"
@@ -161,8 +161,8 @@ const CourseEconomy = () => {
                 </div>
               </div>
               <div className="absolute schoolback bg-white"></div>
-            </div>
-          </div>
+            </div>}
+/>          </div>
         </div>
       </div>
       <div className="flex flex-col w-11/12 m-auto lg:w-full lg:flex-row gap-8 pt-6 lg:gap-4 xxxl:gap-16 mt-6 xxxl:mt-12">

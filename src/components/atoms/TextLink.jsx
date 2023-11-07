@@ -9,7 +9,7 @@ const TextLink = ({className,body,to, ...rest}) => {
 }
 
 TextLink.propTypes = {
-    className:PropTypes.string.isRequired,
+    className:PropTypes.string,
     body:PropTypes.any.isRequired,
     to:PropTypes.string.isRequired
 };

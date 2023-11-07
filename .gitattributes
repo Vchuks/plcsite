@@ -49,4 +49,7 @@
 /src/assets/images/qa.png filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/sdc.png filter=lfs diff=lfs merge=lfs -text
 /src/assets/images/emergingpic.png filter=lfs diff=lfs merge=lfs -text
+/src/assets/images/Rectangle[[:space:]]1738[[:space:]](1).png filter=lfs diff=lfs merge=lfs -text
+/src/assets/images/Rectangle[[:space:]]1738[[:space:]](3).png filter=lfs diff=lfs merge=lfs -text
+/src/assets/images/Rectangle[[:space:]]1738.png filter=lfs diff=lfs merge=lfs -text
 * !text !filter !merge !diff

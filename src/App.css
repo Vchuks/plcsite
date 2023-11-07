@@ -420,6 +420,82 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   width: 20%;
 }
 
+.listStyle li{
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+.listStyle li:before{
+ content:"•"; font-size:15px; vertical-align:top; padding-right:7px; position: absolute; left: 0;
+}
+.digitalcourse{
+  border-radius: 0px 0px 24px 24px;
+  background: #FFF;
+  box-shadow: 0px 2.71705px 62.03182px -2.03779px rgba(16, 24, 40, 0.05), 0px -6.79287px 15.3165px -1.69816px rgba(16, 24, 40, 0.05);
+}
+.selectDig {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0.5em 2em 0.5em 0.5em;
+  font: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-image: url(./assets/images/angle-small-down.png);
+  background-position: right 5% top 1em, right 5% top 1em;
+  background-size:25px  ;
+  background-color: #232323;
+}
+.wrapperc{
+  background-image: url('/src/assets/images/Rectangle\ 1738.png');
+  width: 100%;
+  height: 310px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+.wrapperart{
+  background-image: url('/src/assets/images/Rectangle\ 1738\ \(3\).png');
+  width: 100%;
+  height: 310px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+.wrappercontent{
+  background-image: url('/src/assets/images/Rectangle\ 1738\ \(1\).png');
+  width: 100%;
+  height: 310px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+.wrapperexcel{
+  background-image: url('/src/assets/images/Rectangle\ 1738\ \(2\).png');
+  width: 100%;
+  height: 310px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+.wrapperc2{
+  width: 100%;
+  background: #FFFDFA;
+  height: 310px;
+  position: relative;
+  background-size: cover;
+}
+.exx{
+  display: none;
+  position: absolute;
+  left:15px;
+  top:20px;
+}
+
+
 
 @media (min-width:1023px) and (max-width:1025px) {
   .sbox{
@@ -563,6 +639,9 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   .world-text,.world-text2{
     width: 170px;
   }
+  .wrapperc, .wrapperart, .wrappercontent, .wrapperexcel{
+    height: 250px;
+   }
 }
 
 @media (min-width:750px) and (max-width:980px) {
@@ -584,6 +663,10 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   }
   .vid{
     margin-top: 10%;
+   }
+   .wrapperc, .wrapperart, .wrappercontent, .wrapperexcel{
+    height: 500px;
+    background-size: contain;
    }
 }
 @media (min-width:500px) and (max-width:550px) {

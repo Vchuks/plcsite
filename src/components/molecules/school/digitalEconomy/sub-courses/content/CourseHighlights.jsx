@@ -1,29 +1,32 @@
-import Logo from "../../../../atoms/Logo";
-import Text from "../../../../atoms/Text";
-import picone from '../../../../../assets/images/Frame 20686.png'
-import pictwo from '../../../../../assets/images/Frame 20686 (1).png'
-import picthree from '../../../../../assets/images/Frame 20686 (2).png'
-import picfour from '../../../../../assets/images/Frame 20686 (3).png'
-import picfive from '../../../../../assets/images/Frame 20686 (4).png'
-import DigitalContent from "../../../../../contextData/DigitalContent";
+import Logo from "../../../../../atoms/Logo";
+import Text from "../../../../../atoms/Text";
+import picone from '../../../../../../assets/images/Frame 20686.png'
+import pictwo from '../../../../../../assets/images/Frame 20686 (1).png'
+import picthree from '../../../../../../assets/images/Frame 20686 (2).png'
+import picfour from '../../../../../../assets/images/Frame 20686 (3).png'
+import picfive from '../../../../../../assets/images/Frame 20686 (4).png'
+import DigitalContent from "../../../../../../contextData/DigitalContent";
 import { useContext } from "react";
 
 const CourseHighlights = () => {
     const {digital} = useContext(DigitalContent)
   const numFor = Intl.NumberFormat("en-US");
 
-  const text = `<li>Introduction to Graphics Design & Design Elements.</li>
-<li>Principles of modern design and how users respond to your style.</li>
-<li>Explore the dynamic trends & styles, discovering how they shape individual and brand identities.</li>
-<li>How to Navigate Adobe Photoshop and use all the tools within the toolbar.</li>
-<li>Understand background removal, photo retouching and photo healing.</li>
-<li>Introduction to Animation and different Animation styles.</li>
-<li>How to create short-stop motion animation.</li>
-<li>Character Design, Storyboarding and how to setup a story board for your animation.</li>
-<li>Motion graphics tools like Adobe After Effects.</li>
-<li>Character Rigging.</li>
-<li>2D Animation.</li>
-    `;
+  const text = `<li>Introduction to Content Creation.</li>
+  <li>Exploring various content types.</li>
+  <li>The role of content in marketing.</li>
+  <li>Content Strategy & Planning.</li>
+  <li>Creating a Video Marketing Strategy.</li>
+  <li>Tailoring your style to your audience.</li>
+  <li>Storytelling.</li>
+  <li>Social Media strategy.</li>
+  <li>Audio & Visual content strategy</li>
+  <li>Setting up a recording studio</li>
+  <li>User-Generated content (UGC)</li>
+  <li>Lead generation through content creation.</li>
+  <li>Social media Analytics Tools</li>
+  <li>Converting content to fame, power and cashflow: Case Studies from the most famous influencers, Celebrities and Entrepreneurs</li>
+   `;
 
   const textTwo = `In addition to learning everything listed above, you will be exposed to soft-skills training for how they can use this skills for wealth creation through freelancing, and employment. You will learn how to design and position your portfolio to attract international attention, as well as how to set yourself up for continuous growth and development into more advanced roles and more high paying positions and careers. 
     
@@ -45,10 +48,10 @@ const CourseHighlights = () => {
       <div className="lg:w-[65%] digitalcourse pt-8">
         <div className="w-[90%] m-auto text-center">
         <p className="text-corange font-[gbold] text-[30px] lg:text-[40px]">
-            N {numFor.format(digital[1]?.ngn_price)}
+            N {numFor.format(digital[2]?.ngn_price)}
             <span className="text-cgray text-xl lg:text-2xl font-[gmedium]">
               {" "}
-              | N <span className="line-through">{numFor.format(digital[1]?.ngn_offset)}</span>
+              | N <span className="line-through">{numFor.format(digital[2]?.ngn_offset)}</span>
             </span>
           </p>
           <Text
@@ -63,7 +66,7 @@ const CourseHighlights = () => {
           </div>
         <div className="flex flex-col gap-6 my-4">
             <hr className="w-full mt-2 mb-3"/>
-            <button className="p-4 bg-corange rounded-[10px] text-white font-[gsemibold]">Pay {numFor.format(digital[1]?.ngn_price)}</button>
+            <button className="p-4 font-[gsemibold] bg-corange rounded-[10px] text-white">Pay {numFor.format(digital[2]?.ngn_price)}</button>
             <button className=" border p-4 rounded-[10px] bg-white text-corange border-corange">Chat with Student Advisor</button>
         </div>
         <div className="flex flex-col gap-6 py-4">

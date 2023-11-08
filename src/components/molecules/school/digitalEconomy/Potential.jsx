@@ -33,7 +33,7 @@ const Potential = () => {
           <div className="w-full" data-aos="fade-up"
         data-aos-duration="2000">
             <p className="text-cblue font-['aristsemibold'] text-2xl lg:text-[40px] xxxl:text-8xl py-2"><span className="text-corange">Become a</span> Leader In The Age of Digital Transformation.</p>
-            <pre className="font-['gregular'] xxxl:text-[32px] ">
+            <pre className="font-['gregular'] xxxl:text-[32px] pb-4 ">
             {textPontential}
             </pre>
           </div>

@@ -7,6 +7,7 @@ import picfour from '../../../../../../assets/images/Frame 20686 (3).png'
 import picfive from '../../../../../../assets/images/Frame 20686 (4).png'
 import DigitalContent from "../../../../../../contextData/DigitalContent";
 import { useContext } from "react";
+import TextLink from "../../../../../atoms/TextLink";
 
 const CourseHighlights = () => {
     const {digital, cohort} = useContext(DigitalContent)
@@ -70,7 +71,7 @@ const CourseHighlights = () => {
         <div className="flex flex-col gap-6 my-4">
             <hr className="w-full mt-2 mb-3"/>
             <button className="p-4 bg-corange rounded-[10px] font-[gsemibold] text-white">Pay {numFor.format(digital[3]?.ngn_price)}</button>
-            <button className=" border p-4 rounded-[10px] bg-white text-corange border-corange">Chat with Student Advisor</button>
+            <TextLink to="https://pluralcode.academy/apply" className='w-full' body={<button className="w-full border p-4 rounded-[10px] bg-white text-corange border-corange">Chat with Student Advisor</button>} />
         </div>
         <div className="flex flex-col gap-6 py-4">
         <div className="flex gap-6 text-start">

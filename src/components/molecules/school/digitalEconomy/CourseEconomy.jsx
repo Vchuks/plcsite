@@ -9,7 +9,7 @@ import { useContext } from "react";
 const CourseEconomy = () => {
   const {digital} = useContext(DigitalContent)
   const numFor = Intl.NumberFormat("en-US");
-console.log(digital)
+
   return (
     <div className="school-box px-4 lg:px-14 py-20 lg:py-14" id="school">
       <div className="w-20 h-2 rounded-2xl my-2 bg-corange"></div>
@@ -28,7 +28,7 @@ console.log(digital)
             className="w-full"
             data-aos-duration="2000"
           >
-            <TextLink to="art" body={<div className="relative w-full school p-3 flex flex-col justify-between sb econh">
+            <TextLink to="art_of_selling" body={<div className="relative w-full school p-3 flex flex-col justify-between sb econh">
               <div>
                 <Logo
                   src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/Frame71.png"
@@ -64,7 +64,7 @@ console.log(digital)
             data-aos-duration="2000"
             className="w-full"
           >
-            <TextLink to="creative_&_motion" body={<div className="relative sb econh w-full school p-3 flex flex-col justify-between">
+            <TextLink to="creative_design" body={<div className="relative sb econh w-full school p-3 flex flex-col justify-between">
               <div>
                 <Logo
                   src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/Frame93.png"
@@ -136,7 +136,7 @@ console.log(digital)
             data-aos-duration="2000"
             className="w-full"
           >
-           <TextLink to='excel' body={<div className="relative sb econh w-full school p-3 flex flex-col justify-between">
+           <TextLink to='advanced_excel' body={<div className="relative sb econh w-full school p-3 flex flex-col justify-between">
               <div>
                 <Logo
                   src="https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/Frame98.png"
@@ -275,7 +275,7 @@ console.log(digital)
               />
               <Text
                 className="sbox text-cdark py-2"
-                body="As a Virtual Assistant, you can make money working for top Executives and Investors from home."
+                body="As a Virtual Assistant, you can make money working for top Executives and Investors from home. Learn how it’s done."
               />
               <div className="">
                 

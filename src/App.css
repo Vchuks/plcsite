@@ -525,6 +525,10 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   .wrapper2{
     height: 550px;
   }  
+  .wrapperc, .wrapperart, .wrappercontent, .wrapperexcel{
+    height: 210px;
+    border-radius: 20px;
+   }
   
  
 }

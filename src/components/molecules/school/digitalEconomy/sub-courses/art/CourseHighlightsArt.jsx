@@ -9,7 +9,7 @@ import DigitalContent from "../../../../../../contextData/DigitalContent";
 import { useContext } from "react";
 
 const CourseHighlights = () => {
-  const {digital} = useContext(DigitalContent)
+  const {digital, cohort} = useContext(DigitalContent)
   const numFor = Intl.NumberFormat("en-US");
   
   const text = `<li>Introduction to Tech Sales and Business Development.</li>
@@ -62,7 +62,7 @@ const CourseHighlights = () => {
           <div className="w-11/12 m-auto text-start my-4">
             <label className="py-2">Cohort (Start Month)</label>
             <select className="selectDig w-full font-[gmedium] outline-none border border-[#22205747] px-3 flex items-center justify-center text-sm text-cdark rounded-[10px] bg-white pt-4 2xl:pt-5 2xl:pb-5  pb-3 ">
-              <option className="px-2">November 2023</option>
+              <option className="px-2">{cohort[0]?.name}</option>
             </select>
           </div>
           <div className="flex flex-col gap-6 my-4">
@@ -140,7 +140,7 @@ const CourseHighlights = () => {
                 />
                 <Text
                   className="font-[gbold] text-cgray text-xl lg:text-[32px]"
-                  body="November 25th, 2023"
+                  body={cohort[0]?.name}
                 />
               </div>
             </div>

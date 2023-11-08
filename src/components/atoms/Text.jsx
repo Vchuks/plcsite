@@ -6,7 +6,7 @@ const Text = ({className, body, ...rest}) => {
   )
 }
 Text.propTypes = {
-    body: PropTypes.string.isRequired,
+    body: PropTypes.string,
     className: PropTypes.string.isRequired
 }
 export default Text

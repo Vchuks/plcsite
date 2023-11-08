@@ -450,7 +450,7 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   background-color: #232323;
 }
 .wrapperc{
-  background-image: url('/src/assets/images/Rectangle\ 1738.png');
+  background-image: url('https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/t3.png');
   width: 100%;
   height: 310px;
   position: relative;
@@ -458,7 +458,7 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   background-repeat: no-repeat; 
 }
 .wrapperart{
-  background-image: url('/src/assets/images/Rectangle\ 1738\ \(3\).png');
+  background-image: url('https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/t6.png');
   width: 100%;
   height: 310px;
   position: relative;
@@ -466,7 +466,7 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   background-repeat: no-repeat; 
 }
 .wrappercontent{
-  background-image: url('/src/assets/images/Rectangle\ 1738\ \(1\).png');
+  background-image: url('https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/t2.png');
   width: 100%;
   height: 310px;
   position: relative;
@@ -474,7 +474,7 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   background-repeat: no-repeat; 
 }
 .wrapperexcel{
-  background-image: url('/src/assets/images/Rectangle\ 1738\ \(2\).png');
+  background-image: url('https://bulletsaintseverus911.s3.eu-west-3.amazonaws.com/t1.png');
   width: 100%;
   height: 310px;
   position: relative;

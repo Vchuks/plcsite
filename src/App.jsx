@@ -62,16 +62,16 @@ function App() {
       <Route path='school/digital_economy' element= {<Suspense fallback={<p>Loading...</p>}>
         <DigitalEconomy />
       </Suspense>}/>
-      <Route path='school/digital_economy/creative_&_motion' element= {<Suspense fallback={<p>Loading...</p>}>
+      <Route path='school/digital_economy/creative_design' element= {<Suspense fallback={<p>Loading...</p>}>
         <CreativeMotion />
       </Suspense>}/>
-      <Route path='school/digital_economy/art' element= {<Suspense fallback={<p>Loading...</p>}>
+      <Route path='school/digital_economy/art_of_selling' element= {<Suspense fallback={<p>Loading...</p>}>
         <Art />
       </Suspense>}/>
       <Route path='school/digital_economy/content_creation' element= {<Suspense fallback={<p>Loading...</p>}>
         <Content />
       </Suspense>}/>
-      <Route path='school/digital_economy/excel' element= {<Suspense fallback={<p>Loading...</p>}>
+      <Route path='school/digital_economy/advanced_excel' element= {<Suspense fallback={<p>Loading...</p>}>
         <Excel />
       </Suspense>}/>
       <Route path='school/business' element= {<Suspense fallback={<p>Loading...</p>}>

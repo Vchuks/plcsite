@@ -1,6 +1,6 @@
 import Logo from "../../atoms/Logo";
 import Text from "../../atoms/Text";
-import { MdOutlineTimer } from "react-icons/md";
+// import { MdOutlineTimer } from "react-icons/md";
 import curve from "../../../assets/images/Vector 6.png";
 
 
@@ -9,7 +9,7 @@ const CourseBusiness = () => {
     <div className="school-box px-4 lg:px-14 py-20 lg:py-14" id="school">
       <div className="w-20 h-2 rounded-2xl my-2 bg-corange"></div>
       <p className="text-corange font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl relative w-max mb-20">
-      <span className="text-cdark">Business </span> School <span className="text-cdark">Course </span>
+      <span className="text-cdark"> </span> Available <span className="text-cdark">Courses </span>
         <span className="hidden lg:block absolute w-[100px] h-full -right-28 top-[30px]"><Logo src={curve} alt="" className="w-full"/></span>
       </p>
       <div className="flex w-11/12 m-auto lg:w-full lg flex-col lg:flex-row gap-8 pt-6 lg:gap-4 xxxl:gap-16">
@@ -39,7 +39,7 @@ const CourseBusiness = () => {
                 className="sbox text-cdark py-2"
                 body="Launch a career in Product Design, SCRUM, Agile and Product Management."
               />
-              <div className="flex justify-between items-center font-['gbold']">
+              {/* <div className="flex justify-between items-center font-['gbold']">
                 <div className="flex items-center gap-2">
                   <p className="text-corange text-sm">&#8358; 25,000</p>
                   <p className="text-xs line-through opacity-20 text-cgray">
@@ -50,7 +50,7 @@ const CourseBusiness = () => {
                   <MdOutlineTimer className="text-sm text-cgray" />
                   <p className="text-xs opacity-50">4 weeks</p>
                 </div>
-              </div>
+              </div> */}
               <div className="absolute schoolback bg-cblue"></div>
             </div>
           </div>
@@ -75,7 +75,7 @@ const CourseBusiness = () => {
                 className="sbox text-cdark py-2"
                 body="Launch a career in Product Design, SCRUM, Agile and Product Management."
               />
-              <div className="flex justify-between items-center font-['gbold']">
+              {/* <div className="flex justify-between items-center font-['gbold']">
                 <div className="flex items-center gap-2">
                   <p className="text-corange text-sm">&#8358; 25,000</p>
                   <p className="text-xs line-through opacity-20 text-cgray">
@@ -86,7 +86,7 @@ const CourseBusiness = () => {
                   <MdOutlineTimer className="text-sm text-cgray" />
                   <p className="text-xs opacity-50">4 weeks</p>
                 </div>
-              </div>
+              </div> */}
               <div className="absolute schoolback bg-cdark"></div>
             </div>
           </div>
@@ -111,7 +111,7 @@ const CourseBusiness = () => {
                 className="sbox text-cdark py-2"
                 body="Launch a career in Product Design, SCRUM, Agile and Product Management."
               />
-              <div className="flex justify-between items-center font-['gbold']">
+              {/* <div className="flex justify-between items-center font-['gbold']">
                 <div className="flex items-center gap-2">
                   <p className="text-corange text-sm">&#8358; 25,000</p>
                   <p className="text-xs line-through opacity-20 text-cgray">
@@ -122,7 +122,7 @@ const CourseBusiness = () => {
                   <MdOutlineTimer className="text-sm text-cgray" />
                   <p className="text-xs opacity-50">4 weeks</p>
                 </div>
-              </div>
+              </div> */}
               <div className="absolute schoolback bg-corange"></div>
             </div>
           </div>

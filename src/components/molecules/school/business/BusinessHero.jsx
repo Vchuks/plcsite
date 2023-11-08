@@ -21,11 +21,11 @@ const BusinessHero = () => {
           body="Welcome to Pluralcode's"
         />
         <p className="hero-text 2xl:w-[750px] 2xl:text-7xl xxxl:text-8xl leading-tight lg:leading-none pt-6 text-cblue">
-          Business <span className="text-corange">School</span>
+           <span className="text-corange">School</span> of Business
         </p>
         <Text
           className="lg:w-9/12 2xl:w-[800px] xxxl:w-[900px] xxxl:leading-tight 2xl:py-5 2xl:text-2xl py-3 lg:py-0  font-['gmedium'] text-cblue xxxl:text-3xl"
-          body="Our training is open to all without prerequisite or degree. PluralCode provides a 16 weeks, cutting-edge, full-time, and accessible web development course to help you upskill or quickly change careers. Our Web Development Course is intensive and incorporates extensive practice to help you prepare for the real world. You’ll learn coding by working on interactive websites that utilize HTML, CSS, JavaScript and more."
+          body="Pluralcode’s School of Business is designed for Startup Founders, Managers, Business Owners, Team Leads, Executives and anyone who aspires to attain one of the above positions. You will learn the skills, principles and experiences for managing and growing a successful brand and also access the needed mentorship, guidance and capital to get to the next level."
         />
 
         <div className="relative pt-4 lg:text-lg xxxl:text-2xl text-cblue flex gap-1 ">

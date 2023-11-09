@@ -3,17 +3,17 @@ import Logo from "../../../atoms/Logo";
 
 
 const PotentialBusiness = () => {
-  const textPontential = `At Pluralcode, we understand that the traditional Educational model may not cater to everyone’s needs, especially for those seeking specialized career-paths in the creative and entrepreneurial fields - such as Fashion, Dance, Music, Comedy, Community Building, Events Planning, and more!
+  const textPontential = `At Pluralcode, we understand that the world has changed. Long gone are the days when everyone relied on the traditional education system to learn wealth creation. The things that worked 50 years ago for our parents are no longer working.
+            
+  And so our approach to learning is different; learn the skills you need from the comfort of your home, office, travel, beach anywhere and acquire modern wealth creation skills that will allow you to earn more income working from anywhere in the world.
+  
+  In this model, you are truly borderless, location doesn’t affect you. You learn from anywhere and you earn from anywhere, that is the world we live in today.
 
-  In response to this vacuum, we have brought together a team of top professionals in each field to design and facilitate courses that offer practical knowledge and skills to help you succeed in your career or personal endeavors.
+  The School of Business will grant you access to our Student Portal where you will find weeks worth of expert materials to study at your own time. Additionally, you will get access to weekly classes led by some of the best in the field, where they will host practicals, answer your questions and mentor you in a live virtual environment like Zoom. Finally you will get access to a network of fellow ambitious minds who are building a career and earning income through the skill you are learning.
   
-  Whether you’re looking to launch a career in the fashion industry, hone your skills as a dancer, develop your musical talent into a global brand, master the art of negotiation, build a thriving community, or plan unforgettable events, there is a course for you.
+  Everything in this school is tailored to get your Business Career started in no time, pick a course, enroll and take the first step towards wealth creation.
   
-  Whatever stage of your career you think you are in right now - a seasoned professional or a starter, Pluralcode’s Expert-Led Courses are designed to provide you with a comprehensive learning experience that covers everything from theory to practical applications.
-  
-  You’ll learn from successful experts who have real-world experience and who are passionate about sharing their knowledge with others.
-  
-  Start your journey towards success today!!!`
+  See you in class!!!`
   return (
     <div className="bg-[#E2DDDF] px-4 lg:px-14 py-8 lg:py-0">
       <div className="py-4 mb-5">

@@ -47,7 +47,7 @@ const CourseHighlights = () => {
         ></ul>
         <pre className="font-[gregular] lg:text-lg">{textTwo}</pre>
       </div>
-      <div className="lg:w-[65%] digitalcourse pt-8">
+      <div className="lg:w-[65%] xl:w-[70%] digitalcourse pt-8">
         <div className="w-[90%] m-auto text-center">
           <p className="text-corange font-[gbold] text-[30px] lg:text-[40px]">
             N {numFor.format(digital[0]?.ngn_price)}
@@ -71,7 +71,7 @@ const CourseHighlights = () => {
             <button className="p-4 bg-corange font-[gsemibold] rounded-[10px] text-white">
               Pay N {numFor.format(digital[0]?.ngn_price)}
             </button>
-            <TextLink to="https://pluralcode.academy/apply" className='w-full' body={<button className="w-full border p-4 rounded-[10px] bg-white text-corange border-corange">Chat with Student Advisor</button>} />
+            <TextLink target='_blank' to="https://pluralcode.academy/chat-advisor" className='w-full' body={<button className="w-full border p-4 rounded-[10px] bg-white text-corange border-corange">Chat with Student Advisor</button>} />
           </div>
           <div className="flex flex-col gap-6 py-4">
             <div className="flex gap-6 text-start">

@@ -46,7 +46,7 @@ const CreativeDesign = () => {
         <Text className="text-white font-['gmedium'] xxxl:w-[80%] xxxl:text-2xl lg:pe-2" body='What does it take to be a top level creative designer? This course will answer that by combining still creative tools like Adobe Photoshop, Adobe Illustrator and Motion Design tools like Adobe After Effects and more to give you a comprehensive background as well as soft-skills training to prepare you for the world of freelancing and remote employment. '/>
 
       </div>
-      <div className="lg:w-[65%] wrapperc xxxl:h-[650px] pb-0 lg:pb-10 bg-white  relative rounded-t-[24px]">
+      <div className="lg:w-[65%] xl:w-[70%] wrapperc xl:h-[370px] xxxl:h-[660px] pb-0 lg:pb-10 bg-white  relative rounded-t-[24px]">
       <button
         className="ex text-xl lg:text-3xl lg:p-5 text-black exx"
         onClick={handleClose}

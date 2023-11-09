@@ -64,7 +64,9 @@ const CourseHighlights = () => {
           </div>
         <div className="flex flex-col gap-6 my-4">
             <hr className="w-full mt-2 mb-3"/>
-            <button className="p-4 bg-corange rounded-[10px] text-white font-[gsemibold]">Pay {numFor.format(digital[1]?.ngn_price)}</button>
+            <TextLink to="https://lively-cocada-4d1086.netlify.app/107" target="_blank" body={<button className="p-4 w-full bg-corange font-[gsemibold] rounded-[10px] text-white">
+              Pay N {numFor.format(digital[0]?.ngn_price)}
+            </button>} />
             <TextLink target='_blank' to="https://pluralcode.academy/chat-advisor" className='w-full' body={<button className="w-full border p-4 rounded-[10px] bg-white text-corange border-corange">Chat with Student Advisor</button>} />
         </div>
         <div className="flex flex-col gap-6 py-4">

@@ -53,7 +53,7 @@ const CourseHighlights = () => {
             N {numFor.format(digital[0]?.ngn_price)}
             <span className="text-cgray text-xl lg:text-2xl font-[gmedium]">
               {" "}
-              | N <span className="line-through">{numFor.format(digital[0]?.ngn_offset)}</span>
+              | N <span className="line-through">{numFor.format(digital[0]?.ngn_offset + digital[0]?.ngn_price)}</span>
             </span>
           </p>
           <Text
@@ -68,9 +68,9 @@ const CourseHighlights = () => {
           </div>
           <div className="flex flex-col gap-6 my-4">
             <hr className="w-full mt-2 mb-3" />
-            <button className="p-4 bg-corange font-[gsemibold] rounded-[10px] text-white">
+            <TextLink to="https://lively-cocada-4d1086.netlify.app/105" target="_blank" body={<button className="p-4 w-full bg-corange font-[gsemibold] rounded-[10px] text-white">
               Pay N {numFor.format(digital[0]?.ngn_price)}
-            </button>
+            </button>} />
             <TextLink target='_blank' to="https://pluralcode.academy/chat-advisor" className='w-full' body={<button className="w-full border p-4 rounded-[10px] bg-white text-corange border-corange">Chat with Student Advisor</button>} />
           </div>
           <div className="flex flex-col gap-6 py-4">

@@ -48,7 +48,7 @@ Learn how to prospect high quality leads, build relationships and convert those 
         <pre className="text-white font-['gmedium'] xxxl:w-[80%] xxxl:text-2xl lg:pe-2"> {article} </pre>
 
       </div>
-      <div className="lg:w-[65%] wrapperart xxxl:h-[650px] pb-0 lg:pb-10 bg-white  relative rounded-t-[24px]">
+      <div className="lg:w-[65%] xl:w-[70%] wrapperart xl:h-[370px] xxxl:h-[660px] pb-0 lg:pb-10 bg-white  relative rounded-t-[24px]">
       <button
         className="ex text-xl lg:text-3xl lg:p-5 text-black exx"
         onClick={handleClose}

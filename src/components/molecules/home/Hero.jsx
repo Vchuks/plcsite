@@ -17,7 +17,6 @@ import curve2 from "../../../assets/images/Rectangle 1734.png";
 import curve3 from "../../../assets/images/Rectangle 1735.png";
 
 const Hero = () => {
-  const [entcou, setEntCou] = useState([]);
   const [view, setView] = useState(false)
   const [view2, setView2] = useState(false)
   const [view3, setView3] = useState(false)
@@ -26,15 +25,8 @@ const Hero = () => {
   const [view6, setView6] = useState(false)
   const [view7, setView7] = useState(false)
   const [view8, setView8] = useState(false)
-
-  useEffect(() => {
-    fetch("https://backend.pluralcode.institute/loop-course-list")
-      .then((response) => response.json())
-      .then((result) => {
-        setEntCou(result.courses);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+  const [certCourse, setCertCourse] = useState([]);
+  const [diplomaCourse, setDiplomaCourse] = useState([]);
 
   const handleView = ()=>{
       setView(!view)
@@ -60,6 +52,15 @@ const Hero = () => {
   const handleView8 = ()=>{
       setView8(!view8)
   }
+  useEffect(() => {
+    fetch("https://backend.pluralcode.institute/course-list")
+      .then((response) => response.json())
+      .then((result) => {
+        setCertCourse(result?.certcourses);
+        setDiplomaCourse(result?.diplomacourses);
+      })
+      .catch((err) => console.log(err));
+  }, []);
   
   
   return (
@@ -82,7 +83,10 @@ const Hero = () => {
         <div className="border 2xl:w-[500px] xxxl:w-[700px] rounded-2xl gap-5 2xl:my-6 my-4 border-corange selectdiv flex flex-col lg:flex-row items-center px-6 justify-between py-4 xxxl:py-6">
           <select className="w-full outline-none px-3 flex items-center justify-center text-sm text-cblue rounded bg-white pt-4 2xl:pt-5 2xl:pb-5  pb-3  ">
             <option className=" text-center">Select Course</option>
-            {entcou?.map((each) => (
+            {certCourse?.map((each) => (
+              <option className="px-2" key={each.id}>{each.name}</option>
+              ))}
+            {diplomaCourse?.map((each) => (
               <option className="px-2" key={each.id}>{each.name}</option>
               ))}
           </select>

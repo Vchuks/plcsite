@@ -46,7 +46,7 @@ const CreativeDesign = () => {
         <Text className="text-white font-['gmedium'] xxxl:w-[80%] xxxl:text-2xl lg:pe-2" body='We now live in the world of attention. The wealthiest and most influential people in this era all have something in common; their ability to command attention through content. Whether it’s Elon Musk, Gary Vaynerchuk, MR Beast, Don Jazzy, Donald Trump, Joe Rogan. These guys have mastered the art of using content and attention to create wealth and wield political power, learn how it is done. '/>
 
       </div>
-      <div className="lg:w-[65%] wrappercontent xxxl:h-[650px] pb-0 lg:pb-10 bg-white  relative rounded-t-[24px]">
+      <div className="lg:w-[65%] xl:w-[70%] wrappercontent xl:h-[370px] xxxl:h-[660px] pb-0 lg:pb-10 bg-white  relative rounded-t-[24px]">
       <button
         className="ex text-xl lg:text-3xl lg:p-5 text-black exx"
         onClick={handleClose}

@@ -35,7 +35,7 @@ function App() {
 
         if (location.pathname.includes('/partnership') || location.pathname === "/")  {
           navbar = <Navbar />;
-        } if(location.pathname.includes('/school/digital_economy/creative_design') || location.pathname===('/school/digital_economy/art_of_selling') || location.pathname===('/school/digital_economy/content_creation') || location.pathname===('/school/digital_economy/advanced_excel')){
+        } if(location.pathname.includes('/school/digital_economy')){
           navbar = <NavbarDigital/>
         }
 

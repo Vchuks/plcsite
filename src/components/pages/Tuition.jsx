@@ -2,8 +2,8 @@ import curve from "../../assets/images/Vector 5.png";
 import Logo from "../atoms/Logo";
 import Text from "../atoms/Text";
 import TextLink from "../atoms/TextLink";
-import sub from "../../assets/images/Subtract (1).png";
-import sub2 from "../../assets/images/Subtract.png";
+// import sub from "../../assets/images/Subtract (1).png";
+// import sub2 from "../../assets/images/Subtract.png";
 import sub3 from "../../assets/images/Subtract3.png";
 // import loop from "../../assets/images/PluralCode Loop 1 1.png";
 import { useEffect, useState } from "react";
@@ -253,12 +253,12 @@ const Tuition = () => {
           </div>
         </div> */}
 
-        <div className="hidden lg:block absolute bottom-[42%] right-[18%]">
+        {/* <div className="hidden lg:block absolute bottom-[42%] right-[18%]">
           <Logo src={sub2} className="w-14" alt="" />
         </div>
         <div className="hidden lg:flex absolute bottom-[42%] left-[20%]">
           <Logo src={sub} className="w-14" alt="" />
-        </div>
+        </div> */}
       </div>
       <div className="font-['gregular'] w-full text-center">
         <Text

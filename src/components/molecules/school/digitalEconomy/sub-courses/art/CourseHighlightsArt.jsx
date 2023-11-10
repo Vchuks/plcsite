@@ -138,7 +138,7 @@ const CourseHighlights = () => {
           <div className="flex flex-col gap-6 my-4">
             <hr className="w-full mt-2 mb-3" />
             <TextLink
-              to={`https://lively-cocada-4d1086.netlify.app?course_name=${digital[0]?.name}&cohort=${cohort[0]?.name}`}
+              to={`https://pluralcode.academy/signup?course_name=${digital[0]?.name}&cohort=${cohort[0]?.name}`}
               body={
                 <button className="p-4 w-full bg-corange font-[gsemibold] rounded-[10px] text-white">
                   Pay N {numFor.format(digital[0]?.ngn_price)}

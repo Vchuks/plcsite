@@ -76,7 +76,7 @@ const NavbarDigital = () => {
           body={<button className="w-full">Sign In</button>}
         /> */}
         <TextLink
-          to="https://lively-cocada-4d1086.netlify.app"
+          to="https://pluralcode.academy/signup"
           className="w-36 bg-[#0D0032] xxxl:w-44 xxxl:py-5 xxxl:text-lg text-white text-sm rounded pt-3 pb-3"
           body={<button className="w-full">Start Learning</button>}
         />
@@ -134,7 +134,7 @@ const NavbarDigital = () => {
               body={<button className="w-full">Sign In</button>}
             /> */}
             <TextLink
-              to="https://lively-cocada-4d1086.netlify.app"
+              to="https://pluralcode.academy/signup"
               onClick={closeNav}
               className="w-36 text-sm bg-corange text-white rounded py-3"
               body={<button className="w-full">Start Learning</button>}

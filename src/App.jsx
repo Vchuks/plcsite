@@ -22,6 +22,7 @@ import Art from './components/sub-pages/Art';
 import Content from './components/sub-pages/Content';
 import Excel from './components/sub-pages/Excel';
 import { DataProvider } from './contextData/DigitalContent';
+import NavbarDigital from './components/molecules/NavbarDigital';
 const DigitalEconomy = lazy(()=> import('./components/pages/DigitalEconomy'))
 const Business = lazy(()=> import('./components/pages/Business'))
 
@@ -34,6 +35,8 @@ function App() {
 
         if (location.pathname.includes('/partnership') || location.pathname === "/")  {
           navbar = <Navbar />;
+        } if(location.pathname.includes('/school/digital_economy/creative_design') || location.pathname===('/school/digital_economy/art_of_selling') || location.pathname===('/school/digital_economy/content_creation') || location.pathname===('/school/digital_economy/advanced_excel')){
+          navbar = <NavbarDigital/>
         }
 
    useEffect(()=> {

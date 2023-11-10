@@ -5,7 +5,7 @@ import TextLink from "../atoms/TextLink";
 import sub from "../../assets/images/Subtract (1).png";
 import sub2 from "../../assets/images/Subtract.png";
 import sub3 from "../../assets/images/Subtract3.png";
-import loop from "../../assets/images/PluralCode Loop 1 1.png";
+// import loop from "../../assets/images/PluralCode Loop 1 1.png";
 import { useEffect, useState } from "react";
 
 const Tuition = () => {
@@ -195,7 +195,8 @@ const Tuition = () => {
             <div className="absolute -z-[1] rounded-ss-[30px] rounded-ee-[30px] w-full h-[90%] -right-3 lg:-right-6 top-5 border border-black bg-white"></div>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000">
+        {/* loop */}
+        {/* <div data-aos="fade-up" data-aos-duration="2000">
           <div className="relative w-11/12 m-auto lg:w-[420px] bg-white border border-black rounded-ss-[30px] rounded-ee-[30px]">
             <div className="flex justify-between px-5 py-8 rounded-ss-[30px] bg-cblue font-['gbold'] text-white text-xl lg:text-3xl">
               <Text className="" body="Self Paced (LooP)" />
@@ -250,7 +251,7 @@ const Tuition = () => {
             </div>
             <div className="absolute -z-[1] rounded-ss-[30px] rounded-ee-[30px] w-full h-[90%] -right-3 lg:-right-6 top-5 border border-black bg-white"></div>
           </div>
-        </div>
+        </div> */}
 
         <div className="hidden lg:block absolute bottom-[42%] right-[18%]">
           <Logo src={sub2} className="w-14" alt="" />

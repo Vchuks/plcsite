@@ -48,7 +48,7 @@ const CourseEconomy = () => {
                 <div className="flex items-center gap-2">
                   <p className="text-corange text-sm">&#8358; {numFor.format(digital[0]?.ngn_price)}</p>
                   <p className="text-xs line-through opacity-20 text-cgray">
-                  {numFor.format(digital[0]?.ngn_offset)}
+                  {numFor.format(digital[0]?.ngn_offset + digital[0]?.ngn_price)}
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
@@ -84,7 +84,7 @@ const CourseEconomy = () => {
                 <div className="flex items-center gap-2">
                   <p className="text-corange text-sm">&#8358; {numFor.format(digital[1]?.ngn_price)}</p>
                   <p className="text-xs line-through opacity-20 text-cgray">
-                  {numFor.format(digital[1]?.ngn_offset)}
+                  {numFor.format(digital[1]?.ngn_offset + digital[1]?.ngn_price)}
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
@@ -120,7 +120,7 @@ const CourseEconomy = () => {
                 <div className="flex items-center gap-2">
                   <p className="text-corange text-sm">&#8358; {numFor.format(digital[2]?.ngn_price)}</p>
                   <p className="text-xs line-through opacity-20 text-cgray">
-                  {numFor.format(digital[2]?.ngn_offset)}
+                  {numFor.format(digital[2]?.ngn_offset + digital[2]?.ngn_price)}
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
@@ -156,7 +156,7 @@ const CourseEconomy = () => {
                 <div className="flex items-center gap-2">
                   <p className="text-corange text-sm">&#8358; {numFor.format(digital[3]?.ngn_price)}</p>
                   <p className="text-xs line-through opacity-20 text-cgray">
-                  {numFor.format(digital[3]?.ngn_offset)}
+                  {numFor.format(digital[3]?.ngn_offset + digital[3]?.ngn_price)}
                   </p>
                 </div>
                 <div className="flex items-center gap-2">

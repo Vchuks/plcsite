@@ -6,7 +6,7 @@ import picthree from "../../../../../assets/images/Frame 20686 (2).png";
 import picfour from "../../../../../assets/images/Frame 20686 (3).png";
 import picfive from "../../../../../assets/images/Frame 20686 (4).png";
 import DigitalContent from "../../../../../contextData/DigitalContent";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import TextLink from "../../../../atoms/TextLink";
 import playbtn from "../../../../../assets/images/playbtn.png";
 
@@ -14,6 +14,11 @@ const CourseHighlights = () => {
   const { digital, cohort } = useContext(DigitalContent);
   const numFor = Intl.NumberFormat("en-US");
 
+
+  const [cohortSelect, setCohortSelect] = useState({
+    cohortt: ''
+  })
+  
   const handlePlay = () => {
     const videocard = document.querySelector("#video1");
     const videoWrapper = document.querySelector(".video");
@@ -59,7 +64,7 @@ const CourseHighlights = () => {
     
     You will also be given access to our talent network where you can collaborate and share ideas with like minded individuals, as well as get mentored weekly by experts in the field.`;
   return (
-    <div className="px-4 lg:px-14 pb-10 lg:pb-14 flex flex-col lg:flex-row bg-[#F8F8FA]">
+    <div className="px-4 lg:px-14 pb-10 lg:pb-14 flex flex-col-reverse lg:flex-row bg-[#F8F8FA]">
     <div className="lg:w-[62%] xl:w-[62%] 2xl:w-[60%] xxxl:w-[40%] pe-4 pt-10 lg:pt-14">
       <div className="w-20 h-2 rounded-2xl my-3 bg-corange"></div>
       <p className="relative text-cdark w-max font-['aristsemibold'] text-3xl lg:text-5xl xxxl:text-7xl">
@@ -113,12 +118,12 @@ const CourseHighlights = () => {
       </div>
       <div className="w-[90%] m-auto text-center">
         <p className="text-corange font-[gbold] text-[30px] lg:text-[40px]">
-          N {numFor.format(digital[1]?.ngn_price)}
+          N {numFor.format(digital[1]?.ngn_price || 0)}
           <span className="text-cgray text-xl lg:text-2xl font-[gmedium]">
             {" "}
             | N{" "}
             <span className="line-through">
-              {numFor.format(digital[1]?.ngn_offset + digital[1]?.ngn_price)}
+              {numFor.format(digital[1]?.ngn_offset + digital[1]?.ngn_price || 0)}
             </span>
           </span>
         </p>
@@ -128,17 +133,20 @@ const CourseHighlights = () => {
         />
         <div className="w-11/12 m-auto text-start my-5">
           <label className="py-2">Cohort (Start Month)</label>
-          <select className="selectDig w-full font-[gmedium] outline-none border border-[#22205747] px-3 flex items-center justify-center text-sm text-cdark rounded-[10px] bg-white pt-4 2xl:pt-5 2xl:pb-5  pb-3 ">
-            <option className="px-2">{cohort[0]?.name}</option>
+          <select value={cohortSelect.cohortt}  onChange={(event)=>setCohortSelect(event.target.value)} className="selectDig w-full font-[gmedium] outline-none border border-[#22205747] px-3 flex items-center justify-center text-sm text-cdark rounded-[10px] bg-white pt-4 2xl:pt-5 2xl:pb-5  pb-3 ">
+            
+            {cohort?.map((each)=>{
+            return <option key={each.id}  value={each.name}  className="px-2">{each.name}</option>})}
           </select>
         </div>
         <div className="flex flex-col gap-6 my-4">
           <hr className="w-full mt-2 mb-3" />
           <TextLink
-            to={`https://pluralcode.academy/signup?course_name=${digital[1]?.name}&cohort=${cohort[0]?.name}`}
+            target='_blank'
+            to={`https://pluralcode.academy/signup?course_name=${digital[1]?.name}&cohort=${cohortSelect.cohortt === '' ?cohort[0]?.name:cohortSelect}`}
             body={
               <button className="p-4 w-full bg-corange font-[gsemibold] rounded-[10px] text-white">
-                Pay N {numFor.format(digital[1]?.ngn_price)}
+                Pay N {numFor.format(digital[1]?.ngn_price || 0)}
               </button>
             }
           />

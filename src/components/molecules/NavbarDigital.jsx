@@ -158,7 +158,7 @@ const NavbarDigital = () => {
               </div>
               {/* school drop down */}
               {schdp && (
-                <div className="w-3/4 z-10 absolute top-full mt-1 bg-white schdp p-4 text-black flex flex-col gap-2">
+                <div className="w-10/12 z-10 absolute top-full mt-1 bg-white schdp p-4 text-black flex flex-col gap-2">
                   <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                     <TextLink
                       to="/school/product"
@@ -199,7 +199,7 @@ const NavbarDigital = () => {
                     <TextLink
                       to="/school/business"
                       className="text-sm text-cdark"
-                      body="Business"
+                      body="Business School"
                       onClick={closeNav}
                     />
                   </div>
@@ -224,7 +224,7 @@ const NavbarDigital = () => {
               </div>
               {/* more drop down */}
               {moredp && (
-                <div className="w-3/4 h-[120px] absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">
+                <div className="w-10/12 h-[120px] absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">
                   <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                     <TextLink
                       to="/why_pluralcode"

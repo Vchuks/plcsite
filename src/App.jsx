@@ -25,10 +25,12 @@ import { DataProvider } from './contextData/DigitalContent';
 import NavbarDigital from './components/molecules/NavbarDigital';
 const DigitalEconomy = lazy(()=> import('./components/pages/DigitalEconomy'))
 const Business = lazy(()=> import('./components/pages/Business'))
-
+import ReactGA from 'react-ga4'
 
 
 function App() {
+  ReactGA.initialize("G-86XXG6VF1L");
+
   const location = useLocation();
         let navbar = <NavbarTwo />;   // default navbar
         

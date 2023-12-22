@@ -478,7 +478,9 @@ border: 0.95px solid var(--plural-code-blue, #222057);
   left:15px;
   top:20px;
 }
-
+.spin{
+  display: none;
+}
 
 
 @media (min-width:1023px) and (max-width:1025px) {

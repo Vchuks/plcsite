@@ -6,10 +6,12 @@ import bad from '../../assets/images/Group 20385.png'
 import sdc from '../../assets/images/sdc.png'
 import actd from '../../assets/images/actd.png'
 import qa from '../../assets/images/qa.png'
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useRef, useState } from "react";
+// import { Link } from "react-router-dom";
+import { BiLoaderAlt } from "react-icons/bi";
 
 const Verify = () => {
+  const verifyRef = useRef()
     const [certId, setCertId] = useState('')
     const [certDetail, setCertDetail] = useState({
         certificate_id:"",
@@ -28,12 +30,15 @@ const Verify = () => {
   const [verifySection, setVerifySection] = useState(false);
 //   CERT/PLC/2023/795214
   const handleVerify = () => {
+    const sp = document.querySelector("#spinn");
+    sp.style.display = "block";
+
     fetch(`https://pluralcode.net/apis/v1/verify_certificate.php?cert_id=${certId}`)
     .then(response => response.json())
     .then(result =>{ 
         if (result.statuscode === '00'){
-            setVerifySection(true)
-            setVerify(true)
+          setVerifySection(true)
+          setVerify(true)
     setCertDetail({
         certificate_id:result.certificate_id,
         cohort:result.cohort,
@@ -45,8 +50,11 @@ const Verify = () => {
         full_name:result.full_name,
         status: result.status,
         statuscode:result.statuscode
-    })
-    setNoVerify(false)
+      })
+      setNoVerify(false)
+      sp.style.display = "none";
+      
+      verifyRef.current?.scrollIntoView({behavior: 'smooth'})
   }else{
     setVerifySection(true)
     setVerify(false)
@@ -78,8 +86,14 @@ const Verify = () => {
             />
             <button
               onClick={handleVerify}
-              className="bg-corange w-2/4 font-['gregular'] rounded-e py-3 items-center text-white xxxl:text-2xl"
+              className="bg-corange w-2/4 font-['gregular'] flex justify-center rounded-e py-3 items-center text-white xxxl:text-2xl"
             >
+              <div
+                      id="spinn"
+                      className="spin animate-spin text-2xl mr-2"
+                    >
+                      <BiLoaderAlt />
+                    </div>
               Search
             </button>
           </div>
@@ -88,13 +102,14 @@ const Verify = () => {
           <Logo src={verifyImg} alt="" className="" />
         </div>
       </div>
+      <div ref={verifyRef}>
       {verifySection &&<div className="px-4 lg:px-14 py-6 lg:py-14">
         <Text
           className="text-center text-[32px] font-['gbold'] lg:pb-14 text-cblue"
           body="View Certificate"
         />
         {verify && (
-          <div className="flex">
+          <div className="flex" >
             <div className="w-full hidden lg:flex flex-col justify-center items-center">
               <Logo src={good} alt="" className="w-28" />
               <Text
@@ -173,14 +188,14 @@ const Verify = () => {
                 </div>
               </div>
               
-              <div className="flex flex-col py-3">
+              {/* <div className="flex flex-col py-3">
               <Text
                     className="font-['gregular'] pb-3 lg:text-xl text-cdark"
                     body="Certificate link"
                   />
                   <Link className="w-full" to={`https://certtest.netlify.app/?cert_id=${certId}`}><button className="w-full bg-corange lg:text-lg text-white py-3 rounded">Open</button></Link>
-              </div>
-              <div className="pt-4 lg:pt-10">
+              </div> */}
+              <div className="pt-4 "> {/*lg:pt-10*/}
               <Text
                     className="font-['gregular'] lg:text-xl text-cdark"
                     body="Accredited by"
@@ -222,6 +237,7 @@ const Verify = () => {
         </div>}
       </div>
 }
+      </div>
     </div>
   );
 };

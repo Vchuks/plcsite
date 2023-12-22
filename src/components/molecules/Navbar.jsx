@@ -95,7 +95,7 @@ const Navbar = () => {
           <FaChevronDown className="text-xs"/>
           </div>
         {/* school drop down */}
-        {schdp &&<div className="w-3/4 z-10 absolute top-full mt-1 bg-white schdp p-4 text-black flex flex-col gap-2">
+        {schdp &&<div className="w-10/12 z-10 absolute top-full mt-1 bg-white schdp p-4 text-black flex flex-col gap-2">
         <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                 <TextLink to="/school/product" className="text-sm text-cdark" body="Product School" onClick={closeNav}/>
                 <TextLink to="/school/data" className="text-sm text-cdark" body="Data School" onClick={closeNav}/>
@@ -103,7 +103,7 @@ const Navbar = () => {
                 <TextLink to="/school/cloud" className="text-sm text-cdark" body="Cloud School" onClick={closeNav}/>
                 <TextLink to="/school/emerging_technologies" className="text-sm text-cdark" body="Emerging Technologies" onClick={closeNav}/>
                 <TextLink to="/school/digital_economy" className="text-sm text-cdark" body="Digital Economy" onClick={closeNav}/>
-                <TextLink to="/school/business" className="text-sm text-cdark" body="Business" onClick={closeNav}/>
+                <TextLink to="/school/business" className="text-sm text-cdark" body="Business School" onClick={closeNav}/>
             </div>
         </div>}
         </div>
@@ -116,7 +116,7 @@ const Navbar = () => {
           <FaChevronDown className="text-xs" />
           </div>
           {/* more drop down */}
-        {moredp &&<div className="w-3/4 h-[120px] absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">
+        {moredp &&<div className="w-10/12 h-[120px] absolute z-10 top-full mt-1 bg-white schdp p-4 gap-4 text-black">
         <div className="flex flex-col gap-2 text-sm font-['gmedium']">
                 <TextLink to="/why_pluralcode" className="text-cdark text-sm" body="Why Pluralcode" onClick={closeNav}/>
                 <TextLink to="/partnership" className="text-cdark text-sm" body="Partner with us" onClick={closeNav}/>
